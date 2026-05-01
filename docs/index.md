@@ -204,6 +204,10 @@ blockquote {
   margin-bottom: 1.5rem !important;
 }
 
+.homepage-container .category-title {
+  border-bottom: 2px solid #171717 !important;
+}
+
 .homepage-container ul {
   list-style: none !important;
   padding: 0 !important;
@@ -366,6 +370,7 @@ blockquote {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #171717;
+  border-bottom: 2px solid #171717;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
 }
