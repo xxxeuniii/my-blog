@@ -258,7 +258,6 @@ blockquote {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 1px solid #e5e5e5;
   padding-bottom: 1rem;
   margin-bottom: 2.5rem;
 }
@@ -529,7 +528,6 @@ blockquote {
   font-family: 'Newsreader', serif;
   padding-bottom: 1rem;
   margin-bottom: 2.5rem;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .about-tech-grid {
