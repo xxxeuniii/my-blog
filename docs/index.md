@@ -178,7 +178,6 @@ blockquote {
   line-height: normal !important;
   text-transform: none !important;
   letter-spacing: normal !important;
-  border-bottom: 1px solid #e5e5e5 !important;
   padding-bottom: 1rem !important;
   margin-bottom: 2.5rem !important;
 }
@@ -191,7 +190,6 @@ blockquote {
   line-height: normal !important;
   text-transform: none !important;
   letter-spacing: normal !important;
-  border-bottom: 2px solid #171717 !important;
   padding-bottom: 0.5rem !important;
   margin-bottom: 1.5rem !important;
 }
