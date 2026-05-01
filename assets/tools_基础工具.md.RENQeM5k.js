@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as o}from"./chunks/framework.-Wrcbzkw.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"tools/基础工具.md","filePath":"tools/基础工具.md","lastUpdated":1777670567000}'),a={name:"tools/基础工具.md"};function s(r,c,n,_,d,p){return e(),o("div")}const m=t(a,[["render",s]]);export{i as __pageData,m as default};
