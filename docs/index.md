@@ -156,6 +156,65 @@ blockquote {
   border-left: none !important;
 }
 
+/* 保护首页样式不受目录页样式影响 */
+.homepage-container h2,
+.homepage-container h3,
+.homepage-container ul,
+.homepage-container li,
+.homepage-container a {
+  border-left: none !important;
+  padding-left: 0 !important;
+  display: block !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.homepage-container h2 {
+  font-family: 'Newsreader', serif !important;
+  font-size: 2rem !important;
+  font-weight: 500 !important;
+  color: #171717 !important;
+  line-height: normal !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  padding-bottom: 1rem !important;
+  margin-bottom: 2.5rem !important;
+}
+
+.homepage-container h3 {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+  line-height: normal !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  border-bottom: 2px solid #171717 !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.homepage-container ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  gap: 0 !important;
+}
+
+.homepage-container li {
+  padding: 0.75rem 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  transition: none !important;
+  cursor: pointer !important;
+  position: static !important;
+  overflow: visible !important;
+}
+
 .homepage-container {
   max-width: 1200px;
   margin: 0 auto;
