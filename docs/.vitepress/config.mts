@@ -68,6 +68,8 @@ export default defineConfig({
   title: 'Eunie\'s Blog',
   description: '个人的技术知识库，仅供个人学习记录',
   base: '/my-blog/',
+  ignoreDeadLinks: true,
+  appearance: false,
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
     ['link', { rel: 'icon', href: '/my-blog/favicon.ico' }],
