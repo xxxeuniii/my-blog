@@ -140,7 +140,7 @@ export default defineConfig({
         text: '大模型',
         items: [
           { text: '大模型', link: '/LLM/' },
-          { text: '资源合集', link: '/LLM/资源/ui-ux-design-resources.md' },
+          { text: '资源合集', link: '/LLM/资源/前端设计skill网站.md' },
         ],
       },
       {
