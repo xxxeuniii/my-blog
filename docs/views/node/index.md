@@ -9,29 +9,63 @@ sidebar: false
 
 Node.js 视图与服务端开发
 
----
+<div class="category-info">
+  <div class="info-item">
+    <div class="info-label">文章数量</div>
+    <div class="info-value" id="article-count"></div>
+  </div>
+</div>
 
-## 文章列表
+<ul id="article-list">
+  <li>
+    <strong><a href="./express1.md">express1</a></strong>
+    <br>
+    <span>Express 入门</span>
+  </li>
+  <li>
+    <strong><a href="./express2.md">express2</a></strong>
+    <br>
+    <span>Express 进阶</span>
+  </li>
+  <li>
+    <strong><a href="./nodejs1.md">nodejs1</a></strong>
+    <br>
+    <span>Node.js 入门</span>
+  </li>
+  <li>
+    <strong><a href="./nodejs2.md">nodejs2</a></strong>
+    <br>
+    <span>Node.js 进阶</span>
+  </li>
+  <li>
+    <strong><a href="./socket.io.md">socket.io</a></strong>
+    <br>
+    <span>Socket.IO 实时通信</span>
+  </li>
+  <li>
+    <strong><a href="./sql.md">sql</a></strong>
+    <br>
+    <span>SQL 数据库</span>
+  </li>
+  <li>
+    <strong><a href="./websocket基本使用.md">websocket基本使用</a></strong>
+    <br>
+    <span>WebSocket 基本使用</span>
+  </li>
+</ul>
 
-- **[express1](./express1.md)**  
-  Express 入门
-
-- **[express2](./express2.md)**  
-  Express 进阶
-
-- **[nodejs1](./nodejs1.md)**  
-  Node.js 入门
-
-- **[nodejs2](./nodejs2.md)**  
-  Node.js 进阶
-
-- **[socket.io](./socket.io.md)**  
-  Socket.IO 实时通信
-
-- **[sql](./sql.md)**  
-  SQL 数据库
-
-- **[websocket基本使用](./websocket基本使用.md)**  
-  WebSocket 基本使用
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
+  const list = document.getElementById('article-list')
+  if (list) {
+    const links = list.querySelectorAll('a')
+    const countEl = document.getElementById('article-count')
+    if (countEl) {
+      countEl.textContent = links.length
+    }
+  }
+})
+</script>
 
 </div>

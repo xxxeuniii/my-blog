@@ -9,29 +9,63 @@ sidebar: false
 
 前端工程化与构建工具
 
----
+<div class="category-info">
+  <div class="info-item">
+    <div class="info-label">文章数量</div>
+    <div class="info-value" id="article-count"></div>
+  </div>
+</div>
 
-## 文章列表
+<ul id="article-list">
+  <li>
+    <strong><a href="./esm.md">esm</a></strong>
+    <br>
+    <span>ECMAScript Modules</span>
+  </li>
+  <li>
+    <strong><a href="./vite.md">vite</a></strong>
+    <br>
+    <span>Vite 构建工具</span>
+  </li>
+  <li>
+    <strong><a href="./vite和webpack对比.md">vite和webpack对比</a></strong>
+    <br>
+    <span>Vite vs Webpack</span>
+  </li>
+  <li>
+    <strong><a href="./vite的配置有哪些.md">vite的配置有哪些</a></strong>
+    <br>
+    <span>Vite 配置详解</span>
+  </li>
+  <li>
+    <strong><a href="./webpack.md">webpack</a></strong>
+    <br>
+    <span>Webpack 打包工具</span>
+  </li>
+  <li>
+    <strong><a href="./基本概念.md">基本概念</a></strong>
+    <br>
+    <span>工程化基础概念</span>
+  </li>
+  <li>
+    <strong><a href="./模块化.md">模块化</a></strong>
+    <br>
+    <span>JavaScript 模块化</span>
+  </li>
+</ul>
 
-- **[esm](./esm.md)**  
-  ECMAScript Modules
-
-- **[vite](./vite.md)**  
-  Vite 构建工具
-
-- **[vite和webpack对比](./vite和webpack对比.md)**  
-  Vite vs Webpack
-
-- **[vite的配置有哪些](./vite的配置有哪些.md)**  
-  Vite 配置详解
-
-- **[webpack](./webpack.md)**  
-  Webpack 打包工具
-
-- **[基本概念](./基本概念.md)**  
-  工程化基础概念
-
-- **[模块化](./模块化.md)**  
-  JavaScript 模块化
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
+  const list = document.getElementById('article-list')
+  if (list) {
+    const links = list.querySelectorAll('a')
+    const countEl = document.getElementById('article-count')
+    if (countEl) {
+      countEl.textContent = links.length
+    }
+  }
+})
+</script>
 
 </div>

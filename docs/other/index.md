@@ -9,17 +9,43 @@ sidebar: false
 
 其他技术文章与杂记
 
----
+<div class="category-info">
+  <div class="info-item">
+    <div class="info-label">文章数量</div>
+    <div class="info-value" id="article-count"></div>
+  </div>
+</div>
 
-## 文章列表
+<ul id="article-list">
+  <li>
+    <strong><a href="./20240429.md">20240429</a></strong>
+    <br>
+    <span>技术笔记</span>
+  </li>
+  <li>
+    <strong><a href="./20240726.md">20240726</a></strong>
+    <br>
+    <span>技术笔记</span>
+  </li>
+  <li>
+    <strong><a href="./20240729.md">20240729</a></strong>
+    <br>
+    <span>技术笔记</span>
+  </li>
+</ul>
 
-- **[20240429](./20240429.md)**  
-  技术笔记
-
-- **[20240726](./20240726.md)**  
-  技术笔记
-
-- **[20240729](./20240729.md)**  
-  技术笔记
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
+  const list = document.getElementById('article-list')
+  if (list) {
+    const links = list.querySelectorAll('a')
+    const countEl = document.getElementById('article-count')
+    if (countEl) {
+      countEl.textContent = links.length
+    }
+  }
+})
+</script>
 
 </div>
