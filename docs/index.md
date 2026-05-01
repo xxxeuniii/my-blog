@@ -96,13 +96,23 @@ layout: home
             </div>
             <div class="about-tech-divider"></div>
             <div class="about-tech-item">
-              <span class="about-tech-name">Vite / Webpack / VitePress</span>
+              <span class="about-tech-name">前端 / Agent / Vibe Coding</span>
               <span class="about-tech-num">02</span>
             </div>
             <div class="about-tech-divider"></div>
             <div class="about-tech-item">
-              <span class="about-tech-name">CSS / SCSS / Tailwind CSS</span>
+              <span class="about-tech-name">Vite / Webpack / VitePress</span>
               <span class="about-tech-num">03</span>
+            </div>
+            <div class="about-tech-divider"></div>
+            <div class="about-tech-item">
+              <span class="about-tech-name">CSS / SCSS / Tailwind CSS</span>
+              <span class="about-tech-num">04</span>
+            </div>
+            <div class="about-tech-divider"></div>
+            <div class="about-tech-item">
+              <span class="about-tech-name">精通设计</span>
+              <span class="about-tech-num">05</span>
             </div>
           </div>
           <p class="about-tech-desc">专注于前端工程化与用户体验，追求每一像素的精确性。</p>
