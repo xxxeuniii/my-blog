@@ -84,6 +84,10 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
+    codeBlocks: {
+      showLanguage: true
+    },
+    returnToTopLabel: '回到顶部',
     lastUpdated: {
       text: '上次更新',
       formatOptions: {
