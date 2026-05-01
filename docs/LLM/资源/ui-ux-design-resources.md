@@ -1,8 +1,8 @@
-# 🧠 UI / UX &amp; Design 资源官网合集
+# UI / UX &amp; Design 资源官网合集
 
 ## 1. Anthropic（UI/产品体验相关公司）
 
-👉 `https://www.anthropic.com`
+[https://www.anthropic.com](https://www.anthropic.com)
 
 Claude 的官方公司
 
@@ -14,7 +14,7 @@ Claude 的官方公司
 
 ## 2. UI UX Pro Max（AI UI设计技能库）
 
-👉 `https://ui-ux-pro-max-skill.com`
+[https://ui-ux-pro-max-skill.com](https://ui-ux-pro-max-skill.com)
 
 AI UI设计"设计系统数据库"
 
@@ -26,7 +26,7 @@ AI UI设计"设计系统数据库"
 
 ## 3. Impeccable UI（UI skill）
 
-👉 `https://impeccable-ui.com`
+[https://impeccable-ui.com](https://impeccable-ui.com)
 
 偏"AI UI设计规范库"
 
@@ -38,9 +38,9 @@ AI UI设计"设计系统数据库"
 
 ## 4. UIUX Pro Max（官方文档/介绍）
 
-👉 `https://uupm.cc`
+[https://uupm.cc](https://uupm.cc)
 
-👉 `https://ui-ux-pro-max-skill.com`
+[https://ui-ux-pro-max-skill.com](https://ui-ux-pro-max-skill.com)
 
 设计系统增强 AI 输出质量
 
@@ -50,7 +50,7 @@ AI UI设计"设计系统数据库"
 
 ## 5. 0xDesign（设计灵感/前端设计社区）
 
-👉 `https://0xdesign.dev`
+[https://0xdesign.dev](https://0xdesign.dev)
 
 偏前端 + UI + 产品设计审美
 
@@ -62,7 +62,7 @@ AI UI设计"设计系统数据库"
 
 ## 6. User Interface Wiki（UI模式百科）
 
-👉 `https://ui-patterns.com`
+[https://ui-patterns.com](https://ui-patterns.com)
 
 UI设计模式百科全书
 
@@ -74,7 +74,7 @@ UI设计模式百科全书
 
 ## 7. Designer Skills（设计能力学习体系）
 
-👉 `https://www.nngroup.com`
+[https://www.nngroup.com](https://www.nngroup.com)
 
 （Nielsen Norman Group，权威 UX 机构）
 
@@ -86,7 +86,7 @@ UX行业标准来源
 
 ## 8. Make Interfaces Better（UI改进理念）
 
-👉 `https://lawsofux.com`
+[https://lawsofux.com](https://lawsofux.com)
 
 UX 设计 10 大法则
 
@@ -98,7 +98,7 @@ UX 设计 10 大法则
 
 ## 9. UIUX Wiki / Design Wiki（通用 UI知识库）
 
-👉 `https://www.uxdesign.cc`
+[https://www.uxdesign.cc](https://www.uxdesign.cc)
 
 Medium 上最活跃的 UX 设计社区
 
@@ -108,7 +108,7 @@ UI趋势 / 案例 / 产品拆解
 
 ## 10. UIUX Pro / Design Systems（广义设计系统参考）
 
-👉 `https://material.io`
+[https://material.io](https://material.io)
 
 Google Material Design 官方
 
