@@ -9,23 +9,53 @@ sidebar: false
 
 DOM、BOM、数据结构等核心知识，前端开发的必备基础。
 
----
+<div class="category-info">
+  <div class="info-item">
+    <div class="info-label">文章数量</div>
+    <div class="info-value" id="article-count"></div>
+  </div>
+</div>
 
-## 文章列表
+<ul id="article-list">
+  <li>
+    <strong><a href="./BOM.md">BOM</a></strong>
+    <br>
+    <span>浏览器对象模型，操作浏览器窗口和导航的 API。</span>
+  </li>
+  <li>
+    <strong><a href="./DOM.md">DOM</a></strong>
+    <br>
+    <span>文档对象模型，操作网页元素的核心 API。</span>
+  </li>
+  <li>
+    <strong><a href="./HTML.md">HTML</a></strong>
+    <br>
+    <span>HTML 基础与进阶，语义化标签和现代 Web 标准。</span>
+  </li>
+  <li>
+    <strong><a href="./数据结构.md">数据结构</a></strong>
+    <br>
+    <span>前端常用数据结构与算法，提升代码质量和效率。</span>
+  </li>
+  <li>
+    <strong><a href="./网络请求.md">网络请求</a></strong>
+    <br>
+    <span>HTTP 请求与响应处理，Fetch、Axios 等工具使用。</span>
+  </li>
+</ul>
 
-- **[BOM](./BOM.md)**  
-  浏览器对象模型，操作浏览器窗口和导航的 API。
-
-- **[DOM](./DOM.md)**  
-  文档对象模型，操作网页元素的核心 API。
-
-- **[HTML](./HTML.md)**  
-  HTML 基础与进阶，语义化标签和现代 Web 标准。
-
-- **[数据结构](./数据结构.md)**  
-  前端常用数据结构与算法，提升代码质量和效率。
-
-- **[网络请求](./网络请求.md)**  
-  HTTP 请求与响应处理，Fetch、Axios 等工具使用。
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
+  const list = document.getElementById('article-list')
+  if (list) {
+    const links = list.querySelectorAll('a')
+    const countEl = document.getElementById('article-count')
+    if (countEl) {
+      countEl.textContent = links.length
+    }
+  }
+})
+</script>
 
 </div>

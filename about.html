@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#151c22",
+                        "primary": "#0c1014",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "on-background": "#151c22",
+                        "primary-fixed": "#e0e3e8",
+                        "secondary-fixed-dim": "#c0c7cf",
+                        "secondary": "#585f66",
+                        "on-primary-container": "#888c91",
+                        "on-surface": "#151c22",
+                        "on-tertiary-fixed": "#141d23",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#75777b",
+                        "surface-tint": "#5b5f63",
+                        "surface-container": "#e7eff7",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#f6faff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#181c20",
+                        "secondary-container": "#dce3ec",
+                        "on-secondary-container": "#5e656c",
+                        "on-primary-fixed-variant": "#43474c",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#eaf2fa",
+                        "surface-bright": "#f6faff",
+                        "primary-container": "#212529",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#293138",
+                        "surface-container-highest": "#dbe3ec",
+                        "tertiary": "#081117",
+                        "on-secondary-fixed-variant": "#41484e",
+                        "tertiary-fixed": "#dbe4ed",
+                        "background": "#f6faff",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#44474a",
+                        "secondary-fixed": "#dce3ec",
+                        "primary-fixed-dim": "#c3c7cc",
+                        "on-tertiary-container": "#848d95",
+                        "surface-container-low": "#edf4fd",
+                        "on-tertiary-fixed-variant": "#3f484f",
+                        "surface-variant": "#dbe3ec",
+                        "inverse-primary": "#c3c7cc",
+                        "outline-variant": "#c5c6ca",
+                        "surface-container-high": "#e1e9f1",
+                        "tertiary-fixed-dim": "#bfc8d0",
+                        "surface-dim": "#d3dbe3",
+                        "tertiary-container": "#1d262d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-sm": "12px",
+                        "container-max": "1200px",
+                        "sidebar-width": "260px",
+                        "stack-md": "24px",
+                        "base": "8px",
+                        "section-gap": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Newsreader"],
+                        "nav-link": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Newsreader"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Newsreader"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "nav-link": ["14px", {"lineHeight": "1", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.7", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f6faff;
+            color: #0c1014;
+        }
+    </style>
+</head>
+<body class="font-body-md bg-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-stone-200">
+<div class="flex justify-between items-center h-16 px-6 lg:px-12 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold font-serif text-stone-900">技术归档</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-nav-link text-nav-link text-stone-500 hover:text-stone-900 transition-all duration-200" href="#">文章</a>
+<a class="font-nav-link text-nav-link text-stone-500 hover:text-stone-900 transition-all duration-200" href="#">分类</a>
+<a class="font-nav-link text-nav-link text-stone-500 hover:text-stone-900 transition-all duration-200" href="#">项目</a>
+<a class="font-nav-link text-nav-link text-stone-900 border-b-2 border-stone-900 pb-1" href="#">关于</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center bg-stone-100 rounded px-3 py-1.5">
+<span class="material-symbols-outlined text-stone-500 text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 placeholder-stone-400" placeholder="搜索..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 font-nav-link text-nav-link hover:opacity-90 active:scale-95 transition-all">订阅</button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-section-gap max-w-screen-2xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col lg:flex-row gap-12">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col w-64 space-y-4 py-8 sticky top-24 h-fit rounded-lg border-l-2 border-stone-100">
+<div class="px-4 mb-6">
+<h3 class="font-headline-sm text-lg font-semibold text-stone-900">大纲</h3>
+<p class="font-body-md text-xs text-stone-500">目录</p>
+</div>
+<a class="font-sans text-sm tracking-normal text-stone-900 border-l-2 border-stone-900 pl-4 -ml-[2px] font-semibold flex items-center gap-2" href="#introduction">
+<span class="material-symbols-outlined text-base">info</span> 简介
+            </a>
+<a class="font-sans text-sm tracking-normal text-stone-500 pl-4 hover:bg-stone-100 transition-colors flex items-center gap-2" href="#setup">
+<span class="material-symbols-outlined text-base">settings</span> 配置
+            </a>
+<a class="font-sans text-sm tracking-normal text-stone-500 pl-4 hover:bg-stone-100 transition-colors flex items-center gap-2" href="#architecture">
+<span class="material-symbols-outlined text-base">account_tree</span> 架构
+            </a>
+<a class="font-sans text-sm tracking-normal text-stone-500 pl-4 hover:bg-stone-100 transition-colors flex items-center gap-2" href="#implementation">
+<span class="material-symbols-outlined text-base">code</span> 实现
+            </a>
+<a class="font-sans text-sm tracking-normal text-stone-500 pl-4 hover:bg-stone-100 transition-colors flex items-center gap-2" href="#conclusion">
+<span class="material-symbols-outlined text-base">check_circle</span> 结语
+            </a>
+</aside>
+<!-- Content Area -->
+<div class="flex-1 max-w-4xl">
+<!-- Hero Section (Introduction) -->
+<section class="mb-section-gap" id="introduction">
+<div class="mb-12">
+<h1 class="font-display-lg text-display-lg text-primary mb-6">关于本站 / About The Archive</h1>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed max-w-3xl">
+                        欢迎来到我的数字档案馆。这里不仅是一个技术博客，更是一个致力于技术严谨性与知识传承的思考空间。我通过文字记录从架构设计到代码实现的点滴，旨在为复杂的工程问题提供清晰的叙述。
+                    </p>
+</div>
+</section>
+<hr class="border-stone-200 mb-section-gap"/>
+<!-- Tech Stack (Setup/Architecture) -->
+<section class="mb-section-gap" id="setup">
+<h2 class="font-headline-md text-headline-md text-primary mb-8">技术栈与方法论</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-8 border border-stone-200 rounded-lg hover:border-primary/20 transition-all group bg-white">
+<span class="font-label-caps text-label-caps text-stone-400 mb-4 block">技术领域</span>
+<div class="space-y-3 mb-6">
+<div class="flex items-center justify-between group/item">
+<span class="font-body-md text-stone-900">Rust / Go / TypeScript</span>
+<span class="text-xs font-mono text-stone-400">01</span>
+</div>
+<div class="h-[1px] w-full bg-stone-100"></div>
+<div class="flex items-center justify-between group/item">
+<span class="font-body-md text-stone-900">PostgreSQL / Redis / Kafka</span>
+<span class="text-xs font-mono text-stone-400">02</span>
+</div>
+<div class="h-[1px] w-full bg-stone-100"></div>
+<div class="flex items-center justify-between group/item">
+<span class="font-body-md text-stone-900">Kubernetes / Docker / CI/CD</span>
+<span class="text-xs font-mono text-stone-400">03</span>
+</div>
+</div>
+<p class="font-body-md text-stone-500 text-sm italic">专注于高性能后端系统与分布式架构，追求每一行代码的精确性。</p>
+</div>
+<div class="p-8 border border-stone-200 rounded-lg hover:border-primary/20 transition-all group bg-white">
+<span class="font-label-caps text-label-caps text-stone-400 mb-4 block">设计理念</span>
+<div class="mb-6">
+<h4 class="font-headline-sm text-lg text-primary mb-2">Minimalism as Logic</h4>
+<div class="w-12 h-1 bg-primary"></div>
+</div>
+<p class="font-body-md text-stone-600 text-sm leading-relaxed">
+                            提倡“减法”设计，在保持功能完整的同时，消除不必要的系统复杂性。我认为优秀的代码应该是自解释的，就像一件精密设计的机械结构。
+                        </p>
+</div>
+</div>
+</section>
+<!-- Journey (Implementation) -->
+<section class="mb-section-gap" id="implementation">
+<h2 class="font-headline-md text-headline-md text-primary mb-8">初衷与使命</h2>
+<div class="bg-stone-50 p-10 rounded-lg border-l-4 border-primary">
+<blockquote class="font-body-lg italic text-stone-900 mb-8 border-b border-stone-200 pb-8">
+                        "技术的本质不应只是解决问题，更应是建立一个可理解、可演进的逻辑体系。"
+                    </blockquote>
+<p class="font-body-md text-stone-700 leading-loose">
+                        在信息碎片化的时代，我发现深刻的技术理解往往被淹没。本博客的初衷是构建一个具有**学术严谨性**的技术归档系统。无论是一个简单的组件库开发，还是复杂的分布式共识算法分析，我都力求通过系统的推演和翔实的记录，让知识不仅仅是“可用”，更是“透明”。
+                    </p>
+</div>
+</section>
+<!-- Social/Contact (Conclusion) -->
+<section class="mb-section-gap" id="conclusion">
+<div class="border-t border-stone-200 pt-12">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="flex-1">
+<h3 class="font-headline-sm text-headline-sm mb-4 text-primary">连接与协作</h3>
+<p class="font-body-md text-secondary mb-8 max-w-xl">如果你对我的项目感兴趣，或者想探讨任何技术细节，欢迎通过以下渠道联系。</p>
+<div class="flex flex-wrap gap-x-12 gap-y-4">
+<a class="group flex items-center gap-2 font-nav-link text-sm text-stone-500 hover:text-primary transition-colors" href="https://github.com">
+<span class="text-stone-300 group-hover:text-primary">/</span> GitHub
+                                    <span class="material-symbols-outlined text-xs opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all">north_east</span>
+</a>
+<a class="group flex items-center gap-2 font-nav-link text-sm text-stone-500 hover:text-primary transition-colors" href="https://linkedin.com">
+<span class="text-stone-300 group-hover:text-primary">/</span> LinkedIn
+                                    <span class="material-symbols-outlined text-xs opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all">north_east</span>
+</a>
+<a class="group flex items-center gap-2 font-nav-link text-sm text-stone-500 hover:text-primary transition-colors" href="mailto:hello@example.com">
+<span class="text-stone-300 group-hover:text-primary">/</span> Email
+                                    <span class="material-symbols-outlined text-xs opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all">north_east</span>
+</a>
+</div>
+</div>
+<div class="md:text-right border-l-2 md:border-l-0 md:border-r-2 border-stone-100 pl-6 md:pl-0 md:pr-6 py-2">
+<span class="font-label-caps text-stone-400 block mb-1">地理位置</span>
+<span class="font-headline-sm text-xl text-stone-900">中国，上海</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200 bg-white">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-6 lg:px-12 max-w-screen-2xl mx-auto space-y-4 md:space-y-0">
+<div class="text-sm font-bold text-stone-900 font-serif">技术归档</div>
+<div class="flex space-x-8">
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 hover:text-stone-900 underline decoration-stone-300 transition-all" href="#">RSS 订阅</a>
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 hover:text-stone-900 underline decoration-stone-300 transition-all" href="#">GitHub</a>
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 hover:text-stone-900 underline decoration-stone-300 transition-all" href="#">LinkedIn</a>
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 hover:text-stone-900 underline decoration-stone-300 transition-all" href="#">隐私政策</a>
+</div>
+<div class="font-sans text-xs uppercase tracking-widest text-stone-400">
+            © 2024 Technical Archive. 保留所有权利。精工细作。
+        </div>
+</div>
+</footer>
+</body></html>
