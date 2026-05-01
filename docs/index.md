@@ -688,18 +688,25 @@ blockquote {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .about-contact-link {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #737373;
+  color: #a3a3a3;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .about-contact-link:hover {
   color: #0c1014;
+}
+
+.about-contact-link:not(:last-child)::after {
+  content: '|';
+  margin-left: 1.5rem;
+  color: #a3a3a3;
 }
 
 .about-contact-right {
