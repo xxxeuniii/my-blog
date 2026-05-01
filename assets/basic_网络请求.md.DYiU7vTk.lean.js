@@ -1,1 +1,0 @@
-import{_ as a,o,c as t,ae as s}from"./chunks/framework.Db9uaNqL.js";const q=JSON.parse('{"title":"网络请求","description":"","frontmatter":{},"headers":[],"relativePath":"basic/网络请求.md","filePath":"basic/网络请求.md"}'),r={name:"basic/网络请求.md"};function i(l,e,d,u,n,c){return o(),t("div",null,[...e[0]||(e[0]=[s("",24)])])}const p=a(r,[["render",i]]);export{q as __pageData,p as default};

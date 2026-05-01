@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./chunks/framework.Db9uaNqL.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"react/react基础.md","filePath":"react/react基础.md"}'),r={name:"react/react基础.md"};function c(o,s,n,_,p,d){return t(),a("div")}const f=e(r,[["render",c]]);export{m as __pageData,f as default};

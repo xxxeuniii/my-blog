@@ -1,1 +1,0 @@
-import{_ as r,o,c as d,ae as n}from"./chunks/framework.Db9uaNqL.js";const P=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"network/网络协议.md","filePath":"network/网络协议.md"}'),s={name:"network/网络协议.md"};function e(a,t,l,g,h,i){return o(),d("div",null,[...t[0]||(t[0]=[n("",30)])])}const c=r(s,[["render",e]]);export{P as __pageData,c as default};

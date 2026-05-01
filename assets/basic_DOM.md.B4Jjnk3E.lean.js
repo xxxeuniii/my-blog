@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as t,ae as n}from"./chunks/framework.Db9uaNqL.js";const E=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"basic/DOM.md","filePath":"basic/DOM.md"}'),e={name:"basic/DOM.md"};function l(h,s,p,k,d,r){return a(),t("div",null,[...s[0]||(s[0]=[n("",33)])])}const g=i(e,[["render",l]]);export{E as __pageData,g as default};

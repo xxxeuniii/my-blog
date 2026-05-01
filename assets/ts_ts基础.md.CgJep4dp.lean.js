@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as n,ae as h}from"./chunks/framework.Db9uaNqL.js";const g=JSON.parse('{"title":"TypeScript","description":"","frontmatter":{},"headers":[],"relativePath":"ts/ts基础.md","filePath":"ts/ts基础.md"}'),p={name:"ts/ts基础.md"};function l(t,s,k,e,r,E){return a(),n("div",null,[...s[0]||(s[0]=[h("",38)])])}const y=i(p,[["render",l]]);export{g as __pageData,y as default};

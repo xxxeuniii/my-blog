@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as n,ae as l}from"./chunks/framework.Db9uaNqL.js";const o=JSON.parse('{"title":"const","description":"","frontmatter":{},"headers":[],"relativePath":"js/const.md","filePath":"js/const.md"}'),p={name:"js/const.md"};function h(t,s,e,k,E,r){return a(),n("div",null,[...s[0]||(s[0]=[l("",16)])])}const c=i(p,[["render",h]]);export{o as __pageData,c as default};

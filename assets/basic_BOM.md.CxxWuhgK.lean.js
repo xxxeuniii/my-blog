@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as t,ae as e}from"./chunks/framework.Db9uaNqL.js";const r=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"basic/BOM.md","filePath":"basic/BOM.md"}'),n={name:"basic/BOM.md"};function l(p,s,h,o,d,k){return a(),t("div",null,[...s[0]||(s[0]=[e("",32)])])}const g=i(n,[["render",l]]);export{r as __pageData,g as default};

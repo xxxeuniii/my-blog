@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as t,ae as n}from"./chunks/framework.Db9uaNqL.js";const g=JSON.parse('{"title":"一、前端工程化","description":"","frontmatter":{},"headers":[],"relativePath":"工程化/基本概念.md","filePath":"工程化/基本概念.md"}'),h={name:"工程化/基本概念.md"};function l(k,s,p,e,r,d){return a(),t("div",null,[...s[0]||(s[0]=[n("",55)])])}const o=i(h,[["render",l]]);export{g as __pageData,o as default};

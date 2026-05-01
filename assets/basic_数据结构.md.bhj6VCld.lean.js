@@ -1,1 +1,0 @@
-import{_ as r,o,c as a,ae as n}from"./chunks/framework.Db9uaNqL.js";const c=JSON.parse('{"title":"数据结构简介","description":"","frontmatter":{},"headers":[],"relativePath":"basic/数据结构.md","filePath":"basic/数据结构.md"}'),l={name:"basic/数据结构.md"};function s(i,t,e,g,d,h){return o(),a("div",null,[...t[0]||(t[0]=[n("",74)])])}const b=r(l,[["render",s]]);export{c as __pageData,b as default};
