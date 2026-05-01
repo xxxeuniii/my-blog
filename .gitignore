@@ -3,6 +3,7 @@ node_modules
 docs/.vuepress/.temp/
 docs/.vuepress/dist/
 docs/.vitepress/cache/
+docs/.vitepress/dist/
 vitepress/docs/.vitepress/cache/
 vitepress/docs/.vitepress/dist/
 assets/
