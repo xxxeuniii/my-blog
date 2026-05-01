@@ -81,6 +81,9 @@ export default defineConfig({
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,500;0,600;1,500&display=swap', rel: 'stylesheet' }],
   ],
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     lastUpdated: {
       text: '上次更新',
       formatOptions: {
