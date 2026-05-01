@@ -91,21 +91,21 @@ layout: home
           <span class="about-tech-label">技术领域</span>
           <div class="about-tech-list">
             <div class="about-tech-item">
-              <span class="about-tech-name">Rust / Go / TypeScript</span>
+              <span class="about-tech-name">Vue.js / React / TypeScript</span>
               <span class="about-tech-num">01</span>
             </div>
             <div class="about-tech-divider"></div>
             <div class="about-tech-item">
-              <span class="about-tech-name">PostgreSQL / Redis / Kafka</span>
+              <span class="about-tech-name">Vite / Webpack / VitePress</span>
               <span class="about-tech-num">02</span>
             </div>
             <div class="about-tech-divider"></div>
             <div class="about-tech-item">
-              <span class="about-tech-name">Kubernetes / Docker / CI/CD</span>
+              <span class="about-tech-name">CSS / SCSS / Tailwind CSS</span>
               <span class="about-tech-num">03</span>
             </div>
           </div>
-          <p class="about-tech-desc">专注于高性能后端系统与分布式架构，追求每一行代码的精确性。</p>
+          <p class="about-tech-desc">专注于前端工程化与用户体验，追求每一像素的精确性。</p>
         </div>
         <div class="about-tech-card">
           <span class="about-tech-label">设计理念</span>
