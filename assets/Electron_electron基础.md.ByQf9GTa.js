@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r}from"./chunks/framework.Db9uaNqL.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Electron/electron基础.md","filePath":"Electron/electron基础.md"}'),o={name:"Electron/electron基础.md"};function c(n,a,s,l,_,p){return t(),r("div")}const m=e(o,[["render",c]]);export{i as __pageData,m as default};

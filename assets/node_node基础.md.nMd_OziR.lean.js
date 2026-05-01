@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o}from"./chunks/framework.Db9uaNqL.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"node/node基础.md","filePath":"node/node基础.md"}'),n={name:"node/node基础.md"};function a(r,d,s,c,_,p){return t(),o("div")}const f=e(n,[["render",a]]);export{m as __pageData,f as default};
