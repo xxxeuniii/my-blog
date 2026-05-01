@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface-container text-on-surface font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+  }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* 导航栏样式 */
+.navbar {
+  @apply bg-white/90 dark:bg-stone-950/90 backdrop-blur-md border-b border-stone-200 dark:border-stone-800;
+}
+
+.nav-item > a {
+  @apply font-nav text-nav text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all duration-200;
+}
+
+.nav-item.active > a {
+  @apply text-stone-900 dark:text-stone-50;
+}
+
+.nav-brand {
+  @apply text-xl font-bold font-serif text-stone-900 dark:text-stone-50;
+}
+
+/* Hero 区域 */
+.hero-section {
+  @apply pt-24 pb-20 max-w-screen-xl mx-auto px-6 lg:px-12;
+}
+
+.hero-label {
+  @apply font-label text-stone-400 mb-6 block uppercase tracking-widest;
+}
+
+.hero-title {
+  @apply font-display-lg text-display-lg text-primary mb-8 leading-tight;
+}
+
+.hero-desc {
+  @apply font-body-lg text-body-lg text-secondary max-w-3xl;
+}
+
+/* 年度归档 */
+.archive-section {
+  @apply py-20 max-w-screen-xl mx-auto px-6 lg:px-12;
+}
+
+.section-header {
+  @apply flex items-baseline justify-between border-b border-stone-200 pb-4 mb-10;
+}
+
+.section-title {
+  @apply font-headline-md text-headline-md text-stone-900;
+}
+
+.section-count {
+  @apply font-label text-stone-400;
+}
+
+.archive-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-12;
+}
+
+.archive-year {
+  @apply group cursor-pointer;
+}
+
+.archive-year__number {
+  @apply font-display-lg text-5xl text-stone-900;
+}
+
+.archive-year__count {
+  @apply font-serif italic text-stone-400 text-xl group-hover:text-stone-900 transition-colors;
+}
+
+.archive-year__desc {
+  @apply mt-4 text-stone-500 text-sm leading-relaxed;
+}
+
+/* 分类区域 */
+.categories-section {
+  @apply py-20 max-w-screen-xl mx-auto px-6 lg:px-12;
+}
+
+.categories-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12;
+}
+
+.category-item {
+  @apply space-y-4;
+}
+
+.category-title {
+  @apply font-label-caps text-stone-900 border-b border-stone-900 pb-2 mb-6;
+}
+
+.category-list {
+  @apply space-y-3;
+}
+
+.category-list li {
+  @apply flex justify-between items-center group;
+}
+
+.category-list a {
+  @apply text-body-md text-stone-600 hover:text-stone-900 transition-colors;
+}
+
+.category-list span {
+  @apply text-xs text-stone-300 font-serif;
+}
+
+/* 标签云 */
+.tags-section {
+  @apply py-20 bg-stone-50;
+}
+
+.tags-content {
+  @apply max-w-4xl mx-auto text-center;
+}
+
+.tags-title {
+  @apply font-headline-sm text-headline-sm text-stone-900 mb-10;
+}
+
+.tags-cloud {
+  @apply flex flex-wrap justify-center gap-x-8 gap-y-6 items-baseline;
+}
+
+.tags-cloud span {
+  @apply text-stone-900 font-bold text-3xl;
+}
+
+.tags-cloud span:nth-child(even) {
+  @apply text-stone-500 font-medium text-xl;
+}
+
+.tags-cloud span:nth-child(3n) {
+  @apply text-stone-900 font-semibold text-4xl;
+}
+
+.tags-cloud span:nth-child(4n) {
+  @apply text-stone-400 font-light text-lg;
+}
+
+/* CTA 按钮 */
+.cta-section {
+  @apply mt-32 flex justify-center;
+}
+
+.cta-button {
+  @apply group relative flex items-center gap-4 border border-stone-900 text-stone-900 px-16 py-6 text-xs font-label-caps hover:bg-stone-900 hover:text-white transition-all tracking-widest uppercase;
+}
+
+.cta-button span:first-child {
+  @apply relative z-10;
+}
+
+.cta-button span:last-child {
+  @apply material-symbols-outlined text-sm group-hover:translate-x-2 transition-transform;
+}
+
+/* 页脚 */
+.main-footer {
+  @apply w-full border-t border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-950;
+}
+
+.footer-content {
+  @apply flex flex-col md:flex-row justify-between items-center py-16 px-6 lg:px-12 max-w-screen-2xl mx-auto space-y-8 md:space-y-0;
+}
+
+.footer-brand__title {
+  @apply text-sm font-bold text-stone-900 dark:text-stone-50 uppercase tracking-widest;
+}
+
+.footer-brand__copy {
+  @apply font-sans text-[10px] text-stone-400 dark:text-stone-600 uppercase tracking-[0.2em] mt-2;
+}
+
+.footer-links {
+  @apply flex flex-wrap justify-center gap-x-12 gap-y-4;
+}
+
+.footer-links a {
+  @apply font-sans text-[11px] uppercase tracking-widest text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 border-b border-transparent hover:border-stone-900 transition-all;
+}
+
+/* 社交链接 */
+.nav-social-item {
+  @apply text-stone-400 dark:text-stone-600 hover:text-stone-900 dark:hover:text-stone-200;
+}

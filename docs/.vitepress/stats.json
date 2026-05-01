@@ -1,0 +1,993 @@
+{
+  "total": 84,
+  "byDirectory": {
+    "Electron": {
+      "count": 1,
+      "files": [
+        {
+          "title": "electron基础",
+          "path": "Electron/electron基础.md",
+          "createdAt": "2026-05-01T15:00:11.248Z"
+        }
+      ]
+    },
+    "English": {
+      "count": 3,
+      "files": [
+        {
+          "title": "Summary",
+          "path": "English/《Essential Grammar in Use》/Summary.md",
+          "createdAt": "2026-05-01T15:00:11.264Z"
+        },
+        {
+          "title": "Unit1",
+          "path": "English/《Essential Grammar in Use》/Unit1.md",
+          "createdAt": "2026-05-01T15:00:11.264Z"
+        },
+        {
+          "title": "Unit2",
+          "path": "English/《Essential Grammar in Use》/Unit2.md",
+          "createdAt": "2026-05-01T15:00:11.264Z"
+        }
+      ]
+    },
+    "Java": {
+      "count": 1,
+      "files": [
+        {
+          "title": "java基础",
+          "path": "Java/java基础.md",
+          "createdAt": "2026-05-01T15:00:11.316Z"
+        }
+      ]
+    },
+    "LLM": {
+      "count": 6,
+      "files": [
+        {
+          "title": "mcp",
+          "path": "LLM/基础知识/mcp.md",
+          "createdAt": "2026-05-01T15:00:11.338Z"
+        },
+        {
+          "title": "skill",
+          "path": "LLM/基础知识/skill.md",
+          "createdAt": "2026-05-01T15:00:11.354Z"
+        },
+        {
+          "title": "基本概念",
+          "path": "LLM/基础知识/基本概念.md",
+          "createdAt": "2026-05-01T15:00:11.354Z"
+        },
+        {
+          "title": "langchain",
+          "path": "LLM/框架/langchain.md",
+          "createdAt": "2026-05-01T15:00:11.370Z"
+        },
+        {
+          "title": "langgraph",
+          "path": "LLM/框架/langgraph.md",
+          "createdAt": "2026-05-01T15:00:11.370Z"
+        },
+        {
+          "title": "llmaindex",
+          "path": "LLM/框架/llmaindex.md",
+          "createdAt": "2026-05-01T15:00:11.370Z"
+        }
+      ]
+    },
+    "angular": {
+      "count": 1,
+      "files": [
+        {
+          "title": "angular基础",
+          "path": "angular/angular基础.md",
+          "createdAt": "2026-05-01T15:00:11.185Z"
+        }
+      ]
+    },
+    "basic": {
+      "count": 5,
+      "files": [
+        {
+          "title": "BOM",
+          "path": "basic/BOM.md",
+          "createdAt": "2026-05-01T15:00:11.200Z"
+        },
+        {
+          "title": "DOM",
+          "path": "basic/DOM.md",
+          "createdAt": "2026-05-01T15:00:11.206Z"
+        },
+        {
+          "title": "HTML",
+          "path": "basic/HTML.md",
+          "createdAt": "2026-05-01T15:00:11.206Z"
+        },
+        {
+          "title": "数据结构",
+          "path": "basic/数据结构.md",
+          "createdAt": "2026-05-01T15:00:11.206Z"
+        },
+        {
+          "title": "网络请求",
+          "path": "basic/网络请求.md",
+          "createdAt": "2026-05-01T15:00:11.206Z"
+        }
+      ]
+    },
+    "basic_config": {
+      "count": 4,
+      "files": [
+        {
+          "title": "vite.config.js配置",
+          "path": "basic_config/vite.config.js配置.md",
+          "createdAt": "2026-05-01T15:00:11.217Z"
+        },
+        {
+          "title": "vite",
+          "path": "basic_config/vite.md",
+          "createdAt": "2026-05-01T15:00:11.217Z"
+        },
+        {
+          "title": "vue基础",
+          "path": "basic_config/vue基础.md",
+          "createdAt": "2026-05-01T15:00:11.217Z"
+        },
+        {
+          "title": "服务器基础",
+          "path": "basic_config/服务器基础.md",
+          "createdAt": "2026-05-01T15:00:11.217Z"
+        }
+      ]
+    },
+    "component": {
+      "count": 1,
+      "files": [
+        {
+          "title": "elementui组件库",
+          "path": "component/elementui组件库.md",
+          "createdAt": "2026-05-01T15:00:11.240Z"
+        }
+      ]
+    },
+    "css": {
+      "count": 1,
+      "files": [
+        {
+          "title": "css3的新特性",
+          "path": "css/css3的新特性.md",
+          "createdAt": "2026-05-01T15:00:11.248Z"
+        }
+      ]
+    },
+    "git": {
+      "count": 1,
+      "files": [
+        {
+          "title": "git术语",
+          "path": "git/git术语.md",
+          "createdAt": "2026-05-01T15:00:11.287Z"
+        }
+      ]
+    },
+    "harmony": {
+      "count": 1,
+      "files": [
+        {
+          "title": "基础课程",
+          "path": "harmony/基础课程.md",
+          "createdAt": "2026-05-01T15:00:11.296Z"
+        }
+      ]
+    },
+    "html": {
+      "count": 2,
+      "files": [
+        {
+          "title": "window对象",
+          "path": "html/window对象.md",
+          "createdAt": "2026-05-01T15:00:11.296Z"
+        },
+        {
+          "title": "地址栏各种特殊符号的含义",
+          "path": "html/地址栏各种特殊符号的含义.md",
+          "createdAt": "2026-05-01T15:00:11.306Z"
+        }
+      ]
+    },
+    "js": {
+      "count": 5,
+      "files": [
+        {
+          "title": "const",
+          "path": "js/const.md",
+          "createdAt": "2026-05-01T15:00:11.327Z"
+        },
+        {
+          "title": "ts和js的区别",
+          "path": "js/ts和js的区别.md",
+          "createdAt": "2026-05-01T15:00:11.327Z"
+        },
+        {
+          "title": "几个循环的区别",
+          "path": "js/几个循环的区别.md",
+          "createdAt": "2026-05-01T15:00:11.327Z"
+        },
+        {
+          "title": "操作数组的方法",
+          "path": "js/操作数组的方法.md",
+          "createdAt": "2026-05-01T15:00:11.327Z"
+        },
+        {
+          "title": "数据类型",
+          "path": "js/数据类型.md",
+          "createdAt": "2026-05-01T15:00:11.338Z"
+        }
+      ]
+    },
+    "network": {
+      "count": 4,
+      "files": [
+        {
+          "title": "SSL",
+          "path": "network/SSL.md",
+          "createdAt": "2026-05-01T15:00:11.385Z"
+        },
+        {
+          "title": "基础",
+          "path": "network/基础.md",
+          "createdAt": "2026-05-01T15:00:11.385Z"
+        },
+        {
+          "title": "网络协议",
+          "path": "network/网络协议.md",
+          "createdAt": "2026-05-01T15:00:11.385Z"
+        },
+        {
+          "title": "网络安全",
+          "path": "network/网络安全.md",
+          "createdAt": "2026-05-01T15:00:11.396Z"
+        }
+      ]
+    },
+    "node": {
+      "count": 2,
+      "files": [
+        {
+          "title": "node基础",
+          "path": "node/node基础.md",
+          "createdAt": "2026-05-01T15:00:11.406Z"
+        },
+        {
+          "title": "node服务端开发",
+          "path": "node/node服务端开发.md",
+          "createdAt": "2026-05-01T15:00:11.410Z"
+        }
+      ]
+    },
+    "notes": {
+      "count": 1,
+      "files": [
+        {
+          "title": "图解TCPIP",
+          "path": "notes/图解TCPIP.md",
+          "createdAt": "2026-05-01T15:00:11.420Z"
+        }
+      ]
+    },
+    "other": {
+      "count": 3,
+      "files": [
+        {
+          "title": "20240429",
+          "path": "other/20240429.md",
+          "createdAt": "2024-04-29T00:00:00.000Z"
+        },
+        {
+          "title": "20240726",
+          "path": "other/20240726.md",
+          "createdAt": "2024-07-26T00:00:00.000Z"
+        },
+        {
+          "title": "20240729",
+          "path": "other/20240729.md",
+          "createdAt": "2024-07-29T00:00:00.000Z"
+        }
+      ]
+    },
+    "project": {
+      "count": 10,
+      "files": [
+        {
+          "title": "uniapp",
+          "path": "project/uniapp.md",
+          "createdAt": "2026-05-01T15:00:11.446Z"
+        },
+        {
+          "title": "后台管理系统",
+          "path": "project/后台管理系统.md",
+          "createdAt": "2026-05-01T15:00:11.446Z"
+        },
+        {
+          "title": "微信管理平台",
+          "path": "project/微信管理平台.md",
+          "createdAt": "2026-05-01T15:00:11.453Z"
+        },
+        {
+          "title": "微应用开发",
+          "path": "project/微应用开发.md",
+          "createdAt": "2026-05-01T15:00:11.457Z"
+        },
+        {
+          "title": "微应用框架",
+          "path": "project/微应用框架.md",
+          "createdAt": "2026-05-01T15:00:11.461Z"
+        },
+        {
+          "title": "排队项目",
+          "path": "project/排队项目.md",
+          "createdAt": "2026-05-01T15:00:11.463Z"
+        },
+        {
+          "title": "柜面poc项目",
+          "path": "project/柜面poc项目.md",
+          "createdAt": "2026-05-01T15:00:11.467Z"
+        },
+        {
+          "title": "柜面项目",
+          "path": "project/柜面项目.md",
+          "createdAt": "2026-05-01T15:00:11.471Z"
+        },
+        {
+          "title": "组件封装",
+          "path": "project/组件封装.md",
+          "createdAt": "2026-05-01T15:00:11.475Z"
+        },
+        {
+          "title": "项目迁移",
+          "path": "project/项目迁移.md",
+          "createdAt": "2026-05-01T15:00:11.477Z"
+        }
+      ]
+    },
+    "python": {
+      "count": 1,
+      "files": [
+        {
+          "title": "基于flask开发的dify",
+          "path": "python/基于flask开发的dify.md",
+          "createdAt": "2026-05-01T15:00:11.485Z"
+        }
+      ]
+    },
+    "react": {
+      "count": 1,
+      "files": [
+        {
+          "title": "react基础",
+          "path": "react/react基础.md",
+          "createdAt": "2026-05-01T15:00:11.496Z"
+        }
+      ]
+    },
+    "script": {
+      "count": 1,
+      "files": [
+        {
+          "title": "类型转换js方法合集",
+          "path": "script/类型转换js方法合集.md",
+          "createdAt": "2026-05-01T15:00:11.501Z"
+        }
+      ]
+    },
+    "server": {
+      "count": 1,
+      "files": [
+        {
+          "title": "http请求方式",
+          "path": "server/http请求方式.md",
+          "createdAt": "2026-05-01T15:00:11.516Z"
+        }
+      ]
+    },
+    "tools": {
+      "count": 2,
+      "files": [
+        {
+          "title": "基础工具",
+          "path": "tools/基础工具.md",
+          "createdAt": "2026-05-01T15:00:11.526Z"
+        },
+        {
+          "title": "实用命令行",
+          "path": "tools/实用命令行.md",
+          "createdAt": "2026-05-01T15:00:11.528Z"
+        }
+      ]
+    },
+    "ts": {
+      "count": 1,
+      "files": [
+        {
+          "title": "ts基础",
+          "path": "ts/ts基础.md",
+          "createdAt": "2026-05-01T15:00:11.536Z"
+        }
+      ]
+    },
+    "views": {
+      "count": 17,
+      "files": [
+        {
+          "title": "express1",
+          "path": "views/node/express1.md",
+          "createdAt": "2026-05-01T15:00:11.547Z"
+        },
+        {
+          "title": "express2",
+          "path": "views/node/express2.md",
+          "createdAt": "2026-05-01T15:00:11.554Z"
+        },
+        {
+          "title": "nodejs1",
+          "path": "views/node/nodejs1.md",
+          "createdAt": "2026-05-01T15:00:11.558Z"
+        },
+        {
+          "title": "nodejs2",
+          "path": "views/node/nodejs2.md",
+          "createdAt": "2026-05-01T15:00:11.558Z"
+        },
+        {
+          "title": "socket.io",
+          "path": "views/node/socket.io.md",
+          "createdAt": "2026-05-01T15:00:11.565Z"
+        },
+        {
+          "title": "sql",
+          "path": "views/node/sql.md",
+          "createdAt": "2026-05-01T15:00:11.565Z"
+        },
+        {
+          "title": "websocket基本使用",
+          "path": "views/node/websocket基本使用.md",
+          "createdAt": "2026-05-01T15:00:11.565Z"
+        },
+        {
+          "title": "上海银行排队项目",
+          "path": "views/project/上海银行排队项目.md",
+          "createdAt": "2026-05-01T15:00:11.579Z"
+        },
+        {
+          "title": "微信管理平台",
+          "path": "views/project/微信管理平台.md",
+          "createdAt": "2026-05-01T15:00:11.579Z"
+        },
+        {
+          "title": "柜面poc项目",
+          "path": "views/project/柜面poc项目.md",
+          "createdAt": "2026-05-01T15:00:11.589Z"
+        },
+        {
+          "title": "前端面试题整合",
+          "path": "views/question/前端面试题整合.md",
+          "createdAt": "2026-05-01T15:00:11.598Z"
+        },
+        {
+          "title": "request封装",
+          "path": "views/uniapp/request封装.md",
+          "createdAt": "2026-05-01T15:00:11.610Z"
+        },
+        {
+          "title": "uniapp基础",
+          "path": "views/uniapp/uniapp基础.md",
+          "createdAt": "2026-05-01T15:00:11.614Z"
+        },
+        {
+          "title": "uniapp支付功能",
+          "path": "views/uniapp/uniapp支付功能.md",
+          "createdAt": "2026-05-01T15:00:11.619Z"
+        },
+        {
+          "title": "vue2和vue3的区别",
+          "path": "views/vue/vue2和vue3的区别.md",
+          "createdAt": "2026-05-01T15:00:11.630Z"
+        },
+        {
+          "title": "vue3基础",
+          "path": "views/vue/vue3基础.md",
+          "createdAt": "2026-05-01T15:00:11.636Z"
+        },
+        {
+          "title": "vue3项目",
+          "path": "views/vue/vue3项目.md",
+          "createdAt": "2026-05-01T15:00:11.640Z"
+        }
+      ]
+    },
+    "vue": {
+      "count": 1,
+      "files": [
+        {
+          "title": "vue2和vue3的区别",
+          "path": "vue/vue2和vue3的区别.md",
+          "createdAt": "2026-05-01T15:00:11.650Z"
+        }
+      ]
+    },
+    "工程化": {
+      "count": 7,
+      "files": [
+        {
+          "title": "esm",
+          "path": "工程化/esm.md",
+          "createdAt": "2026-05-01T15:00:11.661Z"
+        },
+        {
+          "title": "vite",
+          "path": "工程化/vite.md",
+          "createdAt": "2026-05-01T15:00:11.665Z"
+        },
+        {
+          "title": "vite和webpack对比",
+          "path": "工程化/vite和webpack对比.md",
+          "createdAt": "2026-05-01T15:00:11.668Z"
+        },
+        {
+          "title": "vite的配置有哪些",
+          "path": "工程化/vite的配置有哪些.md",
+          "createdAt": "2026-05-01T15:00:11.673Z"
+        },
+        {
+          "title": "webpack",
+          "path": "工程化/webpack.md",
+          "createdAt": "2026-05-01T15:00:11.676Z"
+        },
+        {
+          "title": "基本概念",
+          "path": "工程化/基本概念.md",
+          "createdAt": "2026-05-01T15:00:11.679Z"
+        },
+        {
+          "title": "模块化",
+          "path": "工程化/模块化.md",
+          "createdAt": "2026-05-01T15:00:11.683Z"
+        }
+      ]
+    }
+  },
+  "byYear": {
+    "2024": {
+      "count": 3,
+      "files": [
+        {
+          "title": "20240429",
+          "path": "other/20240429.md",
+          "dir": "other"
+        },
+        {
+          "title": "20240726",
+          "path": "other/20240726.md",
+          "dir": "other"
+        },
+        {
+          "title": "20240729",
+          "path": "other/20240729.md",
+          "dir": "other"
+        }
+      ]
+    },
+    "2026": {
+      "count": 81,
+      "files": [
+        {
+          "title": "angular基础",
+          "path": "angular/angular基础.md",
+          "dir": "angular"
+        },
+        {
+          "title": "BOM",
+          "path": "basic/BOM.md",
+          "dir": "basic"
+        },
+        {
+          "title": "DOM",
+          "path": "basic/DOM.md",
+          "dir": "basic"
+        },
+        {
+          "title": "HTML",
+          "path": "basic/HTML.md",
+          "dir": "basic"
+        },
+        {
+          "title": "数据结构",
+          "path": "basic/数据结构.md",
+          "dir": "basic"
+        },
+        {
+          "title": "网络请求",
+          "path": "basic/网络请求.md",
+          "dir": "basic"
+        },
+        {
+          "title": "vite.config.js配置",
+          "path": "basic_config/vite.config.js配置.md",
+          "dir": "basic_config"
+        },
+        {
+          "title": "vite",
+          "path": "basic_config/vite.md",
+          "dir": "basic_config"
+        },
+        {
+          "title": "vue基础",
+          "path": "basic_config/vue基础.md",
+          "dir": "basic_config"
+        },
+        {
+          "title": "服务器基础",
+          "path": "basic_config/服务器基础.md",
+          "dir": "basic_config"
+        },
+        {
+          "title": "elementui组件库",
+          "path": "component/elementui组件库.md",
+          "dir": "component"
+        },
+        {
+          "title": "css3的新特性",
+          "path": "css/css3的新特性.md",
+          "dir": "css"
+        },
+        {
+          "title": "electron基础",
+          "path": "Electron/electron基础.md",
+          "dir": "Electron"
+        },
+        {
+          "title": "Summary",
+          "path": "English/《Essential Grammar in Use》/Summary.md",
+          "dir": "English"
+        },
+        {
+          "title": "Unit1",
+          "path": "English/《Essential Grammar in Use》/Unit1.md",
+          "dir": "English"
+        },
+        {
+          "title": "Unit2",
+          "path": "English/《Essential Grammar in Use》/Unit2.md",
+          "dir": "English"
+        },
+        {
+          "title": "git术语",
+          "path": "git/git术语.md",
+          "dir": "git"
+        },
+        {
+          "title": "基础课程",
+          "path": "harmony/基础课程.md",
+          "dir": "harmony"
+        },
+        {
+          "title": "window对象",
+          "path": "html/window对象.md",
+          "dir": "html"
+        },
+        {
+          "title": "地址栏各种特殊符号的含义",
+          "path": "html/地址栏各种特殊符号的含义.md",
+          "dir": "html"
+        },
+        {
+          "title": "java基础",
+          "path": "Java/java基础.md",
+          "dir": "Java"
+        },
+        {
+          "title": "const",
+          "path": "js/const.md",
+          "dir": "js"
+        },
+        {
+          "title": "ts和js的区别",
+          "path": "js/ts和js的区别.md",
+          "dir": "js"
+        },
+        {
+          "title": "几个循环的区别",
+          "path": "js/几个循环的区别.md",
+          "dir": "js"
+        },
+        {
+          "title": "操作数组的方法",
+          "path": "js/操作数组的方法.md",
+          "dir": "js"
+        },
+        {
+          "title": "数据类型",
+          "path": "js/数据类型.md",
+          "dir": "js"
+        },
+        {
+          "title": "mcp",
+          "path": "LLM/基础知识/mcp.md",
+          "dir": "LLM"
+        },
+        {
+          "title": "skill",
+          "path": "LLM/基础知识/skill.md",
+          "dir": "LLM"
+        },
+        {
+          "title": "基本概念",
+          "path": "LLM/基础知识/基本概念.md",
+          "dir": "LLM"
+        },
+        {
+          "title": "langchain",
+          "path": "LLM/框架/langchain.md",
+          "dir": "LLM"
+        },
+        {
+          "title": "langgraph",
+          "path": "LLM/框架/langgraph.md",
+          "dir": "LLM"
+        },
+        {
+          "title": "llmaindex",
+          "path": "LLM/框架/llmaindex.md",
+          "dir": "LLM"
+        },
+        {
+          "title": "SSL",
+          "path": "network/SSL.md",
+          "dir": "network"
+        },
+        {
+          "title": "基础",
+          "path": "network/基础.md",
+          "dir": "network"
+        },
+        {
+          "title": "网络协议",
+          "path": "network/网络协议.md",
+          "dir": "network"
+        },
+        {
+          "title": "网络安全",
+          "path": "network/网络安全.md",
+          "dir": "network"
+        },
+        {
+          "title": "node基础",
+          "path": "node/node基础.md",
+          "dir": "node"
+        },
+        {
+          "title": "node服务端开发",
+          "path": "node/node服务端开发.md",
+          "dir": "node"
+        },
+        {
+          "title": "图解TCPIP",
+          "path": "notes/图解TCPIP.md",
+          "dir": "notes"
+        },
+        {
+          "title": "uniapp",
+          "path": "project/uniapp.md",
+          "dir": "project"
+        },
+        {
+          "title": "后台管理系统",
+          "path": "project/后台管理系统.md",
+          "dir": "project"
+        },
+        {
+          "title": "微信管理平台",
+          "path": "project/微信管理平台.md",
+          "dir": "project"
+        },
+        {
+          "title": "微应用开发",
+          "path": "project/微应用开发.md",
+          "dir": "project"
+        },
+        {
+          "title": "微应用框架",
+          "path": "project/微应用框架.md",
+          "dir": "project"
+        },
+        {
+          "title": "排队项目",
+          "path": "project/排队项目.md",
+          "dir": "project"
+        },
+        {
+          "title": "柜面poc项目",
+          "path": "project/柜面poc项目.md",
+          "dir": "project"
+        },
+        {
+          "title": "柜面项目",
+          "path": "project/柜面项目.md",
+          "dir": "project"
+        },
+        {
+          "title": "组件封装",
+          "path": "project/组件封装.md",
+          "dir": "project"
+        },
+        {
+          "title": "项目迁移",
+          "path": "project/项目迁移.md",
+          "dir": "project"
+        },
+        {
+          "title": "基于flask开发的dify",
+          "path": "python/基于flask开发的dify.md",
+          "dir": "python"
+        },
+        {
+          "title": "react基础",
+          "path": "react/react基础.md",
+          "dir": "react"
+        },
+        {
+          "title": "类型转换js方法合集",
+          "path": "script/类型转换js方法合集.md",
+          "dir": "script"
+        },
+        {
+          "title": "http请求方式",
+          "path": "server/http请求方式.md",
+          "dir": "server"
+        },
+        {
+          "title": "基础工具",
+          "path": "tools/基础工具.md",
+          "dir": "tools"
+        },
+        {
+          "title": "实用命令行",
+          "path": "tools/实用命令行.md",
+          "dir": "tools"
+        },
+        {
+          "title": "ts基础",
+          "path": "ts/ts基础.md",
+          "dir": "ts"
+        },
+        {
+          "title": "express1",
+          "path": "views/node/express1.md",
+          "dir": "views"
+        },
+        {
+          "title": "express2",
+          "path": "views/node/express2.md",
+          "dir": "views"
+        },
+        {
+          "title": "nodejs1",
+          "path": "views/node/nodejs1.md",
+          "dir": "views"
+        },
+        {
+          "title": "nodejs2",
+          "path": "views/node/nodejs2.md",
+          "dir": "views"
+        },
+        {
+          "title": "socket.io",
+          "path": "views/node/socket.io.md",
+          "dir": "views"
+        },
+        {
+          "title": "sql",
+          "path": "views/node/sql.md",
+          "dir": "views"
+        },
+        {
+          "title": "websocket基本使用",
+          "path": "views/node/websocket基本使用.md",
+          "dir": "views"
+        },
+        {
+          "title": "上海银行排队项目",
+          "path": "views/project/上海银行排队项目.md",
+          "dir": "views"
+        },
+        {
+          "title": "微信管理平台",
+          "path": "views/project/微信管理平台.md",
+          "dir": "views"
+        },
+        {
+          "title": "柜面poc项目",
+          "path": "views/project/柜面poc项目.md",
+          "dir": "views"
+        },
+        {
+          "title": "前端面试题整合",
+          "path": "views/question/前端面试题整合.md",
+          "dir": "views"
+        },
+        {
+          "title": "request封装",
+          "path": "views/uniapp/request封装.md",
+          "dir": "views"
+        },
+        {
+          "title": "uniapp基础",
+          "path": "views/uniapp/uniapp基础.md",
+          "dir": "views"
+        },
+        {
+          "title": "uniapp支付功能",
+          "path": "views/uniapp/uniapp支付功能.md",
+          "dir": "views"
+        },
+        {
+          "title": "vue2和vue3的区别",
+          "path": "views/vue/vue2和vue3的区别.md",
+          "dir": "views"
+        },
+        {
+          "title": "vue3基础",
+          "path": "views/vue/vue3基础.md",
+          "dir": "views"
+        },
+        {
+          "title": "vue3项目",
+          "path": "views/vue/vue3项目.md",
+          "dir": "views"
+        },
+        {
+          "title": "vue2和vue3的区别",
+          "path": "vue/vue2和vue3的区别.md",
+          "dir": "vue"
+        },
+        {
+          "title": "esm",
+          "path": "工程化/esm.md",
+          "dir": "工程化"
+        },
+        {
+          "title": "vite",
+          "path": "工程化/vite.md",
+          "dir": "工程化"
+        },
+        {
+          "title": "vite和webpack对比",
+          "path": "工程化/vite和webpack对比.md",
+          "dir": "工程化"
+        },
+        {
+          "title": "vite的配置有哪些",
+          "path": "工程化/vite的配置有哪些.md",
+          "dir": "工程化"
+        },
+        {
+          "title": "webpack",
+          "path": "工程化/webpack.md",
+          "dir": "工程化"
+        },
+        {
+          "title": "基本概念",
+          "path": "工程化/基本概念.md",
+          "dir": "工程化"
+        },
+        {
+          "title": "模块化",
+          "path": "工程化/模块化.md",
+          "dir": "工程化"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2026-05-01T17:40:24.998Z"
+}

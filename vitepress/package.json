@@ -1,0 +1,18 @@
+{
+  "name": "vitepress",
+  "version": "1.0.0",
+  "description": "Eunie's Tech Blog - VitePress version",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "keywords": ["vitepress", "blog", "docs"],
+  "author": "Eunie",
+  "license": "MIT",
+  "dependencies": {
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.14"
+  }
+}

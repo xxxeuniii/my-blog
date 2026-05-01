@@ -1,0 +1,17 @@
+node_modules
+.temp/
+docs/.vuepress/.temp/
+docs/.vuepress/dist/
+docs/.vitepress/cache/
+vitepress/docs/.vitepress/cache/
+vitepress/docs/.vitepress/dist/
+assets/
+.claude/settings.local.json
+.cursor/
+.DS_Store
+.env
+.env.local
+*.log
+README.md
+CHANGELOG.md
+LICENSE.md

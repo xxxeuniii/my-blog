@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>工程化 - Technical Archive</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#151c22",
+                        "primary": "#0c1014",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "on-background": "#151c22",
+                        "primary-fixed": "#e0e3e8",
+                        "secondary-fixed-dim": "#c0c7cf",
+                        "secondary": "#585f66",
+                        "on-primary-container": "#888c91",
+                        "on-surface": "#151c22",
+                        "on-tertiary-fixed": "#141d23",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#75777b",
+                        "surface-tint": "#5b5f63",
+                        "surface-container": "#e7eff7",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#f6faff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#181c20",
+                        "secondary-container": "#dce3ec",
+                        "on-secondary-container": "#5e656c",
+                        "on-primary-fixed-variant": "#43474c",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#eaf2fa",
+                        "surface-bright": "#f6faff",
+                        "primary-container": "#212529",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#293138",
+                        "surface-container-highest": "#dbe3ec",
+                        "tertiary": "#081117",
+                        "on-secondary-fixed-variant": "#41484e",
+                        "tertiary-fixed": "#dbe4ed",
+                        "background": "#f6faff",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#44474a",
+                        "secondary-fixed": "#dce3ec",
+                        "primary-fixed-dim": "#c3c7cc",
+                        "on-tertiary-container": "#848d95",
+                        "surface-container-low": "#edf4fd",
+                        "on-tertiary-fixed-variant": "#3f484f",
+                        "surface-variant": "#dbe3ec",
+                        "inverse-primary": "#c3c7cc",
+                        "outline-variant": "#c5c6ca",
+                        "surface-container-high": "#e1e9f1",
+                        "tertiary-fixed-dim": "#bfc8d0",
+                        "surface-dim": "#d3dbe3",
+                        "tertiary-container": "#1d262d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-sm": "12px",
+                        "container-max": "1200px",
+                        "sidebar-width": "260px",
+                        "stack-md": "24px",
+                        "base": "8px",
+                        "section-gap": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Newsreader"],
+                        "nav-link": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Newsreader"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Newsreader"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "nav-link": ["14px", {"lineHeight": "1", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.7", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 dark:bg-stone-950/90 backdrop-blur-md border-b border-stone-200 dark:border-stone-800">
+<div class="flex justify-between items-center h-16 px-6 lg:px-12 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold font-serif text-stone-900 dark:text-stone-50">Technical Archive</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-nav-link text-nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all duration-200" href="#">文章</a>
+<a class="font-nav-link text-nav-link text-stone-900 dark:text-stone-50 border-b-2 border-stone-900 dark:border-stone-50 pb-1 hover:text-stone-900 dark:hover:text-stone-100 transition-all duration-200" href="#">分类</a>
+<a class="font-nav-link text-nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all duration-200" href="#">项目</a>
+<a class="font-nav-link text-nav-link text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all duration-200" href="#">关于</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-2 top-1/2 -translate-y-1/2 text-stone-400 text-sm">search</span>
+<input class="pl-8 pr-4 py-1.5 text-xs bg-stone-50 border border-stone-200 rounded focus:ring-1 focus:ring-primary outline-none w-48" placeholder="搜索存档..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 text-nav-link font-nav-link rounded scale-95 active:scale-90 transition-all duration-200">订阅</button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-section-gap max-w-screen-2xl mx-auto px-6 lg:px-12">
+<!-- Category Header -->
+<div class="mb-16 max-w-4xl">
+<div class="flex items-center gap-2 text-stone-500 mb-6 font-label-caps text-label-caps">
+<a class="hover:text-primary transition-colors" href="#">归档</a>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span class="text-primary font-semibold">分类</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-stone-900 mb-8 border-l-4 border-stone-900 pl-8">工程化 / Engineering</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-3xl leading-relaxed mb-10">
+                探讨规模化软件开发的 methodology、工具和系统。涵盖从构建系统到持续集成以及基础设施即代码的深度洞察。我们专注于如何通过系统化的工程手段提升软件交付的可预测性与质量。
+            </p>
+<div class="flex items-center gap-12 py-8 border-y border-stone-200">
+<div>
+<span class="block font-label-caps text-label-caps text-stone-400 mb-2 uppercase tracking-widest">文章数量</span>
+<span class="font-headline-sm text-headline-sm text-primary">42</span>
+</div>
+<div class="w-[1px] h-12 bg-stone-200"></div>
+<div>
+<span class="block font-label-caps text-label-caps text-stone-400 mb-2 uppercase tracking-widest">贡献者</span>
+<span class="font-headline-sm text-headline-sm text-primary">12</span>
+</div>
+<div class="w-[1px] h-12 bg-stone-200"></div>
+<div>
+<span class="block font-label-caps text-label-caps text-stone-400 mb-2 uppercase tracking-widest">最后更新</span>
+<span class="font-headline-sm text-headline-sm text-primary">2024年10月24日</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-12">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col w-64 space-y-4 sticky top-24 h-fit border-l border-stone-200 pl-6">
+<div class="mb-4">
+<h3 class="text-xs font-bold text-stone-400 uppercase tracking-widest font-label-caps">目录 / TOC</h3>
+</div>
+<nav class="flex flex-col space-y-1">
+<a class="group flex items-center text-stone-900 font-semibold text-sm py-2" href="#">
+<span class="w-1.5 h-1.5 rounded-full bg-stone-900 mr-3"></span>
+                        引言
+                    </a>
+<a class="group flex items-center text-stone-500 hover:text-stone-900 text-sm py-2 transition-colors" href="#">
+<span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-stone-300 mr-3"></span>
+                        环境配置
+                    </a>
+<a class="group flex items-center text-stone-500 hover:text-stone-900 text-sm py-2 transition-colors" href="#">
+<span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-stone-300 mr-3"></span>
+                        架构设计
+                    </a>
+<a class="group flex items-center text-stone-500 hover:text-stone-900 text-sm py-2 transition-colors" href="#">
+<span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-stone-300 mr-3"></span>
+                        具体实现
+                    </a>
+<a class="group flex items-center text-stone-500 hover:text-stone-900 text-sm py-2 transition-colors" href="#">
+<span class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-stone-300 mr-3"></span>
+                        总结
+                    </a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1">
+<!-- Featured Article (No Image Version) -->
+<article class="mb-16 p-10 border border-stone-200 bg-white group hover:shadow-xl hover:shadow-stone-200/50 transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+<div class="max-w-2xl">
+<div class="flex items-center gap-3 mb-6">
+<span class="font-label-caps text-label-caps text-primary border border-primary px-2 py-0.5 uppercase tracking-wider">精选案例</span>
+<span class="text-stone-300">/</span>
+<span class="text-stone-400 font-label-caps text-label-caps">FEATURED</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-stone-900 mb-6 group-hover:text-primary transition-colors leading-tight">现代 Monorepo 中分布式构建系统的演进</h2>
+<p class="text-stone-500 font-body-md mb-8 text-lg leading-relaxed">
+                            分析从本地编译到全球缓存的分布式构建执行的演变。深度解析 Bazel、Nx 和 Turborepo 在大规模企业环境中的架构实践，以及如何平衡构建速度与一致性。
+                        </p>
+<div class="flex items-center gap-8 text-xs font-medium text-stone-400 border-t border-stone-100 pt-6">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">calendar_today</span> 2024年10月12日</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">schedule</span> 15 分钟阅读</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">person</span> 技术编辑部</span>
+</div>
+</div>
+</article>
+<!-- Article Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1 -->
+<article class="border-b border-stone-200 py-8 group hover:bg-stone-50 transition-all px-4 -mx-4">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-caps text-label-caps text-stone-500 uppercase tracking-widest">基础设施</span>
+<span class="material-symbols-outlined text-stone-300 group-hover:text-stone-900 transition-colors cursor-pointer">bookmark</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-stone-900 mb-4 group-hover:text-primary transition-colors">基于 Nix 和 Flakes 的声明式 CI/CD 流水线</h3>
+<p class="text-stone-500 text-sm mb-6 line-clamp-2 leading-relaxed">如何利用函数式包管理在异构环境中实现百分之百可复现的构建环境，解决“在我的机器上能运行”的顽疾。</p>
+<div class="flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-stone-400 font-semibold">
+<span>作者: Sarah Chen</span>
+<span>2024年9月28日</span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="border-b border-stone-200 py-8 group hover:bg-stone-50 transition-all px-4 -mx-4">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-caps text-label-caps text-stone-500 uppercase tracking-widest">自动化</span>
+<span class="material-symbols-outlined text-stone-300 group-hover:text-stone-900 transition-colors cursor-pointer">bookmark</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-stone-900 mb-4 group-hover:text-primary transition-colors">为高效率团队设计自动化质量门禁</h3>
+<p class="text-stone-500 text-sm mb-6 line-clamp-2 leading-relaxed">在不降低发布频率的前提下，整合自动化测试、安全扫描和性能剖析的闭环策略。</p>
+<div class="flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-stone-400 font-semibold">
+<span>作者: David Miller</span>
+<span>2024年9月15日</span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="border-b border-stone-200 py-8 group hover:bg-stone-50 transition-all px-4 -mx-4">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-caps text-label-caps text-stone-500 uppercase tracking-widest">架构</span>
+<span class="material-symbols-outlined text-stone-300 group-hover:text-stone-900 transition-colors cursor-pointer">bookmark</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-stone-900 mb-4 group-hover:text-primary transition-colors">平台工程在现代 SaaS 中的角色</h3>
+<p class="text-stone-500 text-sm mb-6 line-clamp-2 leading-relaxed">超越 DevOps：通过自助式基础设施构建赋能团队的内部开发平台（IDP）设计原则。</p>
+<div class="flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-stone-400 font-semibold">
+<span>作者: Elena Rossi</span>
+<span>2024年8月22日</span>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="border-b border-stone-200 py-8 group hover:bg-stone-50 transition-all px-4 -mx-4">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-caps text-label-caps text-stone-500 uppercase tracking-widest">方法论</span>
+<span class="material-symbols-outlined text-stone-300 group-hover:text-stone-900 transition-colors cursor-pointer">bookmark</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-stone-900 mb-4 group-hover:text-primary transition-colors">微服务架构中的数据库 Schema 版本控制</h3>
+<p class="text-stone-500 text-sm mb-6 line-clamp-2 leading-relaxed">从容处理跨独立服务的分布式数据迁移，实现大规模系统中的零停机发布方案。</p>
+<div class="flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-stone-400 font-semibold">
+<span>作者: Marcus Wright</span>
+<span>2024年8月5日</span>
+</div>
+</article>
+</div>
+<!-- Load More -->
+<div class="mt-20 flex justify-center">
+<button class="font-nav-link text-nav-link border border-stone-900 text-stone-900 px-10 py-4 rounded-sm hover:bg-stone-900 hover:text-white transition-all duration-300 uppercase tracking-[0.2em]">
+                        查看全部存档
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-950">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-6 lg:px-12 max-w-screen-2xl mx-auto space-y-4 md:space-y-0">
+<div class="text-sm font-bold text-stone-900 dark:text-stone-50 font-sans">Technical Archive</div>
+<div class="text-xs uppercase tracking-widest text-stone-400 dark:text-stone-600 font-sans">
+                © 2024 Technical Archive. 版权所有。精工细作。
+            </div>
+<nav class="flex gap-8">
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 dark:text-stone-600 hover:text-stone-900 dark:hover:text-stone-200 underline decoration-stone-300 transition-all" href="#">RSS 订阅</a>
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 dark:text-stone-600 hover:text-stone-900 dark:hover:text-stone-200 underline decoration-stone-300 transition-all" href="#">GitHub</a>
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 dark:text-stone-600 hover:text-stone-900 dark:hover:text-stone-200 underline decoration-stone-300 transition-all" href="#">LinkedIn</a>
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 dark:text-stone-600 hover:text-stone-900 dark:hover:text-stone-200 underline decoration-stone-300 transition-all" href="#">隐私政策</a>
+</nav>
+</div>
+</footer>
+</body></html>
