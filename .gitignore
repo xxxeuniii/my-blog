@@ -13,6 +13,5 @@ assets/
 .env
 .env.local
 *.log
-README.md
 CHANGELOG.md
 LICENSE.md
