@@ -111,7 +111,7 @@ layout: home
             </div>
             <div class="about-tech-divider"></div>
             <div class="about-tech-item">
-              <span class="about-tech-name">精通设计</span>
+              <span class="about-tech-name">UI / UX / 视觉设计</span>
               <span class="about-tech-num">05</span>
             </div>
           </div>
