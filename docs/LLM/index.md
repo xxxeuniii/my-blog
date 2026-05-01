@@ -27,6 +27,11 @@ sidebar: false
     <br>
     <span>LangChain、LangGraph、LlamaIndex</span>
   </li>
+  <li>
+    <strong><a href="./ui-ux-design-resources.md">资源合集</a></strong>
+    <br>
+    <span>UI / UX & Design 资源官网合集</span>
+  </li>
 </ul>
 
 <script setup>

@@ -138,7 +138,10 @@ export default defineConfig({
       },
       {
         text: '大模型',
-        link: '/LLM/',
+        items: [
+          { text: '大模型', link: '/LLM/' },
+          { text: '资源合集', link: '/LLM/ui-ux-design-resources.md' },
+        ],
       },
       {
         text: '其他',
