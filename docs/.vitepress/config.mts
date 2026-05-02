@@ -153,15 +153,6 @@ export default defineConfig({
           { text: '鸿蒙', link: '/harmony/' },
         ],
       },
-      {
-        text: '项目',
-        items: [
-          { text: '项目案例', link: '/project/' },
-          { text: '更多项目', link: '/views/project/' },
-          { text: 'uniapp', link: '/views/uniapp/' },
-          { text: 'Node进阶', link: '/views/node/' },
-        ],
-      },
       { text: '面试题', link: '/views/question/' },
     ],
     sidebar: {
