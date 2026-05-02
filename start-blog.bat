@@ -7,39 +7,17 @@ cd /d "%~dp0"
 
 start "VitePress Server" cmd /k "npm run docs:dev"
 
-echo Waiting for server to start...
-echo.
+echo Waiting for server to start (10 seconds)...
+timeout /t 10 /nobreak >nul
 
-setlocal enabledelayedexpansion
-set port=
-set max_wait=30
-set waited=0
-
-:check_port
-timeout /t 1 /nobreak >nul
-set /a waited+=1
-
-for /f "tokens=5" %%a in ('netstat -ano ^| findstr "LISTENING" ^| findstr "13" ') do (
-    echo %%a | findstr "7" >nul 2>&1
-    if !errorlevel!==0 (
-        set port=%%a
-        goto :found
-    )
-)
-
-if %waited% lss %max_wait% goto :check_port
-
-:found
-if defined port (
-    echo Server is running on port %port%
-    echo Opening browser...
-    start http://localhost:%port%/my-blog/
-) else (
-    echo Server may be running on default port 5173
-    echo Opening browser...
-    start http://localhost:5173/my-blog/
-)
+echo Trying to open browser...
+start http://localhost:5173/my-blog/
+start http://localhost:5174/my-blog/
+start http://localhost:5175/my-blog/
+start http://localhost:5176/my-blog/
+start http://localhost:5177/my-blog/
 
 echo.
-echo Server is running! Press any key to exit.
-pause >nul
+echo Server should be running now!
+echo Please use the correct URL from the terminal.
+pause
