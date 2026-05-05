@@ -18,12 +18,12 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./window对象.md">window对象</a></strong>
+    <strong><a href="./window对象">window对象</a></strong>
     <br>
     <span>浏览器 Window 对象 API，控制浏览器窗口的各种方法。</span>
   </li>
   <li>
-    <strong><a href="./地址栏各种特殊符号的含义.md">地址栏各种特殊符号的含义</a></strong>
+    <strong><a href="./地址栏各种特殊符号的含义">地址栏各种特殊符号的含义</a></strong>
     <br>
     <span>URL 特殊符号与编码知识，理解查询参数和哈希的使用。</span>
   </li>

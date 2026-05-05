@@ -18,17 +18,17 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./基础知识/mcp.md">基础知识</a></strong>
+    <strong><a href="./基础知识/mcp">基础知识</a></strong>
     <br>
     <span>MCP、Skill 等基础概念</span>
   </li>
   <li>
-    <strong><a href="./框架/langchain.md">框架</a></strong>
+    <strong><a href="./框架/langchain">框架</a></strong>
     <br>
     <span>LangChain、LangGraph、LlamaIndex</span>
   </li>
   <li>
-    <strong><a href="./资源/前端设计skill网站.md">资源合集</a></strong>
+    <strong><a href="./资源/前端设计skill网站">资源合集</a></strong>
     <br>
     <span>UI / UX & Design 资源官网合集</span>
   </li>

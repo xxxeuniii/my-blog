@@ -18,17 +18,17 @@ uniapp 开发实践
 
 <ul id="article-list">
   <li>
-    <strong><a href="./request封装.md">request封装</a></strong>
+    <strong><a href="./request封装">request封装</a></strong>
     <br>
     <span>uniapp 请求封装</span>
   </li>
   <li>
-    <strong><a href="./uniapp基础.md">uniapp基础</a></strong>
+    <strong><a href="./uniapp基础">uniapp基础</a></strong>
     <br>
     <span>uniapp 基础入门</span>
   </li>
   <li>
-    <strong><a href="./uniapp支付功能.md">uniapp支付功能</a></strong>
+    <strong><a href="./uniapp支付功能">uniapp支付功能</a></strong>
     <br>
     <span>uniapp 支付功能实现</span>
   </li>

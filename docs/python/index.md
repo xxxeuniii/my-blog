@@ -18,7 +18,7 @@ Python 编程与应用开发
 
 <ul id="article-list">
   <li>
-    <strong><a href="./基于flask开发的dify.md">基于flask开发的dify</a></strong>
+    <strong><a href="./基于flask开发的dify">基于flask开发的dify</a></strong>
     <br>
     <span>基于 Flask 开发的 Dify 应用</span>
   </li>

@@ -18,7 +18,7 @@ React 前端框架开发
 
 <ul id="article-list">
   <li>
-    <strong><a href="./react基础.md">react基础</a></strong>
+    <strong><a href="./react基础">react基础</a></strong>
     <br>
     <span>React 框架基础入门</span>
   </li>

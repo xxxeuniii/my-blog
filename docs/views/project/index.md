@@ -18,17 +18,17 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./上海银行排队项目.md">上海银行排队项目</a></strong>
+    <strong><a href="./上海银行排队项目">上海银行排队项目</a></strong>
     <br>
     <span>上海银行排队系统项目</span>
   </li>
   <li>
-    <strong><a href="./微信管理平台.md">微信管理平台</a></strong>
+    <strong><a href="./微信管理平台">微信管理平台</a></strong>
     <br>
     <span>微信管理平台项目</span>
   </li>
   <li>
-    <strong><a href="./柜面poc项目.md">柜面poc项目</a></strong>
+    <strong><a href="./柜面poc项目">柜面poc项目</a></strong>
     <br>
     <span>柜面 POC 项目</span>
   </li>

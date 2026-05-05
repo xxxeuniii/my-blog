@@ -18,7 +18,7 @@ HarmonyOS 应用开发
 
 <ul id="article-list">
   <li>
-    <strong><a href="./基础课程.md">基础课程</a></strong>
+    <strong><a href="./基础课程">基础课程</a></strong>
     <br>
     <span>鸿蒙开发基础课程</span>
   </li>

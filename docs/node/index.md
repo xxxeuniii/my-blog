@@ -18,12 +18,12 @@ Node.js 服务端开发
 
 <ul id="article-list">
   <li>
-    <strong><a href="./node基础.md">node基础</a></strong>
+    <strong><a href="./node基础">node基础</a></strong>
     <br>
     <span>Node.js 基础入门</span>
   </li>
   <li>
-    <strong><a href="./node服务端开发.md">node服务端开发</a></strong>
+    <strong><a href="./node服务端开发">node服务端开发</a></strong>
     <br>
     <span>Node.js 服务端开发实践</span>
   </li>

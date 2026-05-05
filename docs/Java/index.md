@@ -18,7 +18,7 @@ Java 编程语言基础与开发
 
 <ul id="article-list">
   <li>
-    <strong><a href="./java基础.md">java基础</a></strong>
+    <strong><a href="./java基础">java基础</a></strong>
     <br>
     <span>Java 语言基础入门</span>
   </li>

@@ -18,7 +18,7 @@ TypeScript 类型系统与开发
 
 <ul id="article-list">
   <li>
-    <strong><a href="./ts基础.md">ts基础</a></strong>
+    <strong><a href="./ts基础">ts基础</a></strong>
     <br>
     <span>TypeScript 基础入门</span>
   </li>

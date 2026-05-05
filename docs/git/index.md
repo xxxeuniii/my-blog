@@ -18,7 +18,7 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./git术语.md">git术语</a></strong>
+    <strong><a href="./git术语">git术语</a></strong>
     <br>
     <span>Git 常用术语与命令说明</span>
   </li>

@@ -18,27 +18,27 @@ DOM、BOM、数据结构等核心知识，前端开发的必备基础。
 
 <ul id="article-list">
   <li>
-    <strong><a href="./BOM.md">BOM</a></strong>
+    <strong><a href="./BOM">BOM</a></strong>
     <br>
     <span>浏览器对象模型，操作浏览器窗口和导航的 API。</span>
   </li>
   <li>
-    <strong><a href="./DOM.md">DOM</a></strong>
+    <strong><a href="./DOM">DOM</a></strong>
     <br>
     <span>文档对象模型，操作网页元素的核心 API。</span>
   </li>
   <li>
-    <strong><a href="./HTML.md">HTML</a></strong>
+    <strong><a href="./HTML">HTML</a></strong>
     <br>
     <span>HTML 基础与进阶，语义化标签和现代 Web 标准。</span>
   </li>
   <li>
-    <strong><a href="./数据结构.md">数据结构</a></strong>
+    <strong><a href="./数据结构">数据结构</a></strong>
     <br>
     <span>前端常用数据结构与算法，提升代码质量和效率。</span>
   </li>
   <li>
-    <strong><a href="./网络请求.md">网络请求</a></strong>
+    <strong><a href="./网络请求">网络请求</a></strong>
     <br>
     <span>HTTP 请求与响应处理，Fetch、Axios 等工具使用。</span>
   </li>

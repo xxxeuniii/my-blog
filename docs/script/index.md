@@ -18,7 +18,7 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./类型转换js方法合集.md">类型转换js方法合集</a></strong>
+    <strong><a href="./类型转换js方法合集">类型转换js方法合集</a></strong>
     <br>
     <span>JavaScript 类型转换方法合集</span>
   </li>

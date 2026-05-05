@@ -18,7 +18,7 @@ Vue 前端框架开发
 
 <ul id="article-list">
   <li>
-    <strong><a href="./vue2和vue3的区别.md">vue2和vue3的区别</a></strong>
+    <strong><a href="./vue2和vue3的区别">vue2和vue3的区别</a></strong>
     <br>
     <span>Vue 2 与 Vue 3 对比</span>
   </li>

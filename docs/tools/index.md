@@ -18,12 +18,12 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./基础工具.md">基础工具</a></strong>
+    <strong><a href="./基础工具">基础工具</a></strong>
     <br>
     <span>基础开发工具使用</span>
   </li>
   <li>
-    <strong><a href="./实用命令行.md">实用命令行</a></strong>
+    <strong><a href="./实用命令行">实用命令行</a></strong>
     <br>
     <span>实用命令行工具</span>
   </li>

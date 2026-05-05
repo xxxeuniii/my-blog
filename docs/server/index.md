@@ -18,7 +18,7 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./http请求方式.md">http请求方式</a></strong>
+    <strong><a href="./http请求方式">http请求方式</a></strong>
     <br>
     <span>HTTP 请求方式详解</span>
   </li>

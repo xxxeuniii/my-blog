@@ -18,7 +18,7 @@ Angular 前端框架开发
 
 <ul id="article-list">
   <li>
-    <strong><a href="./angular基础.md">angular基础</a></strong>
+    <strong><a href="./angular基础">angular基础</a></strong>
     <br>
     <span>Angular 框架基础入门</span>
   </li>

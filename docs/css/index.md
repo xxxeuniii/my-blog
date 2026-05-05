@@ -18,7 +18,7 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./css3的新特性.md">css3的新特性</a></strong>
+    <strong><a href="./css3的新特性">css3的新特性</a></strong>
     <br>
     <span>CSS3 新增特性与用法详解，动画、渐变、弹性布局等。</span>
   </li>

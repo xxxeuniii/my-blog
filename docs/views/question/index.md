@@ -18,7 +18,7 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./前端面试题整合.md">前端面试题整合</a></strong>
+    <strong><a href="./前端面试题整合">前端面试题整合</a></strong>
     <br>
     <span>前端面试题整合资料</span>
   </li>

@@ -18,7 +18,7 @@ UI 组件库与开发工具
 
 <ul id="article-list">
   <li>
-    <strong><a href="./elementui组件库.md">elementui组件库</a></strong>
+    <strong><a href="./elementui组件库">elementui组件库</a></strong>
     <br>
     <span>Element UI 组件库使用指南</span>
   </li>

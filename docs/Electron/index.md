@@ -18,7 +18,7 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./electron基础.md">electron基础</a></strong>
+    <strong><a href="./electron基础">electron基础</a></strong>
     <br>
     <span>Electron 框架基础入门</span>
   </li>

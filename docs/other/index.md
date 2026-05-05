@@ -18,17 +18,17 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./20240429.md">20240429</a></strong>
+    <strong><a href="./20240429">20240429</a></strong>
     <br>
     <span>技术笔记</span>
   </li>
   <li>
-    <strong><a href="./20240726.md">20240726</a></strong>
+    <strong><a href="./20240726">20240726</a></strong>
     <br>
     <span>技术笔记</span>
   </li>
   <li>
-    <strong><a href="./20240729.md">20240729</a></strong>
+    <strong><a href="./20240729">20240729</a></strong>
     <br>
     <span>技术笔记</span>
   </li>

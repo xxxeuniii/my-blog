@@ -18,37 +18,37 @@ Node.js 视图与服务端开发
 
 <ul id="article-list">
   <li>
-    <strong><a href="./express1.md">express1</a></strong>
+    <strong><a href="./express1">express1</a></strong>
     <br>
     <span>Express 入门</span>
   </li>
   <li>
-    <strong><a href="./express2.md">express2</a></strong>
+    <strong><a href="./express2">express2</a></strong>
     <br>
     <span>Express 进阶</span>
   </li>
   <li>
-    <strong><a href="./nodejs1.md">nodejs1</a></strong>
+    <strong><a href="./nodejs1">nodejs1</a></strong>
     <br>
     <span>Node.js 入门</span>
   </li>
   <li>
-    <strong><a href="./nodejs2.md">nodejs2</a></strong>
+    <strong><a href="./nodejs2">nodejs2</a></strong>
     <br>
     <span>Node.js 进阶</span>
   </li>
   <li>
-    <strong><a href="./socket.io.md">socket.io</a></strong>
+    <strong><a href="./socket.io">socket.io</a></strong>
     <br>
     <span>Socket.IO 实时通信</span>
   </li>
   <li>
-    <strong><a href="./sql.md">sql</a></strong>
+    <strong><a href="./sql">sql</a></strong>
     <br>
     <span>SQL 数据库</span>
   </li>
   <li>
-    <strong><a href="./websocket基本使用.md">websocket基本使用</a></strong>
+    <strong><a href="./websocket基本使用">websocket基本使用</a></strong>
     <br>
     <span>WebSocket 基本使用</span>
   </li>
