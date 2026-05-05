@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o}from"./chunks/framework.-Wrcbzkw.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"node/node基础.md","filePath":"node/node基础.md","lastUpdated":1777981744000}'),a={name:"node/node基础.md"};function n(d,r,s,c,_,p){return t(),o("div")}const f=e(a,[["render",n]]);export{m as __pageData,f as default};
