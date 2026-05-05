@@ -38,41 +38,41 @@ layout: home
       <div class="category-column">
         <h3 class="category-title">基础篇</h3>
         <ul class="category-list">
-          <li><a href="/basic_config/">项目配置</a></li>
-          <li><a href="/basic/">前端基础</a></li>
-          <li><a href="/html/">HTML</a></li>
-          <li><a href="/css/">CSS</a></li>
-          <li><a href="/js/">JavaScript</a></li>
-          <li><a href="/ts/">TypeScript</a></li>
+          <li><a href="/my-blog/basic_config/">项目配置</a></li>
+          <li><a href="/my-blog/basic/">前端基础</a></li>
+          <li><a href="/my-blog/html/">HTML</a></li>
+          <li><a href="/my-blog/css/">CSS</a></li>
+          <li><a href="/my-blog/js/">JavaScript</a></li>
+          <li><a href="/my-blog/ts/">TypeScript</a></li>
         </ul>
       </div>
       <div class="category-column">
         <h3 class="category-title">进阶篇</h3>
         <ul class="category-list">
-          <li><a href="/工程化/">工程化</a></li>
-          <li><a href="/git/">Git</a></li>
-          <li><a href="/tools/">工具</a></li>
-          <li><a href="/network/">网络</a></li>
-          <li><a href="/component/">组件库</a></li>
+          <li><a href="/my-blog/工程化/">工程化</a></li>
+          <li><a href="/my-blog/git/">Git</a></li>
+          <li><a href="/my-blog/tools/">工具</a></li>
+          <li><a href="/my-blog/network/">网络</a></li>
+          <li><a href="/my-blog/component/">组件库</a></li>
         </ul>
       </div>
       <div class="category-column">
         <h3 class="category-title">框架篇</h3>
         <ul class="category-list">
-          <li><a href="/views/vue/">Vue.js</a></li>
-          <li><a href="/react/">React</a></li>
-          <li><a href="/angular/">Angular</a></li>
-          <li><a href="/Electron/">Electron</a></li>
+          <li><a href="/my-blog/views/vue/">Vue.js</a></li>
+          <li><a href="/my-blog/react/">React</a></li>
+          <li><a href="/my-blog/angular/">Angular</a></li>
+          <li><a href="/my-blog/Electron/">Electron</a></li>
         </ul>
       </div>
       <div class="category-column">
         <h3 class="category-title">后端篇</h3>
         <ul class="category-list">
-          <li><a href="/node/">Node.js</a></li>
-          <li><a href="/views/node/">Node.js进阶</a></li>
-          <li><a href="/python/">Python</a></li>
-          <li><a href="/Java/">Java</a></li>
-          <li><a href="/server/">服务器</a></li>
+          <li><a href="/my-blog/node/">Node.js</a></li>
+          <li><a href="/my-blog/views/node/">Node.js进阶</a></li>
+          <li><a href="/my-blog/python/">Python</a></li>
+          <li><a href="/my-blog/Java/">Java</a></li>
+          <li><a href="/my-blog/server/">服务器</a></li>
         </ul>
       </div>
     </div>
