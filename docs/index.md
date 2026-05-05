@@ -15,7 +15,7 @@ layout: home
   <section class="stats-overview">
     <div class="stats-grid">
       <div class="stat-card">
-        <span class="stat-number">84</span>
+        <span class="stat-number">105</span>
         <span class="stat-label">文章总数</span>
       </div>
       <div class="stat-card">
@@ -148,6 +148,7 @@ layout: home
           <div class="about-contact-links">
             <a class="about-contact-link" href="https://github.com">GitHub</a>
             <a class="about-contact-link" href="https://linkedin.com">LinkedIn</a>
+            <a class="about-contact-link" href="https://www.npmjs.com/~euniii">npm</a>
             <a class="about-contact-link" href="mailto:hello@example.com">Email</a>
           </div>
         </div>

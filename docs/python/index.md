@@ -18,6 +18,11 @@ Python 编程与应用开发
 
 <ul id="article-list">
   <li>
+    <strong><a href="./fastapi基础">FastAPI 基础</a></strong>
+    <br>
+    <span>FastAPI 快速入门与常用功能</span>
+  </li>
+  <li>
     <strong><a href="./基于flask开发的dify">基于flask开发的dify</a></strong>
     <br>
     <span>基于 Flask 开发的 Dify 应用</span>
