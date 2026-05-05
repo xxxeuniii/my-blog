@@ -2,6 +2,8 @@
 
 一个基于VitePress的个人技术博客
 
+在线预览：https://xxxeuniii.github.io/my-blog/
+
 ## 技术栈
 
 - VitePress
