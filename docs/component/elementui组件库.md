@@ -1,8 +1,6 @@
 # element
 
-## 20240327
-
-### el-table实现单选
+## el-table实现单选
 
 ```html
         <el-table ref="tableRef" v-loading="loading" :data="test" @selection-change="handleSelectionChange">

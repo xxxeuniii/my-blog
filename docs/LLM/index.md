@@ -16,59 +16,413 @@ sidebar: false
   </div>
 </div>
 
+## 基础知识
+
 <ul id="article-list">
   <li>
-    <strong><a href="./基础知识/mcp">基础知识</a></strong>
+    <strong><a href="./基础知识/基本概念">基本概念</a></strong>
     <br>
-    <span>MCP、Skill 等基础概念</span>
+    <span>大语言模型基础概念</span>
   </li>
   <li>
-    <strong><a href="./框架/langchain">框架</a></strong>
+    <strong><a href="./基础知识/mcp">MCP</a></strong>
     <br>
-    <span>LangChain、LangGraph、LlamaIndex</span>
+    <span>模型上下文协议</span>
   </li>
   <li>
-    <strong><a href="./python/01_Python简介">Python基础</a></strong>
+    <strong><a href="./基础知识/skill">Skill</a></strong>
     <br>
-    <span>Python 编程入门到高级</span>
+    <span>技能系统</span>
+  </li>
+</ul>
+
+## 框架
+
+<ul id="article-list">
+  <li>
+    <strong><a href="./框架/langchain">LangChain</a></strong>
+    <br>
+    <span>LLM 应用开发框架</span>
   </li>
   <li>
-    <strong><a href="./Prompt Engineering/01_fewshot_少样本提示">提示词工程</a></strong>
+    <strong><a href="./框架/langgraph">LangGraph</a></strong>
     <br>
-    <span>提示词优化与最佳实践</span>
+    <span>状态管理工作流框架</span>
   </li>
   <li>
-    <strong><a href="./LangChain/01_llms_语言模型">LangChain</a></strong>
+    <strong><a href="./框架/llmaIndex">LlamaIndex</a></strong>
     <br>
-    <span>LangChain 框架完整教程</span>
+    <span>数据增强 LLM 框架</span>
+  </li>
+</ul>
+
+## Python 基础
+
+<ul id="article-list">
+  <li>
+    <strong><a href="./python/01_Python简介">01. Python 简介</a></strong>
+    <br>
+    <span>Python 概述</span>
   </li>
   <li>
-    <strong><a href="./LanGraph/01_basic_graph_基础图">LanGraph</a></strong>
+    <strong><a href="./python/02_第一个Python程序">02. 第一个程序</a></strong>
     <br>
-    <span>LanGraph 框架使用指南</span>
+    <span>Hello World</span>
   </li>
   <li>
-    <strong><a href="./FastAPI/01_FastAPI简介">FastAPI</a></strong>
+    <strong><a href="./python/03_变量与数据类型">03. 变量与数据类型</a></strong>
     <br>
-    <span>现代 Python API 开发框架</span>
+    <span>数据类型基础</span>
   </li>
   <li>
-    <strong><a href="./资源/前端设计skill网站">资源合集</a></strong>
+    <strong><a href="./python/04_基本运算">04. 基本运算</a></strong>
     <br>
-    <span>UI / UX &amp; Design 资源官网合集</span>
+    <span>运算符与表达式</span>
+  </li>
+  <li>
+    <strong><a href="./python/05_条件语句">05. 条件语句</a></strong>
+    <br>
+    <span>if / else</span>
+  </li>
+  <li>
+    <strong><a href="./python/06_循环结构">06. 循环结构</a></strong>
+    <br>
+    <span>for / while</span>
+  </li>
+  <li>
+    <strong><a href="./python/07_函数定义">07. 函数定义</a></strong>
+    <br>
+    <span>函数与函数调用</span>
+  </li>
+  <li>
+    <strong><a href="./python/08_列表操作">08. 列表操作</a></strong>
+    <br>
+    <span>列表基础</span>
+  </li>
+  <li>
+    <strong><a href="./python/09_字典操作">09. 字典操作</a></strong>
+    <br>
+    <span>字典基础</span>
+  </li>
+  <li>
+    <strong><a href="./python/10_异常处理">10. 异常处理</a></strong>
+    <br>
+    <span>错误与捕获</span>
+  </li>
+  <li>
+    <strong><a href="./python/11_文件操作">11. 文件操作</a></strong>
+    <br>
+    <span>文件读写</span>
+  </li>
+  <li>
+    <strong><a href="./python/12_模块导入">12. 模块导入</a></strong>
+    <br>
+    <span>模块与包</span>
+  </li>
+</ul>
+
+## 提示词工程
+
+<ul id="article-list">
+  <li>
+    <strong><a href="./Prompt Engineering/01_fewshot_少样本提示">01. 少样本提示</a></strong>
+    <br>
+    <span>Few-shot Prompting</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/02_cot_思维链">02. 思维链</a></strong>
+    <br>
+    <span>Chain-of-Thought</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/03_json_结构化输出">03. 结构化输出</a></strong>
+    <br>
+    <span>JSON 格式输出</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/04_zeroshot_零样本提示">04. 零样本提示</a></strong>
+    <br>
+    <span>Zero-shot Prompting</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/05_tot_思维树">05. 思维树</a></strong>
+    <br>
+    <span>Tree-of-Thought</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/06_react_推理行动">06. ReAct</a></strong>
+    <br>
+    <span>Reasoning + Acting</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/07_self_consistency_自洽性">07. 自洽性</a></strong>
+    <br>
+    <span>Self-Consistency</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/08_prompt_chaining_提示链">08. 提示链</a></strong>
+    <br>
+    <span>Prompt Chaining</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/09_system_prompt_系统提示词">09. 系统提示词</a></strong>
+    <br>
+    <span>System Prompt</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/10_temperature_温度参数">10. 温度参数</a></strong>
+    <br>
+    <span>Temperature</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/11_top_p_核采样">11. 核采样</a></strong>
+    <br>
+    <span>Top-p Sampling</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/12_fewshot_cot_融合">12. 少样本 + CoT</a></strong>
+    <br>
+    <span>结合使用</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/13_prompt_injection_提示词注入">13. 提示词注入</a></strong>
+    <br>
+    <span>安全与防护</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/14_api_parameters_常用参数">14. API 参数</a></strong>
+    <br>
+    <span>API 配置详解</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/15_context_window_上下文窗口管理">15. 上下文窗口管理</a></strong>
+    <br>
+    <span>Context Window</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/16_multimodal_多模态提示">16. 多模态提示</a></strong>
+    <br>
+    <span>Multimodal</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/17_emotion_prompting_情感提示">17. 情感提示</a></strong>
+    <br>
+    <span>Emotion Prompting</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/18_generated_knowledge_生成知识">18. 生成知识</a></strong>
+    <br>
+    <span>Generated Knowledge</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/19_instruction_hierarchy_指令层级">19. 指令层级</a></strong>
+    <br>
+    <span>Instruction Hierarchy</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/20_refusal_suppression_拒绝抑制">20. 拒绝抑制</a></strong>
+    <br>
+    <span>Refusal Suppression</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/21_evaluation_iteration_评估与迭代">21. 评估与迭代</a></strong>
+    <br>
+    <span>Evaluation & Iteration</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/22_compression_caching_压缩与缓存">22. 压缩与缓存</a></strong>
+    <br>
+    <span>Compression & Caching</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/23_dynamic_rag_动态RAG提示词">23. 动态 RAG 提示词</a></strong>
+    <br>
+    <span>Dynamic RAG</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/24_dspy_提示词程序化">24. DSPy</a></strong>
+    <br>
+    <span>提示词程序化</span>
+  </li>
+  <li>
+    <strong><a href="./Prompt Engineering/25_meta_prompt_元提示词">25. 元提示词</a></strong>
+    <br>
+    <span>Meta Prompting</span>
+  </li>
+</ul>
+
+## LangChain
+
+<ul id="article-list">
+  <li>
+    <strong><a href="./LangChain/01_llms_语言模型">01. 语言模型</a></strong>
+    <br>
+    <span>LLM 基础与使用</span>
+  </li>
+  <li>
+    <strong><a href="./LangChain/02_prompts_提示词模板">02. 提示词模板</a></strong>
+    <br>
+    <span>模板化提示词管理</span>
+  </li>
+  <li>
+    <strong><a href="./LangChain/03_chains_链式调用">03. 链式调用</a></strong>
+    <br>
+    <span>LCEL 与链组合</span>
+  </li>
+  <li>
+    <strong><a href="./LangChain/04_memory_记忆功能">04. 记忆功能</a></strong>
+    <br>
+    <span>对话上下文管理</span>
+  </li>
+  <li>
+    <strong><a href="./LangChain/05_loaders_文档加载器">05. 文档加载器</a></strong>
+    <br>
+    <span>多种格式文档加载</span>
+  </li>
+  <li>
+    <strong><a href="./LangChain/06_vector_stores_向量数据库">06. 向量数据库</a></strong>
+    <br>
+    <span>向量化与相似性检索</span>
+  </li>
+  <li>
+    <strong><a href="./LangChain/07_agents_智能代理">07. 智能代理</a></strong>
+    <br>
+    <span>AI 代理与工具调用</span>
+  </li>
+  <li>
+    <strong><a href="./LangChain/08_rag_检索增强生成">08. 检索增强生成</a></strong>
+    <br>
+    <span>RAG 系统构建</span>
+  </li>
+  <li>
+    <strong><a href="./LangChain/langchain_notes">LangChain 笔记</a></strong>
+    <br>
+    <span>学习笔记与总结</span>
+  </li>
+</ul>
+
+## LangGraph
+
+<ul id="article-list">
+  <li>
+    <strong><a href="./LanGraph/01_basic_graph_基础图">01. 基础图</a></strong>
+    <br>
+    <span>基础图结构与节点定义</span>
+  </li>
+  <li>
+    <strong><a href="./LanGraph/02_conditional_branch_条件分支">02. 条件分支</a></strong>
+    <br>
+    <span>条件判断与路由</span>
+  </li>
+  <li>
+    <strong><a href="./LanGraph/03_cycle_loop_循环">03. 循环</a></strong>
+    <br>
+    <span>循环执行与迭代</span>
+  </li>
+  <li>
+    <strong><a href="./LanGraph/04_human_in_loop_人机交互">04. 人机交互</a></strong>
+    <br>
+    <span>人类在环模式</span>
+  </li>
+  <li>
+    <strong><a href="./LanGraph/05_state_management_状态管理">05. 状态管理</a></strong>
+    <br>
+    <span>状态存储与传递</span>
+  </li>
+</ul>
+
+## FastAPI
+
+<ul id="article-list">
+  <li>
+    <strong><a href="./FastAPI/01_FastAPI简介">01. 简介</a></strong>
+    <br>
+    <span>FastAPI 基础介绍</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/02_FastAPI安装与基本用法">02. 安装与基本用法</a></strong>
+    <br>
+    <span>快速上手 FastAPI</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/03_FastAPI路径参数">03. 路径参数</a></strong>
+    <br>
+    <span>URL 参数处理</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/04_FastAPI查询参数">04. 查询参数</a></strong>
+    <br>
+    <span>查询字符串处理</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/05_FastAPI请求体">05. 请求体</a></strong>
+    <br>
+    <span>数据验证与解析</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/06_FastAPI响应模型">06. 响应模型</a></strong>
+    <br>
+    <span>响应数据格式</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/07_FastAPI状态码">07. 状态码</a></strong>
+    <br>
+    <span>HTTP 状态码</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/08_FastAPI依赖注入">08. 依赖注入</a></strong>
+    <br>
+    <span>Dependency Injection</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/09_FastAPI认证">09. 认证</a></strong>
+    <br>
+    <span>安全认证机制</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/10_FastAPI数据库集成">10. 数据库集成</a></strong>
+    <br>
+    <span>数据库操作</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/11_FastAPI异步支持">11. 异步支持</a></strong>
+    <br>
+    <span>Async / Await</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/12_FastAPI部署">12. 部署</a></strong>
+    <br>
+    <span>生产环境部署</span>
+  </li>
+  <li>
+    <strong><a href="./FastAPI/Pydantic介绍">Pydantic 介绍</a></strong>
+    <br>
+    <span>数据验证库</span>
+  </li>
+</ul>
+
+## 资源
+
+<ul id="article-list">
+  <li>
+    <strong><a href="./资源/前端设计skill网站">前端设计 Skill 网站</a></strong>
+    <br>
+    <span>UI / UX & Design 资源官网合集</span>
   </li>
 </ul>
 
 <script setup>
 import { onMounted } from 'vue'
 onMounted(() => {
-  const list = document.getElementById('article-list')
-  if (list) {
+  const lists = document.querySelectorAll('#article-list')
+  let totalCount = 0
+  lists.forEach(list => {
     const links = list.querySelectorAll('a')
-    const countEl = document.getElementById('article-count')
-    if (countEl) {
-      countEl.textContent = links.length
-    }
+    totalCount += links.length
+  })
+  const countEl = document.getElementById('article-count')
+  if (countEl) {
+    countEl.textContent = totalCount
   }
 })
 </script>
