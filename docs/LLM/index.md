@@ -25,6 +25,21 @@ sidebar: false
     <span>大语言模型基础概念</span>
   </li>
   <li>
+    <strong><a href="./基础知识/微调">微调</a></strong>
+    <br>
+    <span>模型微调方法与实践</span>
+  </li>
+  <li>
+    <strong><a href="./基础知识/PyTorch">PyTorch</a></strong>
+    <br>
+    <span>深度学习框架</span>
+  </li>
+  <li>
+    <strong><a href="./基础知识/TensorFlow">TensorFlow</a></strong>
+    <br>
+    <span>深度学习框架</span>
+  </li>
+  <li>
     <strong><a href="./基础知识/mcp">MCP</a></strong>
     <br>
     <span>模型上下文协议</span>
@@ -60,64 +75,9 @@ sidebar: false
 
 <ul id="article-list">
   <li>
-    <strong><a href="./python/01_Python简介">01. Python 简介</a></strong>
+    <strong><a href="./python/Python基础教程">Python 基础教程</a></strong>
     <br>
-    <span>Python 概述</span>
-  </li>
-  <li>
-    <strong><a href="./python/02_第一个Python程序">02. 第一个程序</a></strong>
-    <br>
-    <span>Hello World</span>
-  </li>
-  <li>
-    <strong><a href="./python/03_变量与数据类型">03. 变量与数据类型</a></strong>
-    <br>
-    <span>数据类型基础</span>
-  </li>
-  <li>
-    <strong><a href="./python/04_基本运算">04. 基本运算</a></strong>
-    <br>
-    <span>运算符与表达式</span>
-  </li>
-  <li>
-    <strong><a href="./python/05_条件语句">05. 条件语句</a></strong>
-    <br>
-    <span>if / else</span>
-  </li>
-  <li>
-    <strong><a href="./python/06_循环结构">06. 循环结构</a></strong>
-    <br>
-    <span>for / while</span>
-  </li>
-  <li>
-    <strong><a href="./python/07_函数定义">07. 函数定义</a></strong>
-    <br>
-    <span>函数与函数调用</span>
-  </li>
-  <li>
-    <strong><a href="./python/08_列表操作">08. 列表操作</a></strong>
-    <br>
-    <span>列表基础</span>
-  </li>
-  <li>
-    <strong><a href="./python/09_字典操作">09. 字典操作</a></strong>
-    <br>
-    <span>字典基础</span>
-  </li>
-  <li>
-    <strong><a href="./python/10_异常处理">10. 异常处理</a></strong>
-    <br>
-    <span>错误与捕获</span>
-  </li>
-  <li>
-    <strong><a href="./python/11_文件操作">11. 文件操作</a></strong>
-    <br>
-    <span>文件读写</span>
-  </li>
-  <li>
-    <strong><a href="./python/12_模块导入">12. 模块导入</a></strong>
-    <br>
-    <span>模块与包</span>
+    <span>Python 编程入门到高级</span>
   </li>
 </ul>
 
