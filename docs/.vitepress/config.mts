@@ -147,7 +147,6 @@ export default defineConfig({
         text: '其他',
         items: [
           { text: '脚本', link: '/script/' },
-          { text: '随记', link: '/other/' },
           { text: '笔记', link: '/notes/' },
         ],
       },
@@ -175,9 +174,7 @@ export default defineConfig({
       '/Java/': collectSidebarItems('Java'),
       '/LLM/': collectSidebarItems('LLM'),
       '/script/': collectSidebarItems('script'),
-      '/other/': collectSidebarItems('other'),
       '/notes/': collectSidebarItems('notes'),
-      '/project/': collectSidebarItems('project'),
       '/views/project/': collectSidebarItems('views/project'),
       '/views/uniapp/': collectSidebarItems('views/uniapp'),
       '/views/node/': collectSidebarItems('views/node'),
