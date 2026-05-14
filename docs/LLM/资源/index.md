@@ -5,9 +5,9 @@ sidebar: false
 
 <div class="category-index-page">
 
-# 基础
+# 资源
 
-计算机基础知识。
+LLM 相关的学习资源与工具。
 
 <div class="category-info">
   <div class="info-item">
@@ -18,9 +18,9 @@ sidebar: false
 
 <div id="article-list">
   <li>
-    <strong><a href="./network">网络</a></strong>
+    <strong><a href="./前端设计skill网站">前端设计 Skill 网站</a></strong>
     <br>
-    <span>计算机网络基础</span>
+    <span>UI / UX & Design 资源官网合集</span>
   </li>
 </div>
 

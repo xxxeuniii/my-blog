@@ -7,35 +7,21 @@ sidebar: false
 
 # Python 基础
 
-Python 编程入门到高级
+Python 编程从入门到精通的完整教程。
 
 <div class="category-info">
   <div class="info-item">
     <div class="info-label">文章数量</div>
-    <div class="info-value" id="article-count"></div>
+    <div class="info-value">1</div>
   </div>
 </div>
 
-<ul id="article-list">
+<div id="article-list">
   <li>
     <strong><a href="./Python基础教程">Python 基础教程</a></strong>
     <br>
-    <span>包含简介、变量、运算、条件语句、循环、函数、列表、字典、异常处理、文件操作、模块导入等内容</span>
+    <span>Python 编程入门到高级</span>
   </li>
-</ul>
-
-<script setup>
-import { onMounted } from 'vue'
-onMounted(() => {
-  const list = document.getElementById('article-list')
-  if (list) {
-    const links = list.querySelectorAll('a')
-    const countEl = document.getElementById('article-count')
-    if (countEl) {
-      countEl.textContent = links.length
-    }
-  }
-})
-</script>
+</div>
 
 </div>

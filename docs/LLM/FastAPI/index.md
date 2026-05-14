@@ -7,16 +7,16 @@ sidebar: false
 
 # FastAPI
 
-现代 Python API 开发框架
+现代 Python API 开发框架。
 
 <div class="category-info">
   <div class="info-item">
     <div class="info-label">文章数量</div>
-    <div class="info-value" id="article-count"></div>
+    <div class="info-value">13</div>
   </div>
 </div>
 
-<ul id="article-list">
+<div id="article-list">
   <li>
     <strong><a href="./01_FastAPI简介">01. 简介</a></strong>
     <br>
@@ -82,20 +82,6 @@ sidebar: false
     <br>
     <span>数据验证库</span>
   </li>
-</ul>
-
-<script setup>
-import { onMounted } from 'vue'
-onMounted(() => {
-  const list = document.getElementById('article-list')
-  if (list) {
-    const links = list.querySelectorAll('a')
-    const countEl = document.getElementById('article-count')
-    if (countEl) {
-      countEl.textContent = links.length
-    }
-  }
-})
-</script>
+</div>
 
 </div>

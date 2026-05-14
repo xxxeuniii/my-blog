@@ -5,18 +5,18 @@ sidebar: false
 
 <div class="category-index-page">
 
-# LanGraph
+# LangGraph
 
-LanGraph 框架使用指南
+状态管理工作流框架，构建复杂 AI 应用。
 
 <div class="category-info">
   <div class="info-item">
     <div class="info-label">文章数量</div>
-    <div class="info-value" id="article-count"></div>
+    <div class="info-value">5</div>
   </div>
 </div>
 
-<ul id="article-list">
+<div id="article-list">
   <li>
     <strong><a href="./01_basic_graph_基础图">01. 基础图</a></strong>
     <br>
@@ -42,20 +42,6 @@ LanGraph 框架使用指南
     <br>
     <span>状态存储与传递</span>
   </li>
-</ul>
-
-<script setup>
-import { onMounted } from 'vue'
-onMounted(() => {
-  const list = document.getElementById('article-list')
-  if (list) {
-    const links = list.querySelectorAll('a')
-    const countEl = document.getElementById('article-count')
-    if (countEl) {
-      countEl.textContent = links.length
-    }
-  }
-})
-</script>
+</div>
 
 </div>

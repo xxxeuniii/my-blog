@@ -7,16 +7,16 @@ sidebar: false
 
 # LangChain
 
-LangChain 框架完整教程
+LLM 应用开发框架，构建智能代理与 RAG 系统。
 
 <div class="category-info">
   <div class="info-item">
     <div class="info-label">文章数量</div>
-    <div class="info-value" id="article-count"></div>
+    <div class="info-value">9</div>
   </div>
 </div>
 
-<ul id="article-list">
+<div id="article-list">
   <li>
     <strong><a href="./01_llms_语言模型">01. 语言模型</a></strong>
     <br>
@@ -57,20 +57,11 @@ LangChain 框架完整教程
     <br>
     <span>RAG 系统构建</span>
   </li>
-</ul>
-
-<script setup>
-import { onMounted } from 'vue'
-onMounted(() => {
-  const list = document.getElementById('article-list')
-  if (list) {
-    const links = list.querySelectorAll('a')
-    const countEl = document.getElementById('article-count')
-    if (countEl) {
-      countEl.textContent = links.length
-    }
-  }
-})
-</script>
+  <li>
+    <strong><a href="./langchain_notes">LangChain 笔记</a></strong>
+    <br>
+    <span>学习笔记与总结</span>
+  </li>
+</div>
 
 </div>
