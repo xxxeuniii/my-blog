@@ -22,6 +22,11 @@ UI 组件库与开发工具
     <br>
     <span>Element UI 组件库使用指南</span>
   </li>
+  <li>
+    <strong><a href="./ECharts使用指南">ECharts使用指南</a></strong>
+    <br>
+    <span>ECharts 数据可视化图表库使用教程</span>
+  </li>
 </ul>
 
 <script setup>
