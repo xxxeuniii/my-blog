@@ -1,36 +1,29 @@
 Angular 是一个基于 TypeScript 的前端框架，由 Google 维护，适用于构建单页面应用（SPA）。它采用组件化架构，提供了模块化的开发方式，并内置了依赖注入、路由管理、表单处理、HTTP 客户端等功能。
 
-------
+***
 
 ## **一、Angular 基础概念**
 
 ### **1. Angular 的核心特性**
 
 - **组件（Component）**：UI 的基本构建块，每个组件包含 HTML 模板、CSS 样式和 TypeScript 逻辑。
-
 - **模块（Module）**：使用 `NgModule` 进行模块化管理，默认根模块是 `AppModule`。
-
 - 指令（Directive）
 
   ：
-
   - 结构型指令（如 `*ngIf`, `*ngFor`）
   - 属性型指令（如 `[ngClass]`, `[ngStyle]`）
-
 - 数据绑定（Data Binding）
 
   ：
-
   - **插值绑定**：`{{ variable }}`
   - **属性绑定**：`[property]="value"`
   - **事件绑定**：`(event)="handler()"`
   - **双向绑定**：`[(ngModel)]="value"`
-
 - **服务（Service）和依赖注入（Dependency Injection）**：用于逻辑分离和共享数据，使用 `@Injectable()` 标记。
-
 - **路由（Router）**：用于管理单页面应用的导航，基于 `@angular/router`。
 
-------
+***
 
 ## **二、安装与创建项目**
 
@@ -50,7 +43,7 @@ ng serve
 
 默认访问地址：[http://localhost:4200](http://localhost:4200/)
 
-------
+***
 
 ## **三、组件（Component）**
 
@@ -94,7 +87,7 @@ export class MyComponent {
 <button (click)="changeTitle()">Change Title</button>
 ```
 
-------
+***
 
 ## **四、指令（Directives）**
 
@@ -132,7 +125,7 @@ export class MyComponent {
 <p [ngStyle]="{'color': color}">动态颜色</p>
 ```
 
-------
+***
 
 ## **五、数据绑定（Data Binding）**
 
@@ -167,7 +160,7 @@ export class MyComponent {
 import { FormsModule } from '@angular/forms';
 ```
 
-------
+***
 
 ## **六、服务（Service）和依赖注入（DI）**
 
@@ -214,7 +207,7 @@ export class MyComponent {
 }
 ```
 
-------
+***
 
 ## **七、路由（Router）**
 
@@ -248,7 +241,7 @@ export class AppRoutingModule {}
 <router-outlet></router-outlet>
 ```
 
-------
+***
 
 ## **八、表单处理**
 
@@ -283,7 +276,7 @@ export class LoginComponent {
 }
 ```
 
-------
+***
 
 ## **九、HTTP 请求**
 
@@ -317,6 +310,6 @@ export class ApiService {
 import { HttpClientModule } from '@angular/common/http';
 ```
 
-------
+***
 
 这是 Angular 的基础入门，你可以根据需求深入学习 `RxJS`、`State Management（NgRx）` 等高级功能！ 🚀

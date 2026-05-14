@@ -107,7 +107,7 @@ console.log(math.subtract(9, 4)); // 使用 math.subtract
 
 ## **3. ESM 的特点**
 
-### **✅ 静态解析**
+### ** 静态解析**
 
 ESM **在编译阶段**（而不是运行时）解析模块，可以进行 **Tree Shaking（去除无用代码）**，减少最终打包体积，提高性能。
 
@@ -125,7 +125,7 @@ console.log(add(2, 3));
 
 ------
 
-### **✅ 原生支持异步加载**
+### ** 原生支持异步加载**
 
 与 CommonJS **同步加载** 不同，ESM 支持 **异步加载**，可以在需要时动态导入模块：
 
@@ -145,9 +145,9 @@ const moduleA = () => import('./moduleA.js');
 
 ------
 
-### **✅ 适用于浏览器和 Node.js**
+### ** 适用于浏览器和 Node.js**
 
-#### **1️⃣ 浏览器原生支持**
+#### **1. 浏览器原生支持**
 
 ```html
 <script type="module">
@@ -158,7 +158,7 @@ const moduleA = () => import('./moduleA.js');
 
 在浏览器环境中，ESM 以 **异步方式加载**，不会阻塞页面渲染。
 
-#### **2️⃣ Node.js 中使用**
+#### **2. Node.js 中使用**
 
 在 `package.json` 中 **声明 ESM 模块**：
 
@@ -190,9 +190,9 @@ node --experimental-modules main.mjs
 | ------------ | ------------------------------ | -------------------------------- |
 | **导入方式** | `import { } from 'file.js'`    | `const module = require('file')` |
 | **导出方式** | `export` / `export default`    | `module.exports = {}`            |
-| **是否异步** | ✅ 异步支持（浏览器 & Node.js） | ❌ 同步阻塞（仅适合 Node.js）     |
-| **静态分析** | ✅ 支持（可 Tree Shaking）      | ❌ 不支持                         |
-| **适用环境** | ✅ 浏览器 & Node.js             | ❌ 仅 Node.js                     |
+| **是否异步** |  异步支持（浏览器 & Node.js） |  同步阻塞（仅适合 Node.js）     |
+| **静态分析** |  支持（可 Tree Shaking）      |  不支持                         |
+| **适用环境** |  浏览器 & Node.js             |  仅 Node.js                     |
 
 ------
 
@@ -200,10 +200,10 @@ node --experimental-modules main.mjs
 
 | **场景**                     | **使用 ESM 还是 CommonJS？**       |
 | ---------------------------- | ---------------------------------- |
-| **前端开发（React/Vue）**    | ✅ **ESM**，原生支持                |
-| **Node.js（服务器端）**      | ✅ 推荐 ESM，但 CommonJS 仍广泛使用 |
-| **CLI 工具开发**             | ✅ 取决于环境，CommonJS 使用更广泛  |
-| **打包优化（Tree Shaking）** | ✅ 仅 ESM 支持                      |
+| **前端开发（React/Vue）**    |  **ESM**，原生支持                |
+| **Node.js（服务器端）**      |  推荐 ESM，但 CommonJS 仍广泛使用 |
+| **CLI 工具开发**             |  取决于环境，CommonJS 使用更广泛  |
+| **打包优化（Tree Shaking）** |  仅 ESM 支持                      |
 
 ------
 

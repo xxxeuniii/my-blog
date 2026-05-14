@@ -28,7 +28,7 @@ const increment = () => {
 };
 ```
 
-✅ **特点：**
+ **特点：**
 
 - `count` 是响应式的，但必须用 `.value` 访问和修改。
 - 适用于**数字、字符串、布尔值等基本类型**。
@@ -47,7 +47,7 @@ const updateUser = () => {
 };
 ```
 
-✅ **特点：**
+ **特点：**
 
 - `ref` 也可以用于对象，但仍需通过 `user.value` 访问。
 - **对象内部仍然是响应式的**，但如果直接 `user = {}` 赋值，响应性会丢失。
@@ -68,7 +68,7 @@ const updateUser = () => {
 };
 ```
 
-✅ **特点：**
+ **特点：**
 
 - 直接对 `user` 进行修改，无需 `.value`。
 - **对象内部属性也是响应式的**，可直接修改。
@@ -87,7 +87,7 @@ const addTodo = () => {
 };
 ```
 
-✅ **特点：**
+ **特点：**
 
 - **数组也是响应式的**，可以直接 `push/pop` 操作。
 
@@ -101,16 +101,16 @@ const addTodo = () => {
 
 ```ts
 const user = ref({ name: 'Eunie', age: 25 });
-const { name, age } = user.value; // ❌ 这样会丢失响应性
+const { name, age } = user.value; //  这样会丢失响应性
 ```
 
-**✅ 解决方案**：
+** 解决方案**：
 
 ```ts
 import { toRef } from 'vue';
 
 const user = ref({ name: 'Eunie', age: 25 });
-const name = toRef(user.value, 'name'); // ✅ 这样 name 仍是响应式的
+const name = toRef(user.value, 'name'); //  这样 name 仍是响应式的
 ```
 
 ------
@@ -119,33 +119,33 @@ const name = toRef(user.value, 'name'); // ✅ 这样 name 仍是响应式的
 
 ```ts
 const user = reactive({ name: 'Eunie', age: 25 });
-const { name } = user; // ❌ 解构后 name 变成普通变量，失去响应性
+const { name } = user; //  解构后 name 变成普通变量，失去响应性
 ```
 
-**✅ 解决方案**：
+** 解决方案**：
 
 ```ts
 import { toRefs } from 'vue';
 
 const user = reactive({ name: 'Eunie', age: 25 });
-const { name } = toRefs(user); // ✅ 这样 name 仍然是响应式的
+const { name } = toRefs(user); //  这样 name 仍然是响应式的
 ```
 
 ------
 
 ## **5. 什么时候用 `ref`，什么时候用 `reactive`？**
 
-✅ **使用 `ref`：**
+ **使用 `ref`：**
 
 - 适用于 **基本数据类型**（字符串、数字、布尔值）。
 - 需要**解构后仍然保持响应性**（使用 `toRef` ）。
 
-✅ **使用 `reactive`：**
+ **使用 `reactive`：**
 
 - 适用于 **对象和数组**，可以直接修改内部属性。
 - 需要对整个对象进行**深度响应式管理**。
 
-✅ **混合使用 `ref` 和 `reactive`：**
+ **混合使用 `ref` 和 `reactive`：**
 
 ```ts
 import { reactive, ref } from 'vue';
@@ -165,7 +165,7 @@ const user = reactive({ name: 'Eunie', age: ref(25) }); // `age` 仍然是 ref
 | 访问方式     | `.value` 访问和修改                            | 直接访问和修改                      |
 | 深度响应式   | 仅 `ref` 自身是响应式，**对象内部不是**        | **对象内部所有属性都是响应式的**    |
 | 结构解构     | 解构后**丢失响应性**，需 `toRef`               | 解构后**丢失响应性**，需 `toRefs`   |
-| 推荐使用场景 | 1️⃣ 需要解构时仍保持响应式2️⃣ 适用于单一变量       | 1️⃣ 适用于对象、数组 2️⃣ 需要深度响应式 |
+| 推荐使用场景 | 1. 需要解构时仍保持响应式2. 适用于单一变量       | 1. 适用于对象、数组 2. 需要深度响应式 |
 
 ------
 
