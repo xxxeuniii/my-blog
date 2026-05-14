@@ -118,9 +118,8 @@ export default defineConfig({
       {
         text: '前端框架',
         items: [
-          { text: 'Vue.js', link: '/views/vue/' },
+          { text: 'Vue.js', link: '/vue/' },
           { text: 'React.js', link: '/react/' },
-          { text: 'Angular', link: '/angular/' },
           { text: 'Electron', link: '/Electron/' },
         ],
       },
@@ -143,14 +142,7 @@ export default defineConfig({
           { text: '资源合集', link: '/LLM/资源/前端设计skill网站.md' },
         ],
       },
-      {
-        text: '其他',
-        items: [
-          { text: '脚本', link: '/script/' },
-          { text: '笔记', link: '/notes/' },
-        ],
-      },
-      { text: '面试题', link: '/views/question/' },
+      
     ],
     sidebar: {
       '/basic/': collectSidebarItems('basic'),
@@ -161,9 +153,8 @@ export default defineConfig({
       '/ts/': collectSidebarItems('ts'),
       '/git/': collectSidebarItems('git'),
       '/工程化/': collectSidebarItems('工程化'),
-      '/views/vue/': collectSidebarItems('views/vue'),
+      '/vue/': collectSidebarItems('vue'),
       '/react/': collectSidebarItems('react'),
-      '/angular/': collectSidebarItems('angular'),
       '/Electron/': collectSidebarItems('Electron'),
       '/node/': collectSidebarItems('node'),
       '/python/': collectSidebarItems('python'),
@@ -173,12 +164,6 @@ export default defineConfig({
       '/network/': collectSidebarItems('network'),
       '/Java/': collectSidebarItems('Java'),
       '/LLM/': collectSidebarItems('LLM'),
-      '/script/': collectSidebarItems('script'),
-      '/notes/': collectSidebarItems('notes'),
-      '/views/project/': collectSidebarItems('views/project'),
-      '/views/uniapp/': collectSidebarItems('views/uniapp'),
-      '/views/node/': collectSidebarItems('views/node'),
-      '/views/question/': collectSidebarItems('views/question'),
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/xxxeuniii/my-blog' }],
   },
