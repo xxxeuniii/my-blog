@@ -25,8 +25,9 @@ Python 编程从入门到精通的完整教程。
 </ul>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
   const list = document.getElementById('article-list')
   if (list) {
     const countEl = document.getElementById('article-count')

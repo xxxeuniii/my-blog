@@ -25,8 +25,9 @@ LLM 相关的学习资源与工具。
 </ul>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
   const list = document.getElementById('article-list')
   if (list) {
     const countEl = document.getElementById('article-count')

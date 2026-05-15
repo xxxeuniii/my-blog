@@ -26,8 +26,9 @@ sidebar: false
 
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
   const list = document.getElementById('article-list')
   if (list) {
     const countEl = document.getElementById('article-count')

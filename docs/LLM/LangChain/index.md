@@ -65,8 +65,9 @@ LLM 应用开发框架，构建智能代理与 RAG 系统。
 </ul>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
   const list = document.getElementById('article-list')
   if (list) {
     const countEl = document.getElementById('article-count')
