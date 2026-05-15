@@ -708,9 +708,10 @@ blockquote {
 .about-contact-link {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #a3a3a3;
+  color: #a3a3a3 !important;
   text-decoration: none;
   transition: color 0.2s ease;
+  cursor: pointer;
 }
 
 .about-contact-link:hover {
