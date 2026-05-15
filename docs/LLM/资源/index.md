@@ -16,12 +16,13 @@ LLM 相关的学习资源与工具。
   </div>
 </div>
 
-<div id="article-list">
+<ul id="article-list">
   <li data-href="./前端设计skill网站">
     <strong>前端设计 Skill 网站</strong>
     <br>
     <span>UI / UX & Design 资源官网合集</span>
   </li>
+</ul>
 </div>
 
 <script>

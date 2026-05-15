@@ -16,7 +16,7 @@ sidebar: false
   </div>
 </div>
 
-<div id="article-list">
+<ul id="article-list">
   <li data-href="./01_FastAPI简介">
     <strong>01. 简介</strong>
     <br>
@@ -82,6 +82,7 @@ sidebar: false
     <br>
     <span>数据验证库</span>
   </li>
+</ul>
 </div>
 
 <script>

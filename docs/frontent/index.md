@@ -16,7 +16,7 @@ sidebar: false
   </div>
 </div>
 
-<div id="article-list">
+<ul id="article-list">
   <li>
     <strong><a href="./vite">Vite</a></strong>
     <br>
@@ -67,6 +67,7 @@ sidebar: false
     <br>
     <span>UI 组件库</span>
   </li>
+</ul>
 </div>
 
 </div>

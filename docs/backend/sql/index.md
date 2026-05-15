@@ -16,7 +16,7 @@ SQL 数据库从基础到高级的完整学习内容。
   </div>
 </div>
 
-<div id="article-list">
+<ul id="article-list">
   <li data-href="./SQL基础语法">
     <strong>SQL基础语法</strong>
     <br>
@@ -42,6 +42,7 @@ SQL 数据库从基础到高级的完整学习内容。
     <br>
     <span>索引原理、事务ACID、锁机制</span>
   </li>
+</ul>
 </div>
 
 <script>

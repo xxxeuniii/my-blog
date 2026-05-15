@@ -16,7 +16,7 @@ sidebar: false
   </div>
 </div>
 
-<div id="article-list">
+<ul id="article-list">
   <li data-href="./基本概念">
     <strong>基本概念</strong>
     <br>
@@ -32,6 +32,7 @@ sidebar: false
     <br>
     <span>ES Modules 模块化标准</span>
   </li>
+</ul>
 </div>
 
 <script>

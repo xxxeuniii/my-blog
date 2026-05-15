@@ -16,7 +16,7 @@ sidebar: false
   </div>
 </div>
 
-<div id="article-list">
+<ul id="article-list">
   <li data-href="./node">
     <strong>Node.js</strong>
     <br>
@@ -37,6 +37,7 @@ sidebar: false
     <br>
     <span>服务器配置与管理</span>
   </li>
+</ul>
 </div>
 
 <script>

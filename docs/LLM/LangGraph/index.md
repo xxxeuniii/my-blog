@@ -16,7 +16,7 @@ sidebar: false
   </div>
 </div>
 
-<div id="article-list">
+<ul id="article-list">
   <li data-href="./01_basic_graph_基础图">
     <strong>01. 基础图</strong>
     <br>
@@ -42,6 +42,7 @@ sidebar: false
     <br>
     <span>状态存储与传递</span>
   </li>
+</ul>
 </div>
 
 <script>

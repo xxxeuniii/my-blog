@@ -16,7 +16,7 @@ LLM 应用开发框架，构建智能代理与 RAG 系统。
   </div>
 </div>
 
-<div id="article-list">
+<ul id="article-list">
   <li data-href="./01_llms_语言模型">
     <strong>01. 语言模型</strong>
     <br>
@@ -62,6 +62,7 @@ LLM 应用开发框架，构建智能代理与 RAG 系统。
     <br>
     <span>学习笔记与总结</span>
   </li>
+</ul>
 </div>
 
 <script>

@@ -16,7 +16,7 @@ sidebar: false
   </div>
 </div>
 
-<div id="article-list">
+<ul id="article-list">
   <li data-href="./git">
     <strong>Git</strong>
     <br>
@@ -27,6 +27,7 @@ sidebar: false
     <br>
     <span>前端工程化实践</span>
   </li>
+</ul>
 </div>
 
 <script>

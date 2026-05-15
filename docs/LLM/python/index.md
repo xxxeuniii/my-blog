@@ -16,12 +16,13 @@ Python 编程从入门到精通的完整教程。
   </div>
 </div>
 
-<div id="article-list">
+<ul id="article-list">
   <li data-href="./Python基础教程">
     <strong>Python 基础教程</strong>
     <br>
     <span>Python 编程入门到高级</span>
   </li>
+</ul>
 </div>
 
 <script>

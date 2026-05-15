@@ -16,12 +16,14 @@ sidebar: false
   </div>
 </div>
 
-<div id="article-list">
+<ul id="article-list">
   <li data-href="./webpack.md">
     <strong>Webpack</strong>
     <br>
     <span>Webpack 使用指南</span>
   </li>
+</ul>
+
 </div>
 
 <script>
