@@ -17,11 +17,31 @@ Python 编程从入门到精通的完整教程。
 </div>
 
 <div id="article-list">
-  <li>
-    <strong><a href="./Python基础教程">Python 基础教程</a></strong>
+  <li data-href="./Python基础教程">
+    <strong>Python 基础教程</strong>
     <br>
     <span>Python 编程入门到高级</span>
   </li>
 </div>
 
-</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const list = document.getElementById('article-list')
+  if (list) {
+    list.querySelectorAll('li[data-href]').forEach(li => {
+      li.style.cursor = 'pointer'
+      li.addEventListener('click', () => {
+        const href = li.getAttribute('data-href')
+        window.location.href = href
+      })
+    })
+  }
+})
+</script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>

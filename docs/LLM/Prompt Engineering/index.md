@@ -17,128 +17,128 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li>
-    <strong><a href="./01_fewshot_少样本提示">01. 少样本提示</a></strong>
+  <li data-href="./01_fewshot_少样本提示">
+    <strong>01. 少样本提示</strong>
     <br>
     <span>Few-shot Prompting</span>
   </li>
-  <li>
-    <strong><a href="./02_cot_思维链">02. 思维链</a></strong>
+  <li data-href="./02_cot_思维链">
+    <strong>02. 思维链</strong>
     <br>
     <span>Chain-of-Thought</span>
   </li>
-  <li>
-    <strong><a href="./03_json_结构化输出">03. 结构化输出</a></strong>
+  <li data-href="./03_json_结构化输出">
+    <strong>03. 结构化输出</strong>
     <br>
     <span>JSON 格式输出</span>
   </li>
-  <li>
-    <strong><a href="./04_zeroshot_零样本提示">04. 零样本提示</a></strong>
+  <li data-href="./04_zeroshot_零样本提示">
+    <strong>04. 零样本提示</strong>
     <br>
     <span>Zero-shot Prompting</span>
   </li>
-  <li>
-    <strong><a href="./05_tot_思维树">05. 思维树</a></strong>
+  <li data-href="./05_tot_思维树">
+    <strong>05. 思维树</strong>
     <br>
     <span>Tree-of-Thought</span>
   </li>
-  <li>
-    <strong><a href="./06_react_推理行动">06. ReAct</a></strong>
+  <li data-href="./06_react_推理行动">
+    <strong>06. ReAct</strong>
     <br>
     <span>Reasoning + Acting</span>
   </li>
-  <li>
-    <strong><a href="./07_self_consistency_自洽性">07. 自洽性</a></strong>
+  <li data-href="./07_self_consistency_自洽性">
+    <strong>07. 自洽性</strong>
     <br>
     <span>Self-Consistency</span>
   </li>
-  <li>
-    <strong><a href="./08_prompt_chaining_提示链">08. 提示链</a></strong>
+  <li data-href="./08_prompt_chaining_提示链">
+    <strong>08. 提示链</strong>
     <br>
     <span>Prompt Chaining</span>
   </li>
-  <li>
-    <strong><a href="./09_system_prompt_系统提示词">09. 系统提示词</a></strong>
+  <li data-href="./09_system_prompt_系统提示词">
+    <strong>09. 系统提示词</strong>
     <br>
     <span>System Prompt</span>
   </li>
-  <li>
-    <strong><a href="./10_temperature_温度参数">10. 温度参数</a></strong>
+  <li data-href="./10_temperature_温度参数">
+    <strong>10. 温度参数</strong>
     <br>
     <span>Temperature</span>
   </li>
-  <li>
-    <strong><a href="./11_top_p_核采样">11. 核采样</a></strong>
+  <li data-href="./11_top_p_核采样">
+    <strong>11. 核采样</strong>
     <br>
     <span>Top-p Sampling</span>
   </li>
-  <li>
-    <strong><a href="./12_fewshot_cot_融合">12. 少样本 + CoT</a></strong>
+  <li data-href="./12_fewshot_cot_融合">
+    <strong>12. 少样本 + CoT</strong>
     <br>
     <span>结合使用</span>
   </li>
-  <li>
-    <strong><a href="./13_prompt_injection_提示词注入">13. 提示词注入</a></strong>
+  <li data-href="./13_prompt_injection_提示词注入">
+    <strong>13. 提示词注入</strong>
     <br>
     <span>安全与防护</span>
   </li>
-  <li>
-    <strong><a href="./14_api_parameters_常用参数">14. API 参数</a></strong>
+  <li data-href="./14_api_parameters_常用参数">
+    <strong>14. API 参数</strong>
     <br>
     <span>API 配置详解</span>
   </li>
-  <li>
-    <strong><a href="./15_context_window_上下文窗口管理">15. 上下文窗口管理</a></strong>
+  <li data-href="./15_context_window_上下文窗口管理">
+    <strong>15. 上下文窗口管理</strong>
     <br>
     <span>Context Window</span>
   </li>
-  <li>
-    <strong><a href="./16_multimodal_多模态提示">16. 多模态提示</a></strong>
+  <li data-href="./16_multimodal_多模态提示">
+    <strong>16. 多模态提示</strong>
     <br>
     <span>Multimodal</span>
   </li>
-  <li>
-    <strong><a href="./17_emotion_prompting_情感提示">17. 情感提示</a></strong>
+  <li data-href="./17_emotion_prompting_情感提示">
+    <strong>17. 情感提示</strong>
     <br>
     <span>Emotion Prompting</span>
   </li>
-  <li>
-    <strong><a href="./18_generated_knowledge_生成知识">18. 生成知识</a></strong>
+  <li data-href="./18_generated_knowledge_生成知识">
+    <strong>18. 生成知识</strong>
     <br>
     <span>Generated Knowledge</span>
   </li>
-  <li>
-    <strong><a href="./19_instruction_hierarchy_指令层级">19. 指令层级</a></strong>
+  <li data-href="./19_instruction_hierarchy_指令层级">
+    <strong>19. 指令层级</strong>
     <br>
     <span>Instruction Hierarchy</span>
   </li>
-  <li>
-    <strong><a href="./20_refusal_suppression_拒绝抑制">20. 拒绝抑制</a></strong>
+  <li data-href="./20_refusal_suppression_拒绝抑制">
+    <strong>20. 拒绝抑制</strong>
     <br>
     <span>Refusal Suppression</span>
   </li>
-  <li>
-    <strong><a href="./21_evaluation_iteration_评估与迭代">21. 评估与迭代</a></strong>
+  <li data-href="./21_evaluation_iteration_评估与迭代">
+    <strong>21. 评估与迭代</strong>
     <br>
     <span>Evaluation &amp; Iteration</span>
   </li>
-  <li>
-    <strong><a href="./22_compression_caching_压缩与缓存">22. 压缩与缓存</a></strong>
+  <li data-href="./22_compression_caching_压缩与缓存">
+    <strong>22. 压缩与缓存</strong>
     <br>
     <span>Compression &amp; Caching</span>
   </li>
-  <li>
-    <strong><a href="./23_dynamic_rag_动态RAG提示词">23. 动态 RAG 提示词</a></strong>
+  <li data-href="./23_dynamic_rag_动态RAG提示词">
+    <strong>23. 动态 RAG 提示词</strong>
     <br>
     <span>Dynamic RAG</span>
   </li>
-  <li>
-    <strong><a href="./24_dspy_提示词程序化">24. DSPy</a></strong>
+  <li data-href="./24_dspy_提示词程序化">
+    <strong>24. DSPy</strong>
     <br>
     <span>提示词程序化</span>
   </li>
-  <li>
-    <strong><a href="./25_meta_prompt_元提示词">25. 元提示词</a></strong>
+  <li data-href="./25_meta_prompt_元提示词">
+    <strong>25. 元提示词</strong>
     <br>
     <span>Meta Prompting</span>
   </li>
@@ -155,7 +155,27 @@ onMounted(() => {
       countEl.textContent = links.length
     }
   }
+
+  list.querySelectorAll('li[data-href]').forEach(li => {
+    li.style.cursor = 'pointer'
+    li.addEventListener('click', () => {
+      const href = li.getAttribute('data-href')
+      const target = li.getAttribute('target')
+      if (target === '_blank') {
+        window.open(href, '_blank')
+      } else {
+        window.location.href = href
+      }
+    })
+  })
 })
 </script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>

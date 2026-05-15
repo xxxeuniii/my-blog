@@ -17,21 +17,41 @@ sidebar: false
 </div>
 
 <div id="article-list">
-  <li>
-    <strong><a href="./基本概念">基本概念</a></strong>
+  <li data-href="./基本概念">
+    <strong>基本概念</strong>
     <br>
     <span>前端工程化基本概念</span>
   </li>
-  <li>
-    <strong><a href="./模块化">模块化</a></strong>
+  <li data-href="./模块化">
+    <strong>模块化</strong>
     <br>
     <span>前端模块化方案</span>
   </li>
-  <li>
-    <strong><a href="./esm">ESM</a></strong>
+  <li data-href="./esm">
+    <strong>ESM</strong>
     <br>
     <span>ES Modules 模块化标准</span>
   </li>
 </div>
 
-</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const list = document.getElementById('article-list')
+  if (list) {
+    list.querySelectorAll('li[data-href]').forEach(li => {
+      li.style.cursor = 'pointer'
+      li.addEventListener('click', () => {
+        const href = li.getAttribute('data-href')
+        window.location.href = href
+      })
+    })
+  }
+})
+</script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>

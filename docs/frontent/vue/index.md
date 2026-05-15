@@ -17,8 +17,8 @@ Vue 前端框架开发
 </div>
 
 <ul id="article-list">
-  <li>
-    <strong><a href="./vue2和vue3的区别">vue2和vue3的区别</a></strong>
+  <li data-href="./vue2和vue3的区别">
+    <strong>vue2和vue3的区别</strong>
     <br>
     <span>Vue 2 与 Vue 3 对比</span>
   </li>
@@ -35,7 +35,27 @@ onMounted(() => {
       countEl.textContent = links.length
     }
   }
+
+  list.querySelectorAll('li[data-href]').forEach(li => {
+    li.style.cursor = 'pointer'
+    li.addEventListener('click', () => {
+      const href = li.getAttribute('data-href')
+      const target = li.getAttribute('target')
+      if (target === '_blank') {
+        window.open(href, '_blank')
+      } else {
+        window.location.href = href
+      }
+    })
+  })
 })
 </script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>

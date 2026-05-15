@@ -17,8 +17,8 @@ Java 编程语言基础与开发
 </div>
 
 <ul id="article-list">
-  <li>
-    <strong><a href="./java基础">java基础</a></strong>
+  <li data-href="./java基础">
+    <strong>java基础</strong>
     <br>
     <span>Java 语言基础入门</span>
   </li>
@@ -35,7 +35,27 @@ onMounted(() => {
       countEl.textContent = links.length
     }
   }
+
+  list.querySelectorAll('li[data-href]').forEach(li => {
+    li.style.cursor = 'pointer'
+    li.addEventListener('click', () => {
+      const href = li.getAttribute('data-href')
+      const target = li.getAttribute('target')
+      if (target === '_blank') {
+        window.open(href, '_blank')
+      } else {
+        window.location.href = href
+      }
+    })
+  })
 })
 </script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>

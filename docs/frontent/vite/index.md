@@ -16,27 +16,47 @@ sidebar: false
   </div>
 </div>
 
-<div id="article-list">
-  <li>
-    <strong><a href="./vite.md">Vite 指南</a></strong>
+<ul id="article-list">
+  <li data-href="./vite.md">
+    <strong>Vite 指南</strong>
     <br>
     <span>Vite 使用指南</span>
   </li>
-  <li>
-    <strong><a href="./vite配置有哪些">配置有哪些</a></strong>
+  <li data-href="./vite配置有哪些">
+    <strong>配置有哪些</strong>
     <br>
     <span>Vite 配置详解</span>
   </li>
-  <li>
-    <strong><a href="./vite.config.js配置">vite.config.js配置</a></strong>
+  <li data-href="./vite.config.js配置">
+    <strong>vite.config.js配置</strong>
     <br>
     <span>vite.config.js 详细配置</span>
   </li>
-  <li>
-    <strong><a href="./vite和webpack对比">vite和webpack对比</a></strong>
+  <li data-href="./vite和webpack对比">
+    <strong>vite和webpack对比</strong>
     <br>
     <span>Vite vs Webpack 对比</span>
   </li>
-</div>
+</ul>
 
-</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const list = document.getElementById('article-list')
+  if (list) {
+    list.querySelectorAll('li[data-href]').forEach(li => {
+      li.style.cursor = 'pointer'
+      li.addEventListener('click', () => {
+        const href = li.getAttribute('data-href')
+        window.location.href = href
+      })
+    })
+  }
+})
+</script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>

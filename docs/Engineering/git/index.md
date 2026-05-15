@@ -17,13 +17,13 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li>
-    <strong><a href="./git术语">Git 术语</a></strong>
+  <li data-href="./git术语">
+    <strong>Git 术语</strong>
     <br>
     <span>Git 常用术语与命令说明</span>
   </li>
-  <li>
-    <strong><a href="./Git高级操作指南">Git 高级操作指南</a></strong>
+  <li data-href="./Git高级操作指南">
+    <strong>Git 高级操作指南</strong>
     <br>
     <span>变基、撤销操作、分支管理、标签管理等高级技巧</span>
   </li>
@@ -40,7 +40,27 @@ onMounted(() => {
       countEl.textContent = links.length
     }
   }
+
+  list.querySelectorAll('li[data-href]').forEach(li => {
+    li.style.cursor = 'pointer'
+    li.addEventListener('click', () => {
+      const href = li.getAttribute('data-href')
+      const target = li.getAttribute('target')
+      if (target === '_blank') {
+        window.open(href, '_blank')
+      } else {
+        window.location.href = href
+      }
+    })
+  })
 })
 </script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>

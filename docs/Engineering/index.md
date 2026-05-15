@@ -17,16 +17,36 @@ sidebar: false
 </div>
 
 <div id="article-list">
-  <li>
-    <strong><a href="./git">Git</a></strong>
+  <li data-href="./git">
+    <strong>Git</strong>
     <br>
     <span>版本控制系统</span>
   </li>
-  <li>
-    <strong><a href="./Engineering_frontent">前端工程化</a></strong>
+  <li data-href="./Engineering_frontent">
+    <strong>前端工程化</strong>
     <br>
     <span>前端工程化实践</span>
   </li>
 </div>
 
-</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const list = document.getElementById('article-list')
+  if (list) {
+    list.querySelectorAll('li[data-href]').forEach(li => {
+      li.style.cursor = 'pointer'
+      li.addEventListener('click', () => {
+        const href = li.getAttribute('data-href')
+        window.location.href = href
+      })
+    })
+  }
+})
+</script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>

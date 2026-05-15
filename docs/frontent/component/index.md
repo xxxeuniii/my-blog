@@ -17,13 +17,13 @@ UI 组件库与开发工具
 </div>
 
 <ul id="article-list">
-  <li>
-    <strong><a href="./elementui组件库">elementui组件库</a></strong>
+  <li data-href="./elementui组件库">
+    <strong>elementui组件库</strong>
     <br>
     <span>Element UI 组件库使用指南</span>
   </li>
-  <li>
-    <strong><a href="./ECharts使用指南">ECharts使用指南</a></strong>
+  <li data-href="./ECharts使用指南">
+    <strong>ECharts使用指南</strong>
     <br>
     <span>ECharts 数据可视化图表库使用教程</span>
   </li>
@@ -40,7 +40,27 @@ onMounted(() => {
       countEl.textContent = links.length
     }
   }
+
+  list.querySelectorAll('li[data-href]').forEach(li => {
+    li.style.cursor = 'pointer'
+    li.addEventListener('click', () => {
+      const href = li.getAttribute('data-href')
+      const target = li.getAttribute('target')
+      if (target === '_blank') {
+        window.open(href, '_blank')
+      } else {
+        window.location.href = href
+      }
+    })
+  })
 })
 </script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>

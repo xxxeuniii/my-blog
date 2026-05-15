@@ -17,8 +17,8 @@ React 前端框架开发
 </div>
 
 <ul id="article-list">
-  <li>
-    <strong><a href="./react基础">react基础</a></strong>
+  <li data-href="./react基础">
+    <strong>react基础</strong>
     <br>
     <span>React 框架基础入门</span>
   </li>
@@ -35,7 +35,27 @@ onMounted(() => {
       countEl.textContent = links.length
     }
   }
+
+  list.querySelectorAll('li[data-href]').forEach(li => {
+    li.style.cursor = 'pointer'
+    li.addEventListener('click', () => {
+      const href = li.getAttribute('data-href')
+      const target = li.getAttribute('target')
+      if (target === '_blank') {
+        window.open(href, '_blank')
+      } else {
+        window.location.href = href
+      }
+    })
+  })
 })
 </script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>

@@ -17,8 +17,8 @@ UI设计相关资源收集。
 </div>
 
 <ul id="article-list">
-  <li>
-    <strong><a href="https://stitch.withgoogle.com/" target="_blank">Stitch</a></strong>
+  <li data-href="https://stitch.withgoogle.com/" target="_blank">
+    <strong>Stitch</strong>
     <br>
     <span>Google 推出的 AI 代码辅助工具</span>
   </li>
@@ -35,7 +35,27 @@ onMounted(() => {
       countEl.textContent = links.length
     }
   }
+
+  list.querySelectorAll('li[data-href]').forEach(li => {
+    li.style.cursor = 'pointer'
+    li.addEventListener('click', () => {
+      const href = li.getAttribute('data-href')
+      const target = li.getAttribute('target')
+      if (target === '_blank') {
+        window.open(href, '_blank')
+      } else {
+        window.location.href = href
+      }
+    })
+  })
 })
 </script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>

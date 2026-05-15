@@ -17,26 +17,46 @@ sidebar: false
 </div>
 
 <div id="article-list">
-  <li>
-    <strong><a href="./node">Node.js</a></strong>
+  <li data-href="./node">
+    <strong>Node.js</strong>
     <br>
     <span>Node.js 运行时</span>
   </li>
-  <li>
-    <strong><a href="./python">Python</a></strong>
+  <li data-href="./python">
+    <strong>Python</strong>
     <br>
     <span>Python 编程语言</span>
   </li>
-  <li>
-    <strong><a href="./sql">SQL</a></strong>
+  <li data-href="./sql">
+    <strong>SQL</strong>
     <br>
     <span>SQL 数据库</span>
   </li>
-  <li>
-    <strong><a href="./server">服务器</a></strong>
+  <li data-href="./server">
+    <strong>服务器</strong>
     <br>
     <span>服务器配置与管理</span>
   </li>
 </div>
 
-</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const list = document.getElementById('article-list')
+  if (list) {
+    list.querySelectorAll('li[data-href]').forEach(li => {
+      li.style.cursor = 'pointer'
+      li.addEventListener('click', () => {
+        const href = li.getAttribute('data-href')
+        window.location.href = href
+      })
+    })
+  }
+})
+</script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>

@@ -17,13 +17,13 @@ Node.js 服务端开发
 </div>
 
 <ul id="article-list">
-  <li>
-    <strong><a href="./node基础">node基础</a></strong>
+  <li data-href="./node基础">
+    <strong>node基础</strong>
     <br>
     <span>Node.js 基础入门</span>
   </li>
-  <li>
-    <strong><a href="./node服务端开发">node服务端开发</a></strong>
+  <li data-href="./node服务端开发">
+    <strong>node服务端开发</strong>
     <br>
     <span>Node.js 服务端开发实践</span>
   </li>
@@ -40,7 +40,27 @@ onMounted(() => {
       countEl.textContent = links.length
     }
   }
+
+  list.querySelectorAll('li[data-href]').forEach(li => {
+    li.style.cursor = 'pointer'
+    li.addEventListener('click', () => {
+      const href = li.getAttribute('data-href')
+      const target = li.getAttribute('target')
+      if (target === '_blank') {
+        window.open(href, '_blank')
+      } else {
+        window.location.href = href
+      }
+    })
+  })
 })
 </script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>

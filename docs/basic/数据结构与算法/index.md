@@ -17,13 +17,13 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li>
-    <strong><a href="./数据结构">数据结构</a></strong>
+  <li data-href="./数据结构">
+    <strong>数据结构</strong>
     <br>
     <span>数组、链表、栈、队列、哈希表、二叉树</span>
   </li>
-  <li>
-    <strong><a href="./算法">算法</a></strong>
+  <li data-href="./算法">
+    <strong>算法</strong>
     <br>
     <span>排序、二分查找、递归、双指针、复杂度</span>
   </li>
@@ -40,7 +40,27 @@ onMounted(() => {
       countEl.textContent = links.length
     }
   }
+
+  list.querySelectorAll('li[data-href]').forEach(li => {
+    li.style.cursor = 'pointer'
+    li.addEventListener('click', () => {
+      const href = li.getAttribute('data-href')
+      const target = li.getAttribute('target')
+      if (target === '_blank') {
+        window.open(href, '_blank')
+      } else {
+        window.location.href = href
+      }
+    })
+  })
 })
 </script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>

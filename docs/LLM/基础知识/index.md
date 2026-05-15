@@ -17,36 +17,58 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li>
-    <strong><a href="./基本概念">基本概念</a></strong>
+  <li data-href="./基本概念">
+    <strong>基本概念</strong>
     <br>
     <span>大语言模型基础概念</span>
   </li>
-  <li>
-    <strong><a href="./微调">微调</a></strong>
+  <li data-href="./微调">
+    <strong>微调</strong>
     <br>
     <span>模型微调方法与实践</span>
   </li>
-  <li>
-    <strong><a href="./PyTorch">PyTorch</a></strong>
+  <li data-href="./PyTorch">
+    <strong>PyTorch</strong>
     <br>
     <span>深度学习框架</span>
   </li>
-  <li>
-    <strong><a href="./TensorFlow">TensorFlow</a></strong>
+  <li data-href="./TensorFlow">
+    <strong>TensorFlow</strong>
     <br>
     <span>深度学习框架</span>
   </li>
-  <li>
-    <strong><a href="./mcp">MCP</a></strong>
+  <li data-href="./mcp">
+    <strong>MCP</strong>
     <br>
     <span>模型上下文协议</span>
   </li>
-  <li>
-    <strong><a href="./skill">Skill</a></strong>
+  <li data-href="./skill">
+    <strong>Skill</strong>
     <br>
     <span>技能系统</span>
   </li>
 </ul>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const list = document.getElementById('article-list')
+  if (list) {
+    list.querySelectorAll('li[data-href]').forEach(li => {
+      li.style.cursor = 'pointer'
+      li.addEventListener('click', () => {
+        const href = li.getAttribute('data-href')
+        window.location.href = href
+      })
+    })
+  }
+})
+</script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>

@@ -17,28 +17,28 @@ JS 核心语法与特性
 </div>
 
 <ul id="article-list">
-  <li>
-    <strong><a href="./const">const</a></strong>
+  <li data-href="./const">
+    <strong>const</strong>
     <br>
     <span>const 变量声明</span>
   </li>
-  <li>
-    <strong><a href="./ts和js的区别">ts和js的区别</a></strong>
+  <li data-href="./ts和js的区别">
+    <strong>ts和js的区别</strong>
     <br>
     <span>TypeScript 与 JavaScript 对比</span>
   </li>
-  <li>
-    <strong><a href="./几个循环的区别">几个循环的区别</a></strong>
+  <li data-href="./几个循环的区别">
+    <strong>几个循环的区别</strong>
     <br>
     <span>for、forEach、map 等循环区别</span>
   </li>
-  <li>
-    <strong><a href="./操作数组的方法">操作数组的方法</a></strong>
+  <li data-href="./操作数组的方法">
+    <strong>操作数组的方法</strong>
     <br>
     <span>JavaScript 数组操作方法</span>
   </li>
-  <li>
-    <strong><a href="./数据类型">数据类型</a></strong>
+  <li data-href="./数据类型">
+    <strong>数据类型</strong>
     <br>
     <span>JS 数据类型详解</span>
   </li>
@@ -55,7 +55,27 @@ onMounted(() => {
       countEl.textContent = links.length
     }
   }
+
+  list.querySelectorAll('li[data-href]').forEach(li => {
+    li.style.cursor = 'pointer'
+    li.addEventListener('click', () => {
+      const href = li.getAttribute('data-href')
+      const target = li.getAttribute('target')
+      if (target === '_blank') {
+        window.open(href, '_blank')
+      } else {
+        window.location.href = href
+      }
+    })
+  })
 })
 </script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>
