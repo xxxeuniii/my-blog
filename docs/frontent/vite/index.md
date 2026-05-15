@@ -39,6 +39,8 @@ sidebar: false
   </li>
 </ul>
 
+</div>
+
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const list = document.getElementById('article-list')
