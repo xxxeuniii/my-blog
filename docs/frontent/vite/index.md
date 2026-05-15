@@ -22,7 +22,7 @@ sidebar: false
     <br>
     <span>Vite 使用指南</span>
   </li>
-  <li data-href="./vite配置有哪些">
+  <li data-href="./vite的配置有哪些">
     <strong>配置有哪些</strong>
     <br>
     <span>Vite 配置详解</span>
