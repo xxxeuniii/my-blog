@@ -128,7 +128,7 @@ export default defineConfig({
       {
         text: '计算机基础',
         items: [
-          { text: '网络', link: '/basic/network/' },
+          { text: '计算机基础', link: '/basic/' },
         ],
       },
       {
