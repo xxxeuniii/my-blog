@@ -128,7 +128,14 @@ export default defineConfig({
       {
         text: '计算机基础',
         items: [
-          { text: '计算机基础', link: '/basic/' },
+          { text: '网络', link: '/basic/network/' },
+          { text: '进制与位运算', link: '/basic/进制与位运算/' },
+          { text: '操作系统基础', link: '/basic/操作系统基础/' },
+          { text: '计算机网络基础', link: '/basic/计算机网络基础/' },
+          { text: '数据结构与算法', link: '/basic/数据结构与算法/' },
+          { text: '数据库基础', link: '/basic/数据库基础/' },
+          { text: '编程通用基础', link: '/basic/编程通用基础/' },
+          { text: '软件工程基础', link: '/basic/软件工程基础/' },
         ],
       },
       {
