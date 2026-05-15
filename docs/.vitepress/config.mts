@@ -103,7 +103,7 @@ export default defineConfig({
       {
         text: '前端',
         items: [
-          { text: '项目配置', link: '/frontent/basic_config/' },
+          { text: '基础', link: '/frontent/basic/' },
           { text: 'CSS', link: '/frontent/css/' },
           { text: 'HTML', link: '/frontent/html/' },
           { text: 'JavaScript', link: '/frontent/JavaScript/' },
@@ -136,12 +136,6 @@ export default defineConfig({
         items: [
           { text: 'Git', link: '/Engineering/git/' },
           { text: '前端工程化', link: '/Engineering/Engineering_frontent/' },
-        ],
-      },
-      {
-        text: '工具',
-        items: [
-          { text: '工具', link: '/tools/' },
         ],
       },
       {
