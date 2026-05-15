@@ -128,7 +128,6 @@ export default defineConfig({
       {
         text: '计算机基础',
         items: [
-          { text: '网络', link: '/basic/network/' },
           { text: '进制与位运算', link: '/basic/进制与位运算/' },
           { text: '操作系统基础', link: '/basic/操作系统基础/' },
           { text: '计算机网络基础', link: '/basic/计算机网络基础/' },
