@@ -55,8 +55,8 @@ content = content.replace(
   `<span class="stat-number">${totalArticles}</span>`
 )
 content = content.replace(
-  /技术分类<\/span>\s*<span class="stat-number">\d+<\/span>/,
-  `技术分类</span>\n        <span class="stat-number">${totalCategories}</span>`
+  /<span class="stat-number">\d+<\/span>\s*<span class="stat-label">技术分类<\/span>/,
+  `<span class="stat-number">${totalCategories}</span>\n        <span class="stat-label">技术分类</span>`
 )
 
 fs.writeFileSync(indexPath, content, 'utf-8')

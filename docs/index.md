@@ -19,7 +19,7 @@ layout: home
         <span class="stat-label">文章总数</span>
       </div>
       <div class="stat-card">
-        <span class="stat-number">20</span>
+        <span class="stat-number">5</span>
         <span class="stat-label">技术分类</span>
       </div>
       <div class="stat-card">
