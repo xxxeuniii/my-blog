@@ -12,7 +12,7 @@ SQL 数据库从基础到高级的完整学习内容。
 <div class="category-info">
   <div class="info-item">
     <div class="info-label">文章数量</div>
-    <div class="info-value">5</div>
+    <div class="info-value" id="article-count"></div>
   </div>
 </div>
 
@@ -49,6 +49,10 @@ SQL 数据库从基础到高级的完整学习内容。
 document.addEventListener('DOMContentLoaded', () => {
   const list = document.getElementById('article-list')
   if (list) {
+    const countEl = document.getElementById('article-count')
+    if (countEl) {
+      countEl.textContent = list.querySelectorAll('li').length
+    }
     list.querySelectorAll('li[data-href]').forEach(li => {
       li.style.cursor = 'pointer'
       li.addEventListener('click', () => {

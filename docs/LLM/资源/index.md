@@ -12,7 +12,7 @@ LLM 相关的学习资源与工具。
 <div class="category-info">
   <div class="info-item">
     <div class="info-label">文章数量</div>
-    <div class="info-value">1</div>
+    <div class="info-value" id="article-count"></div>
   </div>
 </div>
 
@@ -29,6 +29,10 @@ LLM 相关的学习资源与工具。
 document.addEventListener('DOMContentLoaded', () => {
   const list = document.getElementById('article-list')
   if (list) {
+    const countEl = document.getElementById('article-count')
+    if (countEl) {
+      countEl.textContent = list.querySelectorAll('li').length
+    }
     list.querySelectorAll('li[data-href]').forEach(li => {
       li.style.cursor = 'pointer'
       li.addEventListener('click', () => {

@@ -49,7 +49,7 @@ import { onMounted } from 'vue'
 onMounted(() => {
   const list = document.getElementById('article-list')
   if (list) {
-    const links = list.querySelectorAll('a')
+    const links = list.querySelectorAll('li')
     const countEl = document.getElementById('article-count')
     if (countEl) {
       countEl.textContent = links.length
