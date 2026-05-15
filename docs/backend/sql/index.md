@@ -45,13 +45,15 @@ SQL 数据库从基础到高级的完整学习内容。
 </ul>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
   const list = document.getElementById('article-list')
   if (list) {
+    const links = list.querySelectorAll('li')
     const countEl = document.getElementById('article-count')
     if (countEl) {
-      countEl.textContent = list.querySelectorAll('li').length
+      countEl.textContent = links.length
     }
     list.querySelectorAll('li[data-href]').forEach(li => {
       li.style.cursor = 'pointer'
