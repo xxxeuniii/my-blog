@@ -156,6 +156,12 @@ export default defineConfig({
           { text: '资源', link: '/LLM/资源/' },
         ],
       },
+      {
+        text: '常用网站',
+        items: [
+          { text: '常用网站', link: '/常用网站/' },
+        ],
+      },
 
     ],
     sidebar: false,
