@@ -30,7 +30,7 @@ function countFolders(dir) {
   try {
     const files = fs.readdirSync(dir, { withFileTypes: true })
     for (const file of files) {
-      if (file.isDirectory() && file.name !== '.vitepress') {
+      if (file.isDirectory() && file.name !== '.vitepress' && file.name !== 'public') {
         count++
       }
     }
