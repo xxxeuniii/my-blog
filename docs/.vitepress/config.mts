@@ -157,7 +157,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'UI设计',
+        text: '常用网站',
         items: [
           { text: 'UI设计', link: '/UI设计/' },
         ],
