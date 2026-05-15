@@ -1,323 +1,177 @@
-## **BOM（Browser Object Model）简介**
+# BOM（Browser Object Model）
 
-**BOM（浏览器对象模型）**是浏览器提供的一组API，用于与浏览器窗口和浏览器功能进行交互。与DOM不同，BOM主要关注浏览器窗口的管理、浏览器环境的控制以及浏览器外部的交互。BOM 允许 JavaScript 访问和操作浏览器窗口、历史记录、位置、屏幕、事件等。
+BOM 是浏览器提供的一组 API，用于与浏览器窗口和浏览器功能进行交互。与 DOM 不同，BOM 主要关注浏览器窗口的管理、浏览器环境的控制。
 
-BOM 并没有像 DOM 那样的标准化规范，它通常是指一组**浏览器提供的对象**，这些对象与浏览器的各个功能密切相关。BOM 使得前端开发者能够在 JavaScript 中访问和操作浏览器本身，而不仅仅是页面内容。
+## BOM 核心对象
 
-### **BOM的常见对象**
+| 对象 | 作用 |
+| :--- | :--- |
+| window | 浏览器窗口，全局对象 |
+| document | 页面文档（DOM） |
+| navigator | 浏览器信息 |
+| screen | 屏幕信息 |
+| location | URL 信息 |
+| history | 浏览历史 |
 
-1. **window对象**
-2. **document对象**
-3. **navigator对象**
-4. **screen对象**
-5. **location对象**
-6. **history对象**
-7. **localStorage和sessionStorage**
+## 一、window 对象
 
-### **BOM常见对象详细介绍**
+window 是 BOM 的核心，表示浏览器窗口，是全局对象。
 
-#### 1. **window对象**
+### 常用方法
 
-`window`对象是BOM的核心对象，表示浏览器的窗口。它是全局对象，意味着在浏览器中所有的JavaScript代码都可以直接访问 `window` 对象的属性和方法。
+```javascript
+// 弹窗
+window.alert("Hello");           // 警告框
+window.confirm("确定吗？");       // 确认框，返回 true/false
+window.prompt("请输入名字");      // 输入框，返回用户输入的值
 
-- 常用属性和方法
+// 定时器
+setTimeout(() => {}, 1000);      // 延迟执行
+setInterval(() => {}, 1000);      // 周期执行
 
-  - ```
-    window.alert()
-    ```
+// 窗口操作
+window.open("url");               // 打开新窗口
+window.close();                   // 关闭当前窗口
+```
 
-    ：弹出一个警告框
+### 常用属性
 
-    ```javascript
-    window.alert("Hello, World!");
-    ```
+```javascript
+window.innerWidth;   // 窗口内部宽度
+window.innerHeight;  // 窗口内部高度
+window.outerWidth;  // 窗口外部宽度
+window.outerHeight; // 窗口外部高度
 
-  - ```
-    window.confirm()
-    ```
+window.scrollX;      // 水平滚动距离
+window.scrollY;      // 垂直滚动距离
+```
 
-    ：弹出一个确认框，返回 
+## 二、navigator 对象
 
-    ```
-    true
-    ```
+提供浏览器和系统信息。
 
-     或 
+```javascript
+// 常用属性
+navigator.userAgent;    // 用户代理字符串
+navigator.language;     // 浏览器语言
+navigator.platform;     // 操作系统平台
+navigator.onLine;       // 是否联网
 
-    ```
-    false
-    ```
+// 常用方法
+navigator.geolocation.getCurrentPosition(); // 获取地理位置
+```
 
-    ```javascript
-    let result = window.confirm("Are you sure?");
-    ```
+## 三、screen 对象
 
-  - ```
-    window.prompt()
-    ```
+提供屏幕信息。
 
-    ：弹出一个输入框，返回用户输入的值
+```javascript
+screen.width;        // 屏幕宽度
+screen.height;       // 屏幕高度
+screen.availWidth;   // 可用宽度（不含任务栏）
+screen.availHeight;  // 可用高度
+screen.colorDepth;   // 颜色深度
+```
 
-    ```javascript
-    let name = window.prompt("What is your name?");
-    ```
+## 四、location 对象
 
-  - ```
-    window.innerWidth
-    ```
+操作当前 URL。
 
-     / 
+```javascript
+// 属性
+location.href;       // 完整 URL
+location.protocol;   // 协议 (http/https)
+location.host;       // 主机名和端口
+location.hostname;   // 主机名
+location.port;       // 端口
+location.pathname;   // 路径
+location.search;     // 查询字符串
+location.hash;       // 锚点
 
-    ```
-    window.innerHeight
-    ```
+// 方法
+location.reload();        // 重新加载
+location.replace("url");  // 替换当前页面（无历史记录）
+location.assign("url");   // 跳转到新页面
+```
 
-    ：获取窗口的内部宽度和高度
+## 五、history 对象
 
-    ```javascript
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    ```
+控制浏览器历史记录。
 
-  - ```
-    window.open()
-    ```
+```javascript
+history.back();      // 后退
+history.forward();   // 前进
+history.go(n);      // 跳转（n 可为正负）
 
-    ：打开一个新的浏览器窗口或标签页
+// 示例
+history.go(-1);     // 后退一页
+history.go(1);      // 前进一页
+history.go(0);      // 刷新
+```
 
-    ```javascript
-    let newWindow = window.open("https://www.example.com");
-    ```
+## 六、Web Storage
 
-#### 2. **document对象**
+本地存储，不会随请求发送到服务器。
 
-`document`是DOM的一部分，但也可以认为是BOM的一部分。它提供了访问和操作当前页面内容的方法和属性。它本身是 `window` 对象的一个属性。
+### localStorage
 
-- 常用方法和属性
+持久化存储，数据不会过期。
 
-  - ```
-    document.getElementById()
-    ```
+```javascript
+// 存储
+localStorage.setItem("name", "Tom");
+localStorage.name = "Tom";
 
-    ：获取页面中的元素
+// 读取
+localStorage.getItem("name");
+localStorage.name;
 
-    ```javascript
-    let element = document.getElementById("elementId");
-    ```
+// 删除
+localStorage.removeItem("name");
+localStorage.clear();  // 清空所有
+```
 
-  - ```
-    document.querySelector()
-    ```
+### sessionStorage
 
-    ：获取第一个匹配的元素
+会话级存储，窗口关闭后清除。
 
-    ```javascript
-    let element = document.querySelector(".className");
-    ```
+```javascript
+sessionStorage.setItem("key", "value");
+sessionStorage.getItem("key");
+sessionStorage.removeItem("key");
+sessionStorage.clear();
+```
 
-  - ```
-    document.createElement()
-    ```
+### localStorage vs sessionStorage
 
-    ：创建新的HTML元素
+| 特性 | localStorage | sessionStorage |
+| :--- | :--- | :--- |
+| 生命周期 | 永久 | 会话结束 |
+| 作用域 | 同源 | 当前窗口 |
+| 大小 | 约 5MB | 约 5MB |
 
-    ```javascript
-    let newDiv = document.createElement("div");
-    ```
+## 七、常见应用
 
-#### 3. **navigator对象**
+### 页面跳转
 
-`navigator`对象提供了关于浏览器的各种信息，比如浏览器名称、版本、操作系统等。
+```javascript
+location.href = "https://example.com";
+location.assign("https://example.com");
+```
 
-- 常用属性
+### 获取 URL 参数
 
-  - ```
-    navigator.userAgent
-    ```
+```javascript
+const params = new URLSearchParams(location.search);
+const id = params.get("id");
+```
 
-    ：获取浏览器的用户代理字符串
+### 防重复提交
 
-    ```javascript
-    console.log(navigator.userAgent);
-    ```
-
-  - ```
-    navigator.language
-    ```
-
-    ：获取浏览器的语言设置
-
-    ```javascript
-    console.log(navigator.language);
-    ```
-
-  - ```
-    navigator.platform
-    ```
-
-    ：获取浏览器所在的操作系统平台
-
-    ```javascript
-    console.log(navigator.platform);
-    ```
-
-#### 4. **screen对象**
-
-`screen`对象提供了关于用户屏幕的信息，比如屏幕的分辨率、颜色深度等。
-
-- 常用属性
-
-  - ```
-    screen.width
-    ```
-
-    ：屏幕的宽度（单位为像素）
-
-    ```javascript
-    console.log(screen.width);
-    ```
-
-  - ```
-    screen.height
-    ```
-
-    ：屏幕的高度（单位为像素）
-
-    ```javascript
-    console.log(screen.height);
-    ```
-
-  - ```
-    screen.availWidth
-    ```
-
-    ：屏幕可用的宽度，不包括任务栏
-
-    ```javascript
-    console.log(screen.availWidth);
-    ```
-
-#### 5. **location对象**
-
-`location`对象用于获取和设置浏览器的当前URL。它可以用来访问页面的各个部分（协议、主机名、路径等），并能够进行页面的跳转。
-
-- 常用属性
-
-  - ```
-    location.href
-    ```
-
-    ：获取或设置当前页面的URL
-
-    ```javascript
-    console.log(location.href);
-    location.href = "https://www.example.com"; // 跳转到指定页面
-    ```
-
-  - ```
-    location.hostname
-    ```
-
-    ：获取当前页面的主机名
-
-    ```javascript
-    console.log(location.hostname);
-    ```
-
-  - ```
-    location.pathname
-    ```
-
-    ：获取当前页面的路径名
-
-    ```javascript
-    console.log(location.pathname);
-    ```
-
-  - ```
-    location.reload()
-    ```
-
-    ：重新加载页面
-
-    ```javascript
-    location.reload();
-    ```
-
-#### 6. **history对象**
-
-`history`对象用于访问浏览器的历史记录，它允许开发者控制浏览器的前进、后退和跳转。
-
-- 常用方法
-
-  - ```
-    history.back()
-    ```
-
-    ：返回到前一个页面
-
-    ```javascript
-    history.back();
-    ```
-
-  - ```
-    history.forward()
-    ```
-
-    ：前进到下一个页面
-
-    ```javascript
-    history.forward();
-    ```
-
-  - ```
-    history.go()
-    ```
-
-    ：可以跳转到指定的历史记录条目
-
-    ```javascript
-    history.go(-1);  // 相当于 history.back()
-    history.go(1);   // 相当于 history.forward()
-    ```
-
-#### 7. **localStorage 和 sessionStorage**
-
-`localStorage` 和 `sessionStorage` 是Web Storage API的两种存储机制，用于在浏览器中存储数据。它们与 `cookies` 不同，不会随每个HTTP请求发送，因此可以提供更高效的存储。
-
-- **localStorage**：在浏览器会话之间持续存在，直到用户主动删除。
-
-  - 常用方法
-
-    ```javascript
-    localStorage.setItem("key", "value");  // 设置数据
-    let value = localStorage.getItem("key");  // 获取数据
-    localStorage.removeItem("key");  // 删除指定数据
-    localStorage.clear();  // 清空所有数据
-    ```
-
-- **sessionStorage**：仅在当前会话中有效，浏览器窗口关闭后数据丢失。
-
-  - 常用方法
-
-    ```javascript
-    sessionStorage.setItem("key", "value");  // 设置数据
-    let value = sessionStorage.getItem("key");  // 获取数据
-    sessionStorage.removeItem("key");  // 删除指定数据
-    sessionStorage.clear();  // 清空所有数据
-    ```
-
-------
-
-### **总结**
-
-BOM是浏览器提供的一组对象，用于操作和控制浏览器环境及窗口。它提供了许多有用的API，使得JavaScript能够访问并操作浏览器的一些重要功能，如：
-
-- `window`：访问浏览器窗口、对话框、定时器等。
-- `navigator`：获取浏览器和操作系统信息。
-- `screen`：获取屏幕尺寸和分辨率等信息。
-- `location`：获取和修改页面的URL地址。
-- `history`：控制浏览器的历史记录。
-- `localStorage`和`sessionStorage`：在浏览器中存储数据。
-
-这些BOM对象使得JavaScript可以实现一些浏览器控制功能，如页面跳转、历史记录管理、数据存储等。
+```javascript
+sessionStorage.setItem("submitting", "true");
+window.onload = () => {
+  if (sessionStorage.getItem("submitting")) {
+    // 已提交，禁用按钮
+  }
+};
