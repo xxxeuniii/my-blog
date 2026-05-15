@@ -148,7 +148,7 @@ layout: home
             <a class="about-contact-link" href="https://github.com">GitHub</a>
             <a class="about-contact-link" href="https://linkedin.com">LinkedIn</a>
             <a class="about-contact-link" href="https://www.npmjs.com/~euniii">npm</a>
-            <a class="about-contact-link" href="mailto:hello@example.com">Email</a>
+            <a class="about-contact-link" href="mailto:1491372173@qq.com">Email</a>
           </div>
         </div>
         <div class="about-contact-right">
