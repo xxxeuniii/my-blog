@@ -5,9 +5,9 @@ sidebar: false
 
 <div class="category-index-page">
 
-# 常用网站
+# UI设计
 
-常用工具和网站收集。
+UI设计相关资源收集。
 
 <div class="category-info">
   <div class="info-item">
