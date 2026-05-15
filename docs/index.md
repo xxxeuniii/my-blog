@@ -15,7 +15,7 @@ layout: home
   <section class="stats-overview">
     <div class="stats-grid">
       <div class="stat-card">
-        <span class="stat-number">146</span>
+        <span class="stat-number">160</span>
         <span class="stat-label">文章总数</span>
       </div>
       <div class="stat-card">
