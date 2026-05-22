@@ -27,6 +27,26 @@ Vue 前端框架开发
     <br>
     <span>Vue3 响应式变量定义方式的区别</span>
   </li>
+  <li data-href="./Vue生命周期详解">
+    <strong>Vue生命周期详解</strong>
+    <br>
+    <span>setup 和 unmounted 执行顺序</span>
+  </li>
+  <li data-href="./Vue组件通信方法">
+    <strong>Vue组件通信方法</strong>
+    <br>
+    <span>provide 和 injection 详解</span>
+  </li>
+  <li data-href="./Vue组件动态引入">
+    <strong>Vue组件动态引入</strong>
+    <br>
+    <span>路由分割、异步组件、动态组件切换</span>
+  </li>
+  <li data-href="./Vue组件引入方式对比">
+    <strong>Vue组件引入方式对比</strong>
+    <br>
+    <span>import、defineAsyncComponent、require.context 等方式的优缺点对比</span>
+  </li>
 </ul>
 
 <script setup>

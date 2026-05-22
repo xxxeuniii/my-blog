@@ -5,9 +5,9 @@ sidebar: false
 
 <div class="category-index-page">
 
-# React
+# 性能优化
 
-React 前端框架开发
+前端性能优化
 
 <div class="category-info">
   <div class="info-item">
@@ -17,40 +17,15 @@ React 前端框架开发
 </div>
 
 <ul id="article-list">
-  <li data-href="./react基础">
-    <strong>react基础</strong>
+  <li data-href="./首屏加载时间优化">
+    <strong>首屏加载时间优化</strong>
     <br>
-    <span>React 框架基础入门</span>
+    <span>减少首屏加载时间的多种策略</span>
   </li>
-  <li data-href="./nextjs基础">
-    <strong>nextjs基础</strong>
+  <li data-href="./Vue组件引入性能优化">
+    <strong>Vue组件引入性能优化</strong>
     <br>
-    <span>Next.js 全栈框架入门</span>
-  </li>
-  <li data-href="./前端渲染策略">
-    <strong>前端渲染策略</strong>
-    <br>
-    <span>SSR/SSG/ISR/CSR 渲染策略详解</span>
-  </li>
-  <li data-href="./nextjs进阶">
-    <strong>nextjs进阶</strong>
-    <br>
-    <span>Next.js 认证、中间件、SEO等进阶功能</span>
-  </li>
-  <li data-href="./React与ReactNative区别">
-    <strong>React 与 React Native 区别</strong>
-    <br>
-    <span>Web 和移动端的差异对比</span>
-  </li>
-  <li data-href="./React与Vue区别">
-    <strong>React 与 Vue 区别</strong>
-    <br>
-    <span>核心差异、语法对比、生态对比</span>
-  </li>
-  <li data-href="./Redux详解">
-    <strong>Redux 详解</strong>
-    <br>
-    <span>Redux 是什么、核心概念、Redux Toolkit</span>
+    <span>import、路由级导入、异步组件的选择和组合</span>
   </li>
 </ul>
 

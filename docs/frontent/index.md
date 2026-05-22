@@ -77,6 +77,11 @@ sidebar: false
     <br>
     <span>UI 组件库</span>
   </li>
+  <li>
+    <strong><a href="./performance">性能优化</a></strong>
+    <br>
+    <span>前端与后端性能优化</span>
+  </li>
 </ul>
 
 </div>
