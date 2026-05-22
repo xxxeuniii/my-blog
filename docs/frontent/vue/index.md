@@ -22,6 +22,11 @@ Vue 前端框架开发
     <br>
     <span>Vue 2 与 Vue 3 对比</span>
   </li>
+  <li data-href="./ref和reactive的区别">
+    <strong>ref和reactive的区别</strong>
+    <br>
+    <span>Vue3 响应式变量定义方式的区别</span>
+  </li>
 </ul>
 
 <script setup>
