@@ -5,9 +5,9 @@ sidebar: false
 
 <div class="category-index-page">
 
-# Electron
+# Angular
 
-跨平台桌面应用开发框架
+Google 开发的企业级前端框架
 
 <div class="category-info">
   <div class="info-item">
@@ -17,15 +17,10 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li data-href="./electron基础">
-    <strong>electron基础</strong>
+  <li data-href="./angular基础">
+    <strong>angular基础</strong>
     <br>
-    <span>Electron 框架基础入门</span>
-  </li>
-  <li data-href="./electron打包与更新">
-    <strong>electron打包与更新</strong>
-    <br>
-    <span>Electron 应用打包、发布与自动更新</span>
+    <span>Angular 框架基础入门</span>
   </li>
 </ul>
 

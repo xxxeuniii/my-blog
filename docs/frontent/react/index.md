@@ -22,6 +22,11 @@ React 前端框架开发
     <br>
     <span>React 框架基础入门</span>
   </li>
+  <li data-href="./nextjs基础">
+    <strong>nextjs基础</strong>
+    <br>
+    <span>Next.js 全栈框架入门</span>
+  </li>
 </ul>
 
 <script setup>

@@ -12,7 +12,7 @@ sidebar: false
 <div class="category-info">
   <div class="info-item">
     <div class="info-label">文章数量</div>
-    <div class="info-value">10</div>
+    <div class="info-value">11</div>
   </div>
 </div>
 
@@ -56,6 +56,11 @@ sidebar: false
     <strong><a href="./react">React.js</a></strong>
     <br>
     <span>React.js 框架</span>
+  </li>
+  <li>
+    <strong><a href="./angular">Angular</a></strong>
+    <br>
+    <span>Angular 企业级框架</span>
   </li>
   <li>
     <strong><a href="./Electron">Electron</a></strong>
