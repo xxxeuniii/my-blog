@@ -27,6 +27,16 @@ React 前端框架开发
     <br>
     <span>Next.js 全栈框架入门</span>
   </li>
+  <li data-href="./前端渲染策略">
+    <strong>前端渲染策略</strong>
+    <br>
+    <span>SSR/SSG/ISR/CSR 渲染策略详解</span>
+  </li>
+  <li data-href="./nextjs进阶">
+    <strong>nextjs进阶</strong>
+    <br>
+    <span>Next.js 认证、中间件、SEO等进阶功能</span>
+  </li>
 </ul>
 
 <script setup>
