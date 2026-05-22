@@ -22,6 +22,11 @@ Google 开发的企业级前端框架
     <br>
     <span>Angular 框架基础入门</span>
   </li>
+  <li data-href="./angular进阶">
+    <strong>angular进阶</strong>
+    <br>
+    <span>Angular 依赖注入、路由守卫、RxJS等进阶内容</span>
+  </li>
 </ul>
 
 <script setup>

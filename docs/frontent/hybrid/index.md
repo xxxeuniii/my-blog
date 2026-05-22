@@ -5,9 +5,9 @@ sidebar: false
 
 <div class="category-index-page">
 
-# Electron
+# Hybrid App
 
-跨平台桌面应用开发框架
+移动端混合应用开发 - JSBridge 与原生交互
 
 <div class="category-info">
   <div class="info-item">
@@ -17,20 +17,10 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li data-href="./electron基础">
-    <strong>electron基础</strong>
+  <li data-href="./hybrid基础">
+    <strong>hybrid基础</strong>
     <br>
-    <span>Electron 框架基础入门</span>
-  </li>
-  <li data-href="./electron打包与更新">
-    <strong>electron打包与更新</strong>
-    <br>
-    <span>Electron 应用打包、发布与自动更新</span>
-  </li>
-  <li data-href="./electron跨端适配">
-    <strong>electron跨端适配</strong>
-    <br>
-    <span>H5 页面跨端适配与响应式布局</span>
+    <span>Hybrid App 基础概念与 JSBridge 原理</span>
   </li>
 </ul>
 

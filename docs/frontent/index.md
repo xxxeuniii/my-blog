@@ -12,7 +12,7 @@ sidebar: false
 <div class="category-info">
   <div class="info-item">
     <div class="info-label">文章数量</div>
-    <div class="info-value">11</div>
+    <div class="info-value">12</div>
   </div>
 </div>
 
@@ -66,6 +66,11 @@ sidebar: false
     <strong><a href="./Electron">Electron</a></strong>
     <br>
     <span>Electron 跨平台应用</span>
+  </li>
+  <li>
+    <strong><a href="./hybrid">Hybrid App</a></strong>
+    <br>
+    <span>移动端混合应用开发</span>
   </li>
   <li>
     <strong><a href="./component">组件库</a></strong>

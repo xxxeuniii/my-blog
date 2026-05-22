@@ -96,7 +96,7 @@ const handler = NextAuth({
 })
 ```
 
----
+***
 
 ## 二、中间件 Middleware
 
@@ -178,7 +178,7 @@ export function middleware(request: NextRequest) {
 }
 ```
 
----
+***
 
 ## 三、环境变量
 
@@ -232,7 +232,7 @@ module.exports = {
 }
 ```
 
----
+***
 
 ## 四、国际化 i18n
 
@@ -295,7 +295,7 @@ export default async function Page() {
 }
 ```
 
----
+***
 
 ## 五、动态导入
 
@@ -349,7 +349,7 @@ const Chart = dynamic(() => import('./Chart'), {
 })
 ```
 
----
+***
 
 ## 六、表单处理
 
@@ -425,7 +425,7 @@ export default function FormPage() {
 }
 ```
 
----
+***
 
 ## 七、状态管理
 
@@ -518,7 +518,7 @@ export function ThemeProvider({ children }) {
 export const useTheme = () => useContext(ThemeContext)
 ```
 
----
+***
 
 ## 八、SEO 优化
 
@@ -599,7 +599,7 @@ export default function robots(): MetadataRoute.Robots {
 }
 ```
 
----
+***
 
 ## 九、缓存机制
 
@@ -661,7 +661,7 @@ export async function POST(request: Request) {
 }
 ```
 
----
+***
 
 ## 十、测试
 
@@ -726,7 +726,7 @@ test('首页加载正常', async ({ page }) => {
 })
 ```
 
----
+***
 
 ## 十一、部署进阶
 
@@ -788,7 +788,7 @@ API_KEY=xxx
 NEXT_PUBLIC_API_URL=https://...
 ```
 
----
+***
 
 ## 十二、最佳实践
 
@@ -850,8 +850,5 @@ export default function Error({ error, reset }) {
 }
 ```
 
----
+***
 
-## 总结
-
-本文涵盖了 Next.js 的核心进阶功能，掌握这些内容可以更好地构建生产级别的 Next.js 应用。推荐按需学习和实践。

@@ -162,6 +162,12 @@ export default defineConfig({
           { text: 'UI设计', link: '/UI设计/' },
         ],
       },
+      {
+        text: '其他',
+        items: [
+          { text: 'AI辅助开发', link: '/other/' },
+        ],
+      },
 
     ],
     sidebar: false,
