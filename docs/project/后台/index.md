@@ -5,9 +5,9 @@ sidebar: false
 
 <div class="category-index-page">
 
-# Electron
+# 后台项目
 
-跨平台桌面应用开发框架
+后台项目实践与示例。
 
 <div class="category-info">
   <div class="info-item">
@@ -17,26 +17,6 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li data-href="./electron基础">
-    <strong>electron基础</strong>
-    <br>
-    <span>Electron 框架基础入门</span>
-  </li>
-  <li data-href="./electron打包与更新">
-    <strong>electron打包与更新</strong>
-    <br>
-    <span>Electron 应用打包、发布与自动更新</span>
-  </li>
-  <li data-href="./electron跨端适配">
-    <strong>electron跨端适配</strong>
-    <br>
-    <span>H5 页面跨端适配与响应式布局</span>
-  </li>
-  <li data-href="./electron通信">
-    <strong>electron通信</strong>
-    <br>
-    <span>主进程与渲染进程通信方式</span>
-  </li>
 </ul>
 
 <script setup>

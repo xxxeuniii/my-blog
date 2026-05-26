@@ -5,9 +5,9 @@ sidebar: false
 
 <div class="category-index-page">
 
-# Electron
+# Web3
 
-跨平台桌面应用开发框架
+Web3 与区块链技术知识
 
 <div class="category-info">
   <div class="info-item">
@@ -17,25 +17,10 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li data-href="./electron基础">
-    <strong>electron基础</strong>
+  <li data-href="./DApp基础">
+    <strong>DApp基础</strong>
     <br>
-    <span>Electron 框架基础入门</span>
-  </li>
-  <li data-href="./electron打包与更新">
-    <strong>electron打包与更新</strong>
-    <br>
-    <span>Electron 应用打包、发布与自动更新</span>
-  </li>
-  <li data-href="./electron跨端适配">
-    <strong>electron跨端适配</strong>
-    <br>
-    <span>H5 页面跨端适配与响应式布局</span>
-  </li>
-  <li data-href="./electron通信">
-    <strong>electron通信</strong>
-    <br>
-    <span>主进程与渲染进程通信方式</span>
+    <span>去中心化应用概念、技术栈、开发流程</span>
   </li>
 </ul>
 

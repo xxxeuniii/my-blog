@@ -113,6 +113,7 @@ export default defineConfig({
           { text: 'Electron', link: '/frontent/Electron/' },
           { text: 'Hybrid App', link: '/frontent/hybrid/' },
           { text: '微前端', link: '/frontent/微前端/' },
+          { text: '性能优化', link: '/frontent/性能优化/' },
           { text: '组件库', link: '/frontent/component/' },
           { text: 'Vite', link: '/frontent/vite/' },
           { text: 'Webpack', link: '/frontent/webpack/' },
@@ -178,6 +179,12 @@ export default defineConfig({
         text: '其他',
         items: [
           { text: 'AI辅助开发', link: '/other/' },
+        ],
+      },
+      {
+        text: 'Web3',
+        items: [
+          { text: 'DApp基础', link: '/web3/' },
         ],
       },
 
