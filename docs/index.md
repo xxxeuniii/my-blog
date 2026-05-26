@@ -52,6 +52,7 @@ layout: home
           <li><a href="/my-blog/frontent/vite/">Vite</a></li>
           <li><a href="/my-blog/frontent/webpack/">Webpack</a></li>
           <li><a href="/my-blog/frontent/Electron/">Electron</a></li>
+          <li><a href="/my-blog/frontent/微前端/">微前端</a></li>
           <li><a href="/my-blog/frontent/component/">组件库</a></li>
         </ul>
       </div>

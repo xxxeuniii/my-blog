@@ -111,6 +111,8 @@ export default defineConfig({
           { text: 'Vue', link: '/frontent/vue/' },
           { text: 'React', link: '/frontent/react/' },
           { text: 'Electron', link: '/frontent/Electron/' },
+          { text: 'Hybrid App', link: '/frontent/hybrid/' },
+          { text: '微前端', link: '/frontent/微前端/' },
           { text: '组件库', link: '/frontent/component/' },
           { text: 'Vite', link: '/frontent/vite/' },
           { text: 'Webpack', link: '/frontent/webpack/' },
@@ -142,6 +144,16 @@ export default defineConfig({
         items: [
           { text: 'Git', link: '/Engineering/git/' },
           { text: '前端工程化', link: '/Engineering/Engineering_frontent/' },
+          { text: 'Monorepo', link: '/Engineering/Monorepo/' },
+          { text: 'DevOps', link: '/Engineering/DevOps/' },
+        ],
+      },
+      {
+        text: '运维',
+        items: [
+          { text: 'Linux基础', link: '/ops/' },
+          { text: 'Docker基础', link: '/ops/Docker基础/' },
+          { text: 'Nginx基础', link: '/ops/Nginx基础/' },
         ],
       },
       {
