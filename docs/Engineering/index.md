@@ -12,7 +12,7 @@ sidebar: false
 <div class="category-info">
   <div class="info-item">
     <div class="info-label">文章数量</div>
-    <div class="info-value" id="article-count"></div>
+    <div class="info-value">4</div>
   </div>
 </div>
 
@@ -26,6 +26,16 @@ sidebar: false
     <strong>前端工程化</strong>
     <br>
     <span>前端工程化实践</span>
+  </li>
+  <li data-href="./Monorepo">
+    <strong>Monorepo</strong>
+    <br>
+    <span>Monorepo 工程化实践</span>
+  </li>
+  <li data-href="./DevOps">
+    <strong>DevOps</strong>
+    <br>
+    <span>DevOps 实践与 CI/CD</span>
   </li>
 </ul>
 </div>
