@@ -82,6 +82,11 @@ sidebar: false
     <br>
     <span>数据验证库</span>
   </li>
+  <li data-href="./FastAPI面试考点总结">
+    <strong>面试考点总结</strong>
+    <br>
+    <span>面试常见问题与答案</span>
+  </li>
 </ul>
 </div>
 

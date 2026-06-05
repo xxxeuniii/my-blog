@@ -626,6 +626,7 @@ export default defineConfig({
             { text: '11_FastAPI异步支持', link: '/LLM/FastAPI/11_FastAPI异步支持' },
             { text: '12_FastAPI部署', link: '/LLM/FastAPI/12_FastAPI部署' },
             { text: 'Pydantic介绍', link: '/LLM/FastAPI/Pydantic介绍' },
+            { text: 'FastAPI面试考点总结', link: '/LLM/FastAPI/FastAPI面试考点总结' },
           ]
         }
       ],
