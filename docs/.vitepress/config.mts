@@ -225,6 +225,177 @@ export default defineConfig({
           ]
         }
       ],
+      '/frontent/basic/': [
+        {
+          text: '基础',
+          items: [
+            { text: 'HTML', link: '/frontent/basic/HTML' },
+            { text: 'DOM', link: '/frontent/basic/DOM' },
+            { text: 'BOM', link: '/frontent/basic/BOM' },
+            { text: '数据结构', link: '/frontent/basic/数据结构' },
+            { text: '网络请求', link: '/frontent/basic/网络请求' },
+          ]
+        }
+      ],
+      '/frontent/css/': [
+        {
+          text: 'CSS',
+          items: [
+            { text: 'CSS布局方式', link: '/frontent/css/CSS布局方式' },
+            { text: 'css3的新特性', link: '/frontent/css/css3的新特性' },
+            { text: 'SCSS使用指南', link: '/frontent/css/SCSS使用指南' },
+            { text: 'LESS使用指南', link: '/frontent/css/LESS使用指南' },
+            { text: 'TailwindCSS指南', link: '/frontent/css/TailwindCSS指南' },
+            { text: '样式污染治理', link: '/frontent/css/样式污染治理' },
+          ]
+        }
+      ],
+      '/frontent/html/': [
+        {
+          text: 'HTML',
+          items: [
+            { text: 'window对象', link: '/frontent/html/window对象' },
+            { text: '地址栏各种特殊符号的含义', link: '/frontent/html/地址栏各种特殊符号的含义' },
+          ]
+        }
+      ],
+      '/frontent/JavaScript/': [
+        {
+          text: 'JavaScript',
+          items: [
+            { text: '数据类型', link: '/frontent/JavaScript/数据类型' },
+            { text: 'ES6特性详解', link: '/frontent/JavaScript/ES6特性详解' },
+            { text: 'const', link: '/frontent/JavaScript/const' },
+            { text: '操作数组的方法', link: '/frontent/JavaScript/操作数组的方法' },
+            { text: '几个循环的区别', link: '/frontent/JavaScript/几个循环的区别' },
+            { text: '类型转换js方法合集', link: '/frontent/JavaScript/类型转换js方法合集' },
+            { text: 'ts和js的区别', link: '/frontent/JavaScript/ts和js的区别' },
+          ]
+        }
+      ],
+      '/frontent/TypeScript/': [
+        {
+          text: 'TypeScript',
+          items: [
+            { text: 'ts基础', link: '/frontent/TypeScript/ts基础' },
+          ]
+        }
+      ],
+      '/frontent/vue/': [
+        {
+          text: 'Vue',
+          items: [
+            { text: 'vue2和vue3的区别', link: '/frontent/vue/vue2和vue3的区别' },
+            { text: 'Vue生命周期详解', link: '/frontent/vue/Vue生命周期详解' },
+            { text: 'Vue组件通信方法', link: '/frontent/vue/Vue组件通信方法' },
+            { text: 'Vue组件动态引入', link: '/frontent/vue/Vue组件动态引入' },
+            { text: 'Vue组件引入方式对比', link: '/frontent/vue/Vue组件引入方式对比' },
+            { text: 'Vue3响应式原理', link: '/frontent/vue/Vue3响应式原理' },
+            { text: 'ref和reactive的区别', link: '/frontent/vue/ref和reactive的区别' },
+          ]
+        }
+      ],
+      '/frontent/react/': [
+        {
+          text: 'React',
+          items: [
+            { text: 'react基础', link: '/frontent/react/react基础' },
+            { text: 'React与Vue区别', link: '/frontent/react/React与Vue区别' },
+            { text: 'React与ReactNative区别', link: '/frontent/react/React与ReactNative区别' },
+            { text: 'Redux详解', link: '/frontent/react/Redux详解' },
+            { text: 'nextjs基础', link: '/frontent/react/nextjs基础' },
+            { text: 'nextjs进阶', link: '/frontent/react/nextjs进阶' },
+            { text: '前端渲染策略', link: '/frontent/react/前端渲染策略' },
+          ]
+        }
+      ],
+      '/frontent/Electron/': [
+        {
+          text: 'Electron',
+          items: [
+            { text: 'electron基础', link: '/frontent/Electron/electron基础' },
+            { text: 'electron通信', link: '/frontent/Electron/electron通信' },
+            { text: 'electron跨端适配', link: '/frontent/Electron/electron跨端适配' },
+            { text: 'electron打包与更新', link: '/frontent/Electron/electron打包与更新' },
+          ]
+        }
+      ],
+      '/frontent/hybrid/': [
+        {
+          text: 'Hybrid App',
+          items: [
+            { text: 'hybrid基础', link: '/frontent/hybrid/hybrid基础' },
+          ]
+        }
+      ],
+      '/frontent/微前端/': [
+        {
+          text: '微前端',
+          items: [
+            { text: '微前端基础', link: '/frontent/微前端/微前端基础' },
+          ]
+        }
+      ],
+      '/frontent/性能优化/': [
+        {
+          text: '性能优化',
+          items: [
+            { text: '加载性能优化', link: '/frontent/性能优化/加载性能优化' },
+            { text: '渲染性能优化', link: '/frontent/性能优化/渲染性能优化' },
+            { text: '代码性能优化', link: '/frontent/性能优化/代码性能优化' },
+            { text: '图片性能优化', link: '/frontent/性能优化/图片性能优化' },
+            { text: '首屏加载时间优化', link: '/frontent/性能优化/首屏加载时间优化' },
+            { text: '性能监控', link: '/frontent/性能优化/性能监控' },
+            { text: '埋点与数据采集', link: '/frontent/性能优化/埋点与数据采集' },
+          ]
+        }
+      ],
+      '/frontent/component/': [
+        {
+          text: '组件库',
+          items: [
+            { text: 'elementui组件库', link: '/frontent/component/elementui组件库' },
+            { text: 'ECharts使用指南', link: '/frontent/component/ECharts使用指南' },
+          ]
+        }
+      ],
+      '/frontent/vite/': [
+        {
+          text: 'Vite',
+          items: [
+            { text: 'vite概念', link: '/frontent/vite/vite概念' },
+            { text: 'vite.config.js配置', link: '/frontent/vite/vite.config.js配置' },
+            { text: 'vite的配置有哪些', link: '/frontent/vite/vite的配置有哪些' },
+            { text: 'vite和webpack对比', link: '/frontent/vite/vite和webpack对比' },
+          ]
+        }
+      ],
+      '/frontent/webpack/': [
+        {
+          text: 'Webpack',
+          items: [
+            { text: 'webpack', link: '/frontent/webpack/webpack' },
+          ]
+        }
+      ],
+      '/frontent/angular/': [
+        {
+          text: 'Angular',
+          items: [
+            { text: 'angular基础', link: '/frontent/angular/angular基础' },
+            { text: 'angular进阶', link: '/frontent/angular/angular进阶' },
+          ]
+        }
+      ],
+      '/frontent/performance/': [
+        {
+          text: '性能优化',
+          items: [
+            { text: 'Vue组件引入性能优化', link: '/frontent/performance/Vue组件引入性能优化' },
+            { text: '首屏加载时间优化', link: '/frontent/performance/首屏加载时间优化' },
+          ]
+        }
+      ],
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/xxxeuniii/my-blog' }],
   },
