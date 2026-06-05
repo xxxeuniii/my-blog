@@ -1,0 +1,378 @@
+# Python 可变参数详解：*args 和 **kwargs
+
+## 一、什么是可变参数
+
+在 Python 中，函数的参数可以分为以下几种：
+
+1. **位置参数**：必须按顺序传递的参数
+2. **默认参数**：有默认值的参数
+3. **可变位置参数**：`*args`，可以接收任意数量的位置参数
+4. **可变关键字参数**：`**kwargs`，可以接收任意数量的关键字参数
+
+## 二、*args：可变位置参数
+
+### 2.1 基本用法
+
+`*args` 允许函数接收**任意数量**的**位置参数**，这些参数会被打包成一个**元组**。
+
+```python
+def func(*args):
+    print("args 的类型:", type(args))
+    print("args 的值:", args)
+
+# 调用方式1：不传参数
+func()
+# args 的类型: <class 'tuple'>
+# args 的值: ()
+
+# 调用方式2：传一个参数
+func(1)
+# args 的类型: <class 'tuple'>
+# args 的值: (1,)
+
+# 调用方式3：传多个参数
+func(1, 2, 3)
+# args 的类型: <class 'tuple'>
+# args 的值: (1, 2, 3)
+```
+
+### 2.2 实际应用场景
+
+#### 场景1：计算多个数的和
+
+```python
+def sum_all(*args):
+    total = 0
+    for num in args:
+        total += num
+    return total
+
+result = sum_all(1, 2, 3, 4, 5)
+print(result)  # 15
+```
+
+#### 场景2：打印多个值
+
+```python
+def print_all(*args):
+    for arg in args:
+        print(arg)
+
+print_all("Hello", "World", "Python")
+# Hello
+# World
+# Python
+```
+
+### 2.3 与普通参数结合使用
+
+```python
+def greet(greeting, *names):
+    """greeting 是普通参数，names 是可变位置参数"""
+    for name in names:
+        print(f"{greeting}, {name}!")
+
+greet("Hello", "Alice", "Bob", "Charlie")
+# Hello, Alice!
+# Hello, Bob!
+# Hello, Charlie!
+```
+
+**注意**：`*args` 必须放在普通参数之后。
+
+## 三、**kwargs：可变关键字参数
+
+### 3.1 基本用法
+
+`**kwargs` 允许函数接收**任意数量**的**关键字参数**，这些参数会被打包成一个**字典**。
+
+```python
+def func(**kwargs):
+    print("kwargs 的类型:", type(kwargs))
+    print("kwargs 的值:", kwargs)
+
+# 调用方式1：不传参数
+func()
+# kwargs 的类型: <class 'dict'>
+# kwargs 的值: {}
+
+# 调用方式2：传一个关键字参数
+func(a=1)
+# kwargs 的类型: <class 'dict'>
+# kwargs 的值: {'a': 1}
+
+# 调用方式3：传多个关键字参数
+func(a=1, b=2, c=3)
+# kwargs 的类型: <class 'dict'>
+# kwargs 的值: {'a': 1, 'b': 2, 'c': 3}
+```
+
+### 3.2 实际应用场景
+
+#### 场景1：打印用户信息
+
+```python
+def print_user_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_user_info(name="Alice", age=25, city="北京")
+# name: Alice
+# age: 25
+# city: 北京
+```
+
+#### 场景2：配置初始化
+
+```python
+def create_config(**settings):
+    config = {
+        "debug": False,
+        "port": 8080,
+        "host": "localhost"
+    }
+    # 更新配置
+    config.update(settings)
+    return config
+
+config = create_config(debug=True, port=5000)
+print(config)
+# {'debug': True, 'port': 5000, 'host': 'localhost'}
+```
+
+### 3.3 与普通参数结合使用
+
+```python
+def create_person(name, **info):
+    """name 是普通参数，info 是可变关键字参数"""
+    person = {"name": name}
+    person.update(info)
+    return person
+
+person = create_person("Alice", age=25, city="北京", occupation="工程师")
+print(person)
+# {'name': 'Alice', 'age': 25, 'city': '北京', 'occupation': '工程师'}
+```
+
+## 四、*args 和 **kwargs 一起使用
+
+### 4.1 基本用法
+
+当 `*args` 和 `**kwargs` 同时使用时，`*args` 必须放在 `**kwargs` 之前。
+
+```python
+def func(*args, **kwargs):
+    print("位置参数:", args)
+    print("关键字参数:", kwargs)
+
+func(1, 2, 3, a=4, b=5)
+# 位置参数: (1, 2, 3)
+# 关键字参数: {'a': 4, 'b': 5}
+```
+
+### 4.2 参数顺序规则
+
+函数定义时，参数的顺序必须遵循以下规则：
+
+```python
+def func(
+    普通参数,        # 1. 位置参数（必须的）
+    默认参数=值,     # 2. 默认参数（可选的）
+    *args,          # 3. 可变位置参数
+    仅限关键字参数,   # 4. 仅限关键字参数（Python 3.8+）
+    **kwargs        # 5. 可变关键字参数
+):
+    pass
+```
+
+```python
+# 示例：完整的参数顺序
+def example(a, b=10, *args, c, **kwargs):
+    print(f"a: {a}")
+    print(f"b: {b}")
+    print(f"args: {args}")
+    print(f"c: {c}")
+    print(f"kwargs: {kwargs}")
+
+example(1, 2, 3, 4, c=5, d=6, e=7)
+# a: 1
+# b: 2
+# args: (3, 4)
+# c: 5
+# kwargs: {'d': 6, 'e': 7}
+```
+
+## 五、解包操作
+
+### 5.1 解包列表/元组到 *args
+
+使用 `*` 可以将列表或元组的元素解包成位置参数。
+
+```python
+def add(a, b, c):
+    return a + b + c
+
+# 列表解包
+numbers = [1, 2, 3]
+result = add(*numbers)
+print(result)  # 6
+
+# 元组解包
+numbers = (1, 2, 3)
+result = add(*numbers)
+print(result)  # 6
+```
+
+### 5.2 解包字典到 **kwargs
+
+使用 `**` 可以将字典的键值对解包成关键字参数。
+
+```python
+def print_person(name, age, city):
+    print(f"{name}, {age}岁, 来自{city}")
+
+# 字典解包
+person_info = {"name": "Alice", "age": 25, "city": "北京"}
+print_person(**person_info)
+# Alice, 25岁, 来自北京
+```
+
+### 5.3 综合示例
+
+```python
+def func(*args, **kwargs):
+    print("args:", args)
+    print("kwargs:", kwargs)
+
+# 准备数据
+numbers = [1, 2, 3]
+info = {"a": 4, "b": 5}
+
+# 同时解包
+func(*numbers, **info)
+# args: (1, 2, 3)
+# kwargs: {'a': 4, 'b': 5}
+```
+
+## 六、实际应用案例
+
+### 6.1 装饰器中使用
+
+```python
+def logger(func):
+    def wrapper(*args, **kwargs):
+        print(f"调用函数: {func.__name__}")
+        print(f"位置参数: {args}")
+        print(f"关键字参数: {kwargs}")
+        result = func(*args, **kwargs)
+        print(f"函数返回: {result}")
+        return result
+    return wrapper
+
+@logger
+def add(a, b):
+    return a + b
+
+add(1, b=2)
+# 调用函数: add
+# 位置参数: (1,)
+# 关键字参数: {'b': 2}
+# 函数返回: 3
+```
+
+### 6.2 传递参数给其他函数
+
+```python
+def process_data(data, *args, **kwargs):
+    # 预处理数据
+    processed = [x * 2 for x in data]
+    
+    # 调用其他函数，传递剩余参数
+    return other_function(processed, *args, **kwargs)
+
+def other_function(data, flag=False, verbose=True):
+    if verbose:
+        print(f"处理数据: {data}")
+    if flag:
+        return sum(data)
+    return data
+
+result = process_data([1, 2, 3], flag=True, verbose=False)
+print(result)  # 12
+```
+
+### 6.3 类的初始化
+
+```python
+class Person:
+    def __init__(self, name, **kwargs):
+        self.name = name
+        # 将所有关键字参数作为实例属性
+        for key, value in kwargs.items():
+            setattr(self, key, value)
+
+p = Person("Alice", age=25, city="北京", occupation="工程师")
+print(p.name)        # Alice
+print(p.age)         # 25
+print(p.city)        # 北京
+print(p.occupation)  # 工程师
+```
+
+## 七、常见误区与注意事项
+
+### 7.1 参数顺序错误
+
+```python
+# ❌ 错误：**kwargs 不能放在 *args 之前
+def func(**kwargs, *args):
+    pass
+
+# ✅ 正确顺序
+def func(*args, **kwargs):
+    pass
+```
+
+### 7.2 不要滥用可变参数
+
+```python
+# ❌ 不推荐：参数不明确
+def func(*args):
+    # 需要猜测 args 的含义
+    pass
+
+# ✅ 推荐：明确参数
+def func(a, b, c):
+    pass
+```
+
+### 7.3 args 和 kwargs 是约定俗成的命名
+
+```python
+# 虽然可以用其他名字，但不推荐
+def func(*my_args, **my_kwargs):
+    pass
+
+# 推荐使用标准命名
+def func(*args, **kwargs):
+    pass
+```
+
+## 八、总结
+
+| 特性 | `*args` | `**kwargs` |
+|------|---------|------------|
+| 全称 | arguments | keyword arguments |
+| 类型 | 元组 (tuple) | 字典 (dict) |
+| 用途 | 接收任意数量的位置参数 | 接收任意数量的关键字参数 |
+| 位置 | 必须在普通参数之后，**kwargs 之前 | 必须在所有参数最后 |
+| 解包 | 使用 `*` 解包列表/元组 | 使用 `**` 解包字典 |
+
+**核心要点**：
+1. `*args` 打包位置参数为元组
+2. `**kwargs` 打包关键字参数为字典
+3. 参数顺序：普通参数 → 默认参数 → `*args` → 仅限关键字参数 → `**kwargs`
+4. 使用 `*` 和 `**` 可以解包数据
+
+这些内容在我的博客中有更详细的讲解：
+- [Python基础.md](file:///e:/note/my-blog/docs/backend/python/Python基础.md)
+- [Python面试考点总结.md](file:///e:/note/my-blog/docs/backend/python/Python面试考点总结.md)

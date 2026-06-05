@@ -25,7 +25,12 @@ Python 编程与应用开发
   <li data-href="./Python进阶">
     <strong>Python 进阶</strong>
     <br>
-    <span>装饰器、生成器、异步编程、设计模式</span>
+    <span>装饰器、生成器、元编程</span>
+  </li>
+  <li data-href="./Python可变参数详解">
+    <strong>Python 可变参数详解</strong>
+    <br>
+    <span>*args 和 **kwargs 详解</span>
   </li>
   <li data-href="./Python装饰器详解">
     <strong>Python 装饰器详解</strong>

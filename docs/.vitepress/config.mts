@@ -421,6 +421,7 @@ export default defineConfig({
           items: [
             { text: 'Python基础', link: '/backend/python/Python基础' },
             { text: 'Python进阶', link: '/backend/python/Python进阶' },
+            { text: 'Python可变参数详解', link: '/backend/python/Python可变参数详解' },
             { text: 'Python装饰器详解', link: '/backend/python/Python装饰器详解' },
             { text: 'Python生成器与迭代器详解', link: '/backend/python/Python生成器与迭代器详解' },
             { text: 'Python异步编程详解', link: '/backend/python/Python异步编程详解' },
