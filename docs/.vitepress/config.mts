@@ -225,6 +225,14 @@ export default defineConfig({
           ]
         }
       ],
+      '/ops/Security/': [
+        {
+          text: '服务器安全',
+          items: [
+            { text: '服务器网络安全', link: '/ops/Security/服务器网络安全' },
+          ]
+        }
+      ],
       '/frontent/basic/': [
         {
           text: '基础',

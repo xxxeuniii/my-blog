@@ -37,6 +37,11 @@ sidebar: false
     <br>
     <span>Nginx Web 服务器配置与优化</span>
   </li>
+  <li data-href="./Security/">
+    <strong>服务器安全</strong>
+    <br>
+    <span>网络安全、系统安全、数据安全防护</span>
+  </li>
 </ul>
 
 <script setup>
