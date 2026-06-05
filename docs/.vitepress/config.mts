@@ -152,9 +152,10 @@ export default defineConfig({
       {
         text: '运维',
         items: [
-          { text: 'Linux基础', link: '/ops/' },
-          { text: 'Docker基础', link: '/ops/Docker基础/' },
-          { text: 'Nginx基础', link: '/ops/Nginx基础/' },
+          { text: 'Linux', link: '/ops/Linux/' },
+          { text: 'SSH与云服务器', link: '/ops/SSH/' },
+          { text: 'Docker', link: '/ops/Docker/' },
+          { text: 'Nginx', link: '/ops/Nginx/' },
         ],
       },
       {

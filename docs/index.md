@@ -15,11 +15,11 @@ layout: home
   <section class="stats-overview">
     <div class="stats-grid">
       <div class="stat-card">
-        <span class="stat-number">160</span>
+        <span class="stat-number">203</span>
         <span class="stat-label">文章总数</span>
       </div>
       <div class="stat-card">
-        <span class="stat-number">5</span>
+        <span class="stat-number">10</span>
         <span class="stat-label">技术分类</span>
       </div>
       <div class="stat-card">

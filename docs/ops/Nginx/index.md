@@ -5,9 +5,9 @@ sidebar: false
 
 <div class="category-index-page">
 
-# 运维
+# Nginx
 
-运维相关技术知识。
+Nginx Web 服务器配置与优化，包括反向代理、负载均衡、HTTPS 配置等内容。
 
 <div class="category-info">
   <div class="info-item">
@@ -17,25 +17,10 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li data-href="./Linux/">
-    <strong>Linux</strong>
+  <li data-href="./Nginx基础">
+    <strong>Nginx基础</strong>
     <br>
-    <span>Linux 系统基础命令与进阶运维知识</span>
-  </li>
-  <li data-href="./SSH/">
-    <strong>SSH与云服务器</strong>
-    <br>
-    <span>SSH 免登录配置、CI/CD 自动化部署</span>
-  </li>
-  <li data-href="./Docker/">
-    <strong>Docker</strong>
-    <br>
-    <span>Docker 容器技术入门与实践</span>
-  </li>
-  <li data-href="./Nginx/">
-    <strong>Nginx</strong>
-    <br>
-    <span>Nginx Web 服务器配置与优化</span>
+    <span>Nginx Web 服务器配置入门</span>
   </li>
 </ul>
 

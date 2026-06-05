@@ -5,9 +5,9 @@ sidebar: false
 
 <div class="category-index-page">
 
-# 运维
+# Linux
 
-运维相关技术知识。
+Linux 系统管理相关知识，从基础命令到进阶运维。
 
 <div class="category-info">
   <div class="info-item">
@@ -17,25 +17,15 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li data-href="./Linux/">
-    <strong>Linux</strong>
+  <li data-href="./Linux基础">
+    <strong>Linux基础</strong>
     <br>
-    <span>Linux 系统基础命令与进阶运维知识</span>
+    <span>Linux 系统常用命令与操作</span>
   </li>
-  <li data-href="./SSH/">
-    <strong>SSH与云服务器</strong>
+  <li data-href="./Linux进阶">
+    <strong>Linux进阶</strong>
     <br>
-    <span>SSH 免登录配置、CI/CD 自动化部署</span>
-  </li>
-  <li data-href="./Docker/">
-    <strong>Docker</strong>
-    <br>
-    <span>Docker 容器技术入门与实践</span>
-  </li>
-  <li data-href="./Nginx/">
-    <strong>Nginx</strong>
-    <br>
-    <span>Nginx Web 服务器配置与优化</span>
+    <span>系统监控、安全加固、脚本编写等进阶内容</span>
   </li>
 </ul>
 
