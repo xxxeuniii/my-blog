@@ -1,15 +1,65 @@
+---
+layout: page
+sidebar: false
+---
+
+<div class="category-index-page">
+
 # 服务器安全
 
 服务器安全是运维工作的核心内容，涵盖网络层、系统层、应用层和数据层的全方位防护。
 
-## 安全分类
+<div class="category-info">
+  <div class="info-item">
+    <div class="info-label">文章数量</div>
+    <div class="info-value" id="article-count"></div>
+  </div>
+</div>
 
-- [服务器网络安全](服务器网络安全)
+<ul id="article-list">
+  <li data-href="./服务器网络安全">
+    <strong>服务器网络安全</strong>
+    <br>
+    <span>网络安全、系统安全、数据安全防护的全面指南</span>
+  </li>
+</ul>
 
-## 安全防护要点
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
+  const list = document.getElementById('article-list')
+  if (list) {
+    const items = list.querySelectorAll('li[data-href]')
+    items.forEach(item => {
+      item.style.cursor = 'pointer'
+      item.addEventListener('click', () => {
+        const href = item.getAttribute('data-href')
+        if (href) {
+          window.location.href = href
+        }
+      })
+    })
+    const countEl = document.getElementById('article-count')
+    if (countEl) {
+      countEl.textContent = items.length
+    }
+  }
+})
+</script>
 
-1. **网络层防护**：防火墙配置、安全组规则、DDoS防护
-2. **系统层防护**：用户权限管理、SSH安全、服务安全配置
-3. **应用层防护**：WAF配置、SSL/TLS加密、漏洞修复
-4. **数据层防护**：数据加密、定期备份、敏感数据保护
-5. **监控审计**：日志监控、入侵检测、安全审计
+</div>
+
+<style>
+#article-list li {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+#article-list li:hover {
+  border-color: #171717;
+  background: #fafafa;
+}
+</style>

@@ -156,6 +156,7 @@ export default defineConfig({
           { text: 'SSH与云服务器', link: '/ops/SSH/' },
           { text: 'Docker', link: '/ops/Docker/' },
           { text: 'Nginx', link: '/ops/Nginx/' },
+          { text: '服务器安全', link: '/ops/Security/' },
         ],
       },
       {
