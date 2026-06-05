@@ -418,6 +418,8 @@ export default defineConfig({
         {
           text: 'Python',
           items: [
+            { text: 'Python基础', link: '/backend/python/Python基础' },
+            { text: 'Python进阶', link: '/backend/python/Python进阶' },
             { text: 'fastapi基础', link: '/backend/python/fastapi基础' },
             { text: '基于flask开发的dify', link: '/backend/python/基于flask开发的dify' },
           ]

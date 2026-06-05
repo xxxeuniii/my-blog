@@ -17,6 +17,16 @@ Python 编程与应用开发
 </div>
 
 <ul id="article-list">
+  <li data-href="./Python基础">
+    <strong>Python 基础</strong>
+    <br>
+    <span>Python 基础语法、数据类型、函数与类</span>
+  </li>
+  <li data-href="./Python进阶">
+    <strong>Python 进阶</strong>
+    <br>
+    <span>装饰器、生成器、异步编程、设计模式</span>
+  </li>
   <li data-href="./fastapi基础">
     <strong>FastAPI 基础</strong>
     <br>
