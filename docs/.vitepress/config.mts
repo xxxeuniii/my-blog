@@ -190,7 +190,42 @@ export default defineConfig({
       },
 
     ],
-    sidebar: false,
+    sidebar: {
+      '/ops/Linux/': [
+        {
+          text: 'Linux',
+          items: [
+            { text: 'Linux基础', link: '/ops/Linux/Linux基础' },
+            { text: 'Linux进阶', link: '/ops/Linux/Linux进阶' },
+            { text: 'Linux发行版对比', link: '/ops/Linux/Linux发行版对比' },
+          ]
+        }
+      ],
+      '/ops/SSH/': [
+        {
+          text: 'SSH与云服务器',
+          items: [
+            { text: 'SSH与云服务器配置', link: '/ops/SSH/SSH与云服务器配置' },
+          ]
+        }
+      ],
+      '/ops/Docker/': [
+        {
+          text: 'Docker',
+          items: [
+            { text: 'Docker基础', link: '/ops/Docker/Docker基础' },
+          ]
+        }
+      ],
+      '/ops/Nginx/': [
+        {
+          text: 'Nginx',
+          items: [
+            { text: 'Nginx基础', link: '/ops/Nginx/Nginx基础' },
+          ]
+        }
+      ],
+    },
     socialLinks: [{ icon: 'github', link: 'https://github.com/xxxeuniii/my-blog' }],
   },
 })
