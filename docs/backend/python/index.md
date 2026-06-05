@@ -42,6 +42,11 @@ Python 编程与应用开发
     <br>
     <span>asyncio 异步编程入门到实践</span>
   </li>
+  <li data-href="./Python面试考点总结">
+    <strong>Python 面试考点总结</strong>
+    <br>
+    <span>面试常见问题与答案汇总</span>
+  </li>
   <li data-href="./fastapi基础">
     <strong>FastAPI 基础</strong>
     <br>

@@ -424,6 +424,7 @@ export default defineConfig({
             { text: 'Python装饰器详解', link: '/backend/python/Python装饰器详解' },
             { text: 'Python生成器与迭代器详解', link: '/backend/python/Python生成器与迭代器详解' },
             { text: 'Python异步编程详解', link: '/backend/python/Python异步编程详解' },
+            { text: 'Python面试考点总结', link: '/backend/python/Python面试考点总结' },
             { text: 'fastapi基础', link: '/backend/python/fastapi基础' },
             { text: '基于flask开发的dify', link: '/backend/python/基于flask开发的dify' },
           ]
