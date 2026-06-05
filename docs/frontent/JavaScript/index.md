@@ -17,30 +17,45 @@ JS 核心语法与特性
 </div>
 
 <ul id="article-list">
+  <li data-href="./数据类型">
+    <strong>数据类型</strong>
+    <br>
+    <span>JS 数据类型详解</span>
+  </li>
   <li data-href="./const">
     <strong>const</strong>
     <br>
     <span>const 变量声明</span>
   </li>
-  <li data-href="./ts和js的区别">
-    <strong>ts和js的区别</strong>
+  <li data-href="./ES6特性详解">
+    <strong>ES6特性详解</strong>
     <br>
-    <span>TypeScript 与 JavaScript 对比</span>
+    <span>ES6 新特性详解</span>
   </li>
-  <li data-href="./几个循环的区别">
-    <strong>几个循环的区别</strong>
+  <li data-href="./JavaScript闭包详解">
+    <strong>JavaScript闭包详解</strong>
     <br>
-    <span>for、forEach、map 等循环区别</span>
+    <span>闭包概念、原理与应用</span>
   </li>
   <li data-href="./操作数组的方法">
     <strong>操作数组的方法</strong>
     <br>
     <span>JavaScript 数组操作方法</span>
   </li>
-  <li data-href="./数据类型">
-    <strong>数据类型</strong>
+  <li data-href="./几个循环的区别">
+    <strong>几个循环的区别</strong>
     <br>
-    <span>JS 数据类型详解</span>
+    <span>for、forEach、map 等循环区别</span>
+  </li>
+  <li data-href="./类型转换js方法合集">
+    <strong>类型转换js方法合集</strong>
+    <br>
+    <span>JavaScript 类型转换方法</span>
+  </li>
+  <li data-href="./ts和js的区别">
+    <strong>ts和js的区别</strong>
+    <br>
+    <span>TypeScript 与 JavaScript 对比</span>
   </li>
 </ul>
 

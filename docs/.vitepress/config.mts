@@ -273,8 +273,9 @@ export default defineConfig({
           text: 'JavaScript',
           items: [
             { text: '数据类型', link: '/frontent/JavaScript/数据类型' },
-            { text: 'ES6特性详解', link: '/frontent/JavaScript/ES6特性详解' },
             { text: 'const', link: '/frontent/JavaScript/const' },
+            { text: 'ES6特性详解', link: '/frontent/JavaScript/ES6特性详解' },
+            { text: 'JavaScript闭包详解', link: '/frontent/JavaScript/JavaScript闭包详解' },
             { text: '操作数组的方法', link: '/frontent/JavaScript/操作数组的方法' },
             { text: '几个循环的区别', link: '/frontent/JavaScript/几个循环的区别' },
             { text: '类型转换js方法合集', link: '/frontent/JavaScript/类型转换js方法合集' },
@@ -420,6 +421,9 @@ export default defineConfig({
           items: [
             { text: 'Python基础', link: '/backend/python/Python基础' },
             { text: 'Python进阶', link: '/backend/python/Python进阶' },
+            { text: 'Python装饰器详解', link: '/backend/python/Python装饰器详解' },
+            { text: 'Python生成器与迭代器详解', link: '/backend/python/Python生成器与迭代器详解' },
+            { text: 'Python异步编程详解', link: '/backend/python/Python异步编程详解' },
             { text: 'fastapi基础', link: '/backend/python/fastapi基础' },
             { text: '基于flask开发的dify', link: '/backend/python/基于flask开发的dify' },
           ]

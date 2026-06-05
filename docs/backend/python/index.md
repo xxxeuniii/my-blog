@@ -27,6 +27,21 @@ Python 编程与应用开发
     <br>
     <span>装饰器、生成器、异步编程、设计模式</span>
   </li>
+  <li data-href="./Python装饰器详解">
+    <strong>Python 装饰器详解</strong>
+    <br>
+    <span>深入理解装饰器，从原理到实践</span>
+  </li>
+  <li data-href="./Python生成器与迭代器详解">
+    <strong>Python 生成器与迭代器详解</strong>
+    <br>
+    <span>详细讲解迭代器和生成器的使用</span>
+  </li>
+  <li data-href="./Python异步编程详解">
+    <strong>Python 异步编程详解</strong>
+    <br>
+    <span>asyncio 异步编程入门到实践</span>
+  </li>
   <li data-href="./fastapi基础">
     <strong>FastAPI 基础</strong>
     <br>
