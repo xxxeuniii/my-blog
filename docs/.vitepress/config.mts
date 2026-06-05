@@ -419,13 +419,14 @@ export default defineConfig({
         {
           text: 'Python',
           items: [
-            { text: 'Python基础', link: '/backend/python/Python基础' },
-            { text: 'Python进阶', link: '/backend/python/Python进阶' },
-            { text: 'Python可变参数详解', link: '/backend/python/Python可变参数详解' },
-            { text: 'Python装饰器详解', link: '/backend/python/Python装饰器详解' },
-            { text: 'Python生成器与迭代器详解', link: '/backend/python/Python生成器与迭代器详解' },
-            { text: 'Python异步编程详解', link: '/backend/python/Python异步编程详解' },
-            { text: 'Python面试考点总结', link: '/backend/python/Python面试考点总结' },
+            { text: '基础', link: '/backend/python/基础' },
+            { text: '进阶', link: '/backend/python/进阶' },
+            { text: '可变参数详解', link: '/backend/python/可变参数详解' },
+            { text: '装饰器详解', link: '/backend/python/装饰器详解' },
+            { text: '生成器与迭代器详解', link: '/backend/python/生成器与迭代器详解' },
+            { text: '异步编程详解', link: '/backend/python/异步编程详解' },
+            { text: '类与对象详解', link: '/backend/python/类与对象详解' },
+            { text: '面试考点总结', link: '/backend/python/面试考点总结' },
             { text: 'fastapi基础', link: '/backend/python/fastapi基础' },
             { text: '基于flask开发的dify', link: '/backend/python/基于flask开发的dify' },
           ]
