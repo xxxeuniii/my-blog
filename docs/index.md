@@ -7,7 +7,7 @@ layout: home
   <header class="hero-section">
     <h1 class="hero-title">技术档案：知识图谱与索引</h1>
     <p class="hero-description">
-      写代码的日常，技术笔记与思考。
+      写代码的日常，技术笔记与思考。纸上得来终觉浅，绝知此事要躬行。
     </p>
   </header>
 
@@ -15,7 +15,7 @@ layout: home
   <section class="stats-overview">
     <div class="stats-grid">
       <div class="stat-card">
-        <span class="stat-number">203</span>
+        <span class="stat-number">213</span>
         <span class="stat-label">文章总数</span>
       </div>
       <div class="stat-card">

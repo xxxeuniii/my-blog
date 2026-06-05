@@ -72,7 +72,7 @@ const ChartComponent = defineAsyncComponent(() =>
 
 ---
 
-### 4. 动态组件（<component>）
+### 4. 动态组件（`&lt;component&gt;`）
 
 ```vue
 <template>

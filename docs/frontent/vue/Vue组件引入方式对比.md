@@ -242,7 +242,7 @@ requireComponents.keys().forEach(fileName => {
 2. defineAsyncComponent      ████████████████░░░░ 中
 3. require.context           █████████████░░░░░░░ 中-慢
 4. () => import() 路由级     ████████████░░░░░░░░ 中-慢
-5. 动态组件 <component>     ████░░░░░░░░░░░░░░░░ 慢
+5. 动态组件 `&lt;component&gt;`     ████░░░░░░░░░░░░░░░░ 慢
 ```
 
 ### 打包体积对比
@@ -252,12 +252,12 @@ requireComponents.keys().forEach(fileName => {
 | import | 大 | 大 |
 | () => import() | 小 | 小 |
 | defineAsyncComponent | 中 | 中 |
-| <component> | 中 | 中 |
+| `&lt;component&gt;` | 中 | 中 |
 | require.context | 大 | 大 |
 
 ## 完整对比表
 
-| 特性 | import | () => import() | defineAsyncComponent | <component> | require.context |
+| 特性 | import | () => import() | defineAsyncComponent | `&lt;component&gt;` | require.context |
 |------|--------|----------------|----------------------|-------------|-----------------|
 | **首屏体积** | 大 | 小 | 中 | 中 | 大 |
 | **加载速度** | 快 | 慢 | 中-慢 | 中-慢 | 慢 |
@@ -289,7 +289,7 @@ requireComponents.keys().forEach(fileName => {
 ┌─────────────────────────────────────┐
 │ () => import() (路由级)              │
 │ + defineAsyncComponent (按需组件)    │
-│ + <component> (动态切换)             │
+│ + `&lt;component&gt;` (动态切换)             │
 │ + require.context (组件库)           │
 └─────────────────────────────────────┘
 ```
@@ -303,7 +303,7 @@ requireComponents.keys().forEach(fileName => {
 │ 必需/核心组件           → import                      │
 │ 页面级组件              → () => import()              │
 │ 大型/复杂组件           → defineAsyncComponent        │
-│ 动态切换组件            → <component>                 │
+│ 动态切换组件            → `&lt;component&gt;`                 │
 │ 重复使用的组件库        → require.context             │
 └─────────────────────────────────────────────────────┘
 ```
@@ -359,7 +359,7 @@ const AsyncComponent = defineAsyncComponent({
 1. **import** - 必需组件的首选，性能最好
 2. **() => import()** - 页面级分割的标准方式
 3. **defineAsyncComponent** - 按需加载的最佳选择
-4. **<component>** - 动态切换的利器
+4. **`&lt;component&gt;`** - 动态切换的利器
 5. **require.context** - 自动导入的便利方式
 
 ### 性能优先级
@@ -375,5 +375,5 @@ const AsyncComponent = defineAsyncComponent({
 - **必需组件用 import**
 - **页面组件用 () => import()**
 - **大型组件用 defineAsyncComponent**
-- **动态切换用 <component>**
+- **动态切换用 `&lt;component&gt;`**
 - **组件库用 require.context**

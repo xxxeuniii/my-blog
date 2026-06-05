@@ -27,6 +27,11 @@ Linux 系统管理相关知识，从基础命令到进阶运维。
     <br>
     <span>系统监控、安全加固、脚本编写等进阶内容</span>
   </li>
+  <li data-href="./Linux发行版对比">
+    <strong>Linux发行版对比</strong>
+    <br>
+    <span>Ubuntu/Debian、CentOS/RHEL等主流发行版详解</span>
+  </li>
 </ul>
 
 <script setup>
