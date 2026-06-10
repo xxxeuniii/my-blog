@@ -18,9 +18,9 @@ sidebar: false
 
 <ul id="article-list">
   <li data-href="./ai辅助开发">
-    <strong>ai辅助开发</strong>
+    <strong>AI 编码工具对比</strong>
     <br>
-    <span>利用 AI 辅助开发的需求实现流程</span>
+    <span>对比 AI IDE、终端 Agent 与云端编码工具</span>
   </li>
 </ul>
 

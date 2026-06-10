@@ -1,602 +1,355 @@
-# AI 辅助开发
+# AI 编码工具对比：IDE、终端 Agent 与云端 Agent
 
-本文介绍如何利用 AI 工具辅助开发，实现需求的完整流程。
+> 更新于 2026 年 6 月。AI 编码工具迭代很快，本文重点比较稳定的产品形态与使用方式，不比较容易过时的模型排名和套餐价格。
 
-## 一、AI 辅助开发概述
+AI 编程已经从“根据注释补全几行代码”，发展到可以搜索仓库、修改多个文件、运行命令、执行测试和处理 Pull Request。
 
-### 什么是 AI 辅助开发
+面对 Cursor、GitHub Copilot、Claude Code、Codex 等工具，真正需要判断的不是“谁最聪明”，而是：
 
-AI 辅助开发是指利用人工智能工具（如 ChatGPT、Cursor、Copilot 等）帮助程序员完成代码编写、问题排查、知识学习等开发工作。
+- 它能否理解整个代码仓库？
+- 它是在 IDE 中协作，还是在后台独立完成任务？
+- 修改代码前是否容易审查与控制？
+- 它是否适合当前团队的开发流程？
 
-### AI 能做什么
+## 一、先理解四类 AI 编码工具
 
-| 能力 | 说明 | 示例 |
-|------|------|------|
-| **代码生成** | 根据描述生成代码 | "写一个 Vue 登录组件" |
-| **代码解释** | 分析代码逻辑 | "这段代码什么意思" |
-| **Bug 修复** | 分析错误并提供方案 | "这个报错怎么解决" |
-| **代码优化** | 性能优化、重构建议 | "这段代码怎么优化" |
-| **知识查询** | 技术问题解答 | "什么是依赖注入" |
-| **文档生成** | 生成注释、API 文档 | "给这个函数写注释" |
+| 类型 | 工作方式 | 典型工具 | 适合场景 |
+|------|----------|----------|----------|
+| **AI 原生 IDE** | 编辑器、对话、补全和 Agent 深度集成 | Cursor、Windsurf、Trae | 高频日常开发、边写边改 |
+| **IDE 内 Agent** | 作为 VS Code、JetBrains 等编辑器的扩展运行 | GitHub Copilot、Gemini Code Assist、通义灵码、Junie | 保留现有 IDE 与团队环境 |
+| **终端 / 本地 Agent** | 在本地仓库中读取文件、执行命令和修改代码 | Claude Code、Codex CLI、Gemini CLI、Aider | 后端、脚本、跨文件任务、自动化 |
+| **云端异步 Agent** | 在隔离环境中独立执行任务并提交结果 | Codex Cloud、GitHub Copilot coding agent、Devin | Issue 修复、批量任务、并行开发 |
 
-## 二、常用 AI 开发工具
+这四类工具没有绝对高低。它们分别优化了不同的开发体验：
 
-### 1. Cursor
+- AI IDE 强调即时反馈。
+- IDE 插件强调迁移成本低。
+- 终端 Agent 强调控制感与自动化。
+- 云端 Agent 强调并行与异步执行。
 
-AI 编程 IDE，基于 VS Code。
+## 二、AI IDE 对比
 
-```bash
-# 下载安装
-https://cursor.sh
+### Cursor
 
-# 核心功能
-- Tab 自动补全
-- Ctrl+K 生成代码
-- Ctrl+L 对话问答
-- Ctrl+/ 解释代码
+[Cursor](https://cursor.com/) 是基于 VS Code 生态构建的 AI 原生编辑器。它把代码补全、仓库问答、多文件修改和 Agent 工作流放进同一个界面。
+
+**优势**
+
+- 从 VS Code 迁移成本低，扩展与快捷键习惯容易保留。
+- 编辑、对话、Diff 审查和 Agent 操作衔接顺畅。
+- 适合一边阅读代码、一边让 AI 修改的工作方式。
+
+**需要注意**
+
+- Agent 修改速度快，但复杂任务仍需要主动审查 Diff。
+- 编辑器中的规则、索引质量和上下文选择会显著影响结果。
+
+**适合**
+
+个人开发者、全栈开发、希望 AI 深度参与日常编码的人。
+
+### Windsurf
+
+[Windsurf](https://windsurf.com/) 也是 AI 原生 IDE，核心体验围绕 Cascade Agent 展开，强调理解开发上下文并持续执行多步任务。
+
+**优势**
+
+- Agent 工作流与编辑器结合紧密。
+- 适合从需求描述开始，连续完成搜索、修改和验证。
+- 对喜欢“让 AI 主动推进任务”的开发者更自然。
+
+**需要注意**
+
+- 自动化程度越高，越需要明确任务边界和验证条件。
+- 与现有团队工具链的兼容性应先通过真实项目验证。
+
+**适合**
+
+原型开发、独立项目，以及偏好 Agent 主动执行的人。
+
+### Trae
+
+[Trae](https://www.trae.ai/) 提供 AI IDE 与 Agent 能力，产品定位更偏向低门槛的 AI 开发体验。
+
+**优势**
+
+- 上手成本较低，适合体验 AI IDE 工作流。
+- 对中文需求描述和国内开发环境较友好。
+
+**需要注意**
+
+- 在大型仓库、复杂工具链和团队规范中的表现需要单独评估。
+- 不应只看 Demo 生成效果，应重点测试真实项目维护能力。
+
+**适合**
+
+学生、个人项目、快速原型和希望低成本尝试 AI IDE 的开发者。
+
+### AI IDE 怎么选
+
+| 关注点 | 更适合的方向 |
+|--------|--------------|
+| 从 VS Code 平滑迁移，重视成熟体验 | Cursor |
+| 希望 Agent 更主动地连续推进任务 | Windsurf |
+| 中文体验、快速入门和原型开发 | Trae |
+
+选择 AI IDE 时，不要只测试“从零生成一个页面”。更有价值的测试是：
+
+1. 让它理解一个已有模块。
+2. 修改跨越三个以上文件的需求。
+3. 要求它运行测试并修复失败。
+4. 检查它是否遵守项目现有代码模式。
+
+## 三、IDE 内 AI Agent 对比
+
+### GitHub Copilot
+
+[GitHub Copilot](https://docs.github.com/en/copilot) 已经不只是代码补全工具。它覆盖编辑器内聊天、Agent 模式、代码审查，以及可以在 GitHub 中处理任务的 coding agent。
+
+**优势**
+
+- 与 GitHub、Pull Request 和主流 IDE 集成紧密。
+- 团队无需整体迁移到新的编辑器。
+- 从补全到 Issue、PR 的协作链路较完整。
+
+**适合**
+
+使用 GitHub 协作的团队，以及希望保留 VS Code 或 JetBrains 的开发者。
+
+### Gemini Code Assist
+
+[Gemini Code Assist](https://developers.google.com/gemini-code-assist) 提供代码补全、聊天和 Agent 能力，并与 Google Cloud 开发生态结合。
+
+**优势**
+
+- 适合 Google Cloud、Android 和相关技术栈。
+- 可以作为现有 IDE 中的辅助工具使用。
+
+**适合**
+
+Google Cloud 用户、Android 开发者，以及已经使用 Gemini 生态的团队。
+
+### 通义灵码
+
+[通义灵码](https://lingma.aliyun.com/) 是面向国内开发者的 AI 编码助手，覆盖代码补全、问答、代码解释与智能编码能力。
+
+**优势**
+
+- 中文交互和国内网络环境较友好。
+- 适合阿里云及国内常见研发场景。
+- 保留现有 IDE，迁移成本较低。
+
+**适合**
+
+国内团队、中文需求较多的开发者，以及希望在现有 IDE 中使用 AI 的用户。
+
+### JetBrains AI Assistant 与 Junie
+
+[JetBrains AI](https://www.jetbrains.com/ai/) 将 AI Assistant 与 Junie 编码 Agent 集成到 IntelliJ IDEA、WebStorm、PyCharm 等 IDE 中。
+
+**优势**
+
+- 能利用 JetBrains IDE 对代码结构、重构和项目模型的理解。
+- 对 Java、Kotlin、Python 等 JetBrains 重度用户更自然。
+
+**适合**
+
+不希望离开 JetBrains IDE 的专业开发者。
+
+## 四、终端与本地 Agent 对比
+
+### Claude Code
+
+[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) 是运行在终端中的编码 Agent，可以读取仓库、修改文件、执行命令并协助完成开发任务。
+
+**优势**
+
+- 对复杂代码理解、分析和跨文件任务较强。
+- 终端工作流清晰，适合后端和基础设施开发。
+- 容易与脚本、Git 和现有命令行工具结合。
+
+**适合**
+
+大型仓库分析、重构、后端开发、排查复杂问题。
+
+### OpenAI Codex
+
+[Codex](https://openai.com/codex/) 可以在本地终端或云端环境中执行编码任务，适合修改代码、运行测试、解释仓库和并行处理任务。
+
+**优势**
+
+- 同时覆盖本地协作与云端异步执行。
+- 适合把明确任务交给 Agent 完整处理。
+- 可以围绕仓库任务、验证与代码审查形成工作流。
+
+**适合**
+
+希望并行推进多个任务、自动处理明确 Issue，以及需要本地与云端 Agent 配合的开发者。
+
+### Gemini CLI
+
+[Gemini CLI](https://github.com/google-gemini/gemini-cli) 是面向终端的开源 AI Agent，可用于理解代码、执行开发任务并连接工具。
+
+**优势**
+
+- 开源、终端原生。
+- 适合 Gemini 和 Google 开发生态用户。
+- 便于组合进命令行工作流。
+
+**适合**
+
+偏好开源工具、Google 技术栈和终端工作方式的开发者。
+
+### Aider
+
+[Aider](https://aider.chat/) 是成熟的开源 AI 结对编程工具，强调在 Git 仓库中进行可追踪的代码修改。
+
+**优势**
+
+- Git 工作流清晰，修改容易追踪。
+- 支持多种模型和自定义配置。
+- 自动化程度相对克制，适合希望保持控制的人。
+
+**适合**
+
+希望使用开源工具、自选模型，并重视 Git 提交过程的开发者。
+
+## 五、云端异步 Agent 对比
+
+云端 Agent 与 IDE 中的聊天最大区别是：开发者不需要一直等待它工作。
+
+你可以把 Issue 或任务交给 Agent，让它在独立环境中读取代码、修改文件、运行测试，然后返回 Pull Request 或 Diff。
+
+| 工具 | 主要特点 | 更适合 |
+|------|----------|--------|
+| **Codex Cloud** | 可并行执行仓库任务，并返回可审查结果 | 多任务并行、明确的工程任务 |
+| **GitHub Copilot coding agent** | 从 GitHub Issue 到 Pull Request 的工作流紧密 | GitHub 团队、Issue 驱动开发 |
+| **Devin** | 强调较完整的软件任务执行与独立工作环境 | 长任务、团队任务委派 |
+
+云端 Agent 最适合边界清晰、可以自动验证的工作，例如：
+
+- 修复有稳定复现步骤的 Bug。
+- 补充单元测试。
+- 批量升级依赖或迁移 API。
+- 修改文档与重复性代码。
+- 处理定义明确的小型 Issue。
+
+对于需求模糊、涉及核心架构或缺少测试的任务，云端 Agent 很容易做出“看似完成、实际偏离”的结果。
+
+## 六、主流工具横向对比
+
+| 工具 | 主要界面 | 仓库级修改 | 执行命令 | 异步任务 | 核心优势 |
+|------|----------|------------|----------|----------|----------|
+| Cursor | AI IDE | 强 | 支持 | 有限 | 编辑体验与 Agent 平衡 |
+| Windsurf | AI IDE | 强 | 支持 | 有限 | 主动式 Agent 工作流 |
+| GitHub Copilot | IDE + GitHub | 强 | 支持 | 支持 | GitHub 与团队协作 |
+| JetBrains Junie | JetBrains IDE | 强 | 支持 | 以 IDE 内为主 | JetBrains 项目理解 |
+| Claude Code | 终端 | 强 | 强 | 本地任务为主 | 代码理解与复杂任务 |
+| Codex | 终端 + 云端 | 强 | 强 | 强 | 本地与云端任务协作 |
+| Gemini CLI | 终端 | 强 | 强 | 本地任务为主 | 开源与 Google 生态 |
+| Aider | 终端 | 强 | 可组合 | 否 | Git 工作流与模型自由度 |
+| Devin | 云端工作区 | 强 | 强 | 强 | 独立执行长任务 |
+| 通义灵码 | IDE 插件 | 支持 | 视模式而定 | 以 IDE 内为主 | 中文与国内开发环境 |
+
+## 七、按开发场景选择
+
+### 个人开发与快速原型
+
+优先考虑 Cursor、Windsurf 或 Trae。
+
+它们可以在一个界面内完成需求讨论、代码生成和即时修改。但不要让 Agent 一次生成整个项目，应该按模块推进并持续运行验证。
+
+### 已有大型项目
+
+优先考虑 Claude Code、Codex、Cursor 或 JetBrains Junie。
+
+关键不是生成速度，而是工具能否：
+
+- 找到项目中相似实现。
+- 遵循已有架构和命名规范。
+- 控制修改范围。
+- 运行现有测试。
+- 给出容易审查的 Diff。
+
+### GitHub 团队协作
+
+优先考虑 GitHub Copilot coding agent 或 Codex 云端任务。
+
+把小型 Issue、测试补充和明确 Bug 修复交给云端 Agent，开发者负责审查结果，可以减少等待时间。
+
+### 国内网络与中文开发
+
+可以优先测试通义灵码与 Trae，同时根据项目要求评估数据策略、模型能力和团队工具链兼容性。
+
+### 希望保留最大控制权
+
+优先考虑 Aider、Claude Code 或 Codex CLI。
+
+终端 Agent 更容易限制工作目录、查看命令执行过程，并与 Git 分支和测试命令结合。
+
+## 八、评估工具时应该测试什么
+
+不要使用“写一个 Todo List”判断工具能力。应该拿真实项目完成以下测试：
+
+| 测试任务 | 观察重点 |
+|----------|----------|
+| 解释现有模块 | 是否真正理解调用关系 |
+| 修复一个真实 Bug | 是否能复现、定位并验证 |
+| 新增跨文件功能 | 是否遵守现有架构 |
+| 补充测试 | 是否覆盖边界情况 |
+| 执行重构 | 是否控制修改范围 |
+| 运行项目命令 | 是否会根据失败结果继续修复 |
+
+建议记录以下指标：
+
+- 首次任务成功率。
+- 人工修改时间。
+- 引入回归问题的数量。
+- Token 或额度消耗。
+- Diff 是否容易审查。
+- 对项目规则的遵守程度。
+
+## 九、AI Agent 编码的安全边界
+
+AI Agent 可以执行命令和修改大量文件，因此必须建立明确边界。
+
+### 必须人工确认的操作
+
+- 删除大量文件或修改数据库。
+- 发布生产环境。
+- 推送代码、合并 Pull Request。
+- 修改权限、密钥和基础设施。
+- 安装来源不明确的依赖。
+
+### 推荐工作流
+
+```text
+明确任务与验收条件
+        ↓
+让 Agent 阅读相关代码
+        ↓
+先给计划，再执行修改
+        ↓
+运行 lint、类型检查和测试
+        ↓
+人工审查 Diff
+        ↓
+提交代码
 ```
 
-### 2. GitHub Copilot
+无论使用哪个工具，都应让 Agent 在独立分支或可回退环境中工作。AI 可以负责执行，但最终责任仍属于开发者。
 
-代码补全工具，集成在 IDE 中。
+## 十、结论
 
-```bash
-# 安装
-# VS Code 扩展市场搜索 "GitHub Copilot"
+没有一款 AI 编码工具适合所有人。
 
-# 使用
-# 在代码中输入注释，AI 自动补全
-function // 计算斐波那契数列
-function fibonacci(n) { ... }
-```
+- 想获得流畅的编辑体验，选择 AI 原生 IDE。
+- 不想迁移编辑器，选择 Copilot、通义灵码或 JetBrains AI。
+- 偏好终端与可控自动化，选择 Claude Code、Codex CLI、Gemini CLI 或 Aider。
+- 想并行处理明确任务，选择云端异步 Agent。
 
-### 3. ChatGPT
+真正有效的使用方式不是让 AI 替代开发者，而是把工作拆成两部分：
 
-通用 AI 对话工具。
+> 人负责目标、边界、架构和验收；Agent 负责搜索、实现、验证和重复劳动。
 
-```bash
-# 使用方式
-1. 描述需求
-2. AI 生成方案
-3. 追问细节
-4. 复制代码
-```
-
-### 4. 通义灵码
-
-阿里推出的 AI 编程助手。
-
-```bash
-# 下载
-https://tongyi.aliyun.com/lingma
-
-# 功能
-- 代码补全
-- 代码生成
-- 智能问答
-```
-
-## 三、利用 AI 实现需求的流程
-
-### 完整流程图
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                    AI 辅助开发流程                         │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│   1. 需求描述                                            │
-│      │                                                  │
-│      ▼                                                  │
-│   2. AI 理解需求                                        │
-│      │                                                  │
-│      ▼                                                  │
-│   3. AI 生成代码框架                                     │
-│      │                                                  │
-│      ▼                                                  │
-│   4. 本地运行验证                                        │
-│      │                                                  │
-│      ├─ 成功 ──► 完成                                    │
-│      │                                                  │
-│      ▼ 失败                                              │
-│   5. 发给 AI 调试                                        │
-│      │                                                  │
-│      ▼                                                  │
-│   6. AI 提供方案                                        │
-│      │                                                  │
-│      ▼                                                  │
-│   7. 修改代码                                           │
-│      │                                                  │
-│      └───────────────────────────────────► 4. 循环      │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
-
-### 步骤详解
-
-#### 步骤 1：需求描述
-
-```markdown
-[错误示例]
-"帮我写个功能"
-
-[正确示例]
-"帮我写一个 Vue3 的用户登录组件，包含：
-1. 用户名和密码输入框
-2. 表单验证（用户名必填，密码至少6位）
-3. 登录按钮，点击调用 /api/login 接口
-4. 登录失败显示错误提示"
-```
-
-**技巧：需求描述越详细，AI 理解越准确**
-
-#### 步骤 2：AI 生成代码
-
-```markdown
-# AI 生成的代码示例（Vue3）
-
-<template>
-  <form @submit.prevent="handleSubmit">
-    <div>
-      <input
-        v-model="form.username"
-        placeholder="用户名"
-      />
-      <span v-if="errors.username">{{ errors.username }}</span>
-    </div>
-    <div>
-      <input
-        v-model="form.password"
-        type="password"
-        placeholder="密码"
-      />
-      <span v-if="errors.password">{{ errors.password }}</span>
-    </div>
-    <button type="submit" :disabled="loading">
-      {{ loading ? '登录中...' : '登录' }}
-    </button>
-    <p v-if="error" class="error">{{ error }}</p>
-  </form>
-</template>
-
-<script setup>
-import { reactive, ref } from 'vue'
-import axios from 'axios'
-
-const form = reactive({
-  username: '',
-  password: ''
-})
-
-const errors = reactive({})
-const loading = ref(false)
-const error = ref('')
-
-const validate = () => {
-  errors.username = form.username ? '' : '用户名必填'
-  errors.password = form.password.length >= 6 ? '' : '密码至少6位'
-  return !errors.username && !errors.password
-}
-
-const handleSubmit = async () => {
-  if (!validate()) return
-
-  loading.value = true
-  error.value = ''
-
-  try {
-    await axios.post('/api/login', form)
-    // 登录成功处理
-  } catch (e) {
-    error.value = e.response?.data?.message || '登录失败'
-  } finally {
-    loading.value = false
-  }
-}
-</script>
-```
-
-#### 步骤 3：运行验证
-
-```bash
-# 运行项目
-npm run dev
-
-# 测试功能
-1. 输入空用户名 -> 应显示"用户名必填"
-2. 输入短密码 -> 应显示"密码至少6位"
-3. 输入正确信息 -> 应调用登录接口
-```
-
-#### 步骤 4：报错调试
-
-如果遇到错误，把错误信息发给 AI：
-
-```markdown
-# 发给 AI
-运行报错：Uncaught (in promise) Error: AxiosError: Request failed with status code 500
-
-代码是刚才你帮我写的登录组件，请帮我排查问题。
-```
-
-```markdown
-# AI 回复
-500 错误是服务器内部错误，可能原因：
-
-1. 接口地址不对 - 检查 /api/login 是否正确
-2. 请求参数格式不对 - 检查 Content-Type
-3. 服务器问题 - 检查后端日志
-
-建议排查步骤：
-1. 打开浏览器开发者工具 -> Network
-2. 查看请求详情
-3. 检查后端接口日志
-```
-
-## 四、AI 提问技巧
-
-### 1. 清晰描述上下文
-
-```markdown
-- 怎么实现登录？
-+ 我现在用 Vue3 + TypeScript，想实现登录功能，应该怎么做？
-```
-
-### 2. 分步提问
-
-```markdown
-- 帮我写个后台管理系统
-+ 1. 先帮我设计一下 Vue3 后台管理系统的目录结构
-+ 2. 接下来帮我写登录页面的代码
-+ 3. 登录成功后怎么跳转到首页？
-```
-
-### 3. 提供限制条件
-
-```markdown
-# 告诉 AI 你的技术栈和限制
-- 使用 Vue3 Composition API
-- 使用 TypeScript
-- 不要使用 Element Plus，用 Tailwind CSS
-- 需要支持移动端响应式
-```
-
-### 4. 让 AI 解释代码
-
-```markdown
-# 看不懂某段代码时
-这段代码什么意思？逐行解释
-
-# 想了解原理
-为什么这里要用 watchEffect？和应用场景是什么？
-```
-
-## 五、AI 辅助开发最佳实践
-
-### 1. 需求文档先行
-
-```markdown
-# 先写好需求文档再问 AI
-
-## 用户登录功能需求
-
-### 功能描述
-用户通过用户名密码登录系统
-
-### 详细需求
-1. 输入框：用户名、密码
-2. 验证：用户名必填，密码至少6位
-3. 按钮：登录按钮
-4. 交互：登录中禁用按钮
-5. 错误：显示错误提示
-6. 成功：跳转首页
-
-### 技术要求
-- Vue3 + Composition API
-- TypeScript
-- 使用 axios 请求
-- 使用 Pinia 管理登录状态
-```
-
-### 2. 代码审查
-
-AI 生成的代码一定要自己审查：
-
-```markdown
-# 审查要点
-1. 安全性 - 是否有 XSS、SQL 注入风险
-2. 性能 - 是否有性能问题
-3. 规范 - 是否符合团队代码规范
-4. 完整 - 是否覆盖所有边界情况
-```
-
-### 3. 复杂逻辑自己把握
-
-```markdown
-# 适合 AI 做的
-- 基础代码模板
-- 重复性代码
-- 简单功能实现
-- 代码解释
-
-# 不适合 AI 做的
-- 核心业务逻辑
-- 架构设计
-- 安全相关代码
-- 不熟悉的领域
-```
-
-### 4. 迭代优化
-
-```markdown
-# 不要期望一次成功
-
-1. AI 生成初版 -> 运行测试
-2. 发现问题 -> 发给 AI 修复
-3. 再次测试 -> 重复直到满意
-```
-
-### 5. 在成熟项目中正确使用 AI
-
-在已有项目中开发新需求时，正确使用 AI 的关键是：**让 AI 学习项目的现有代码模式**。
-
-#### 核心思路
-
-```
-1. 先找到项目中类似的实现
-2. 把现有代码发给 AI 参考
-3. 让 AI 按照现有模式生成新代码
-4. 本地运行验证
-```
-
-#### 具体做法
-
-##### 1. 告诉 AI 代码规范和技术栈
-
-```markdown
-# 告诉 AI
-我们项目的技术栈：
-- Vue3 + Composition API
-- TypeScript
-- 使用 Pinia 管理状态
-- 网络请求用 utils/request.js 里的方法
-- 组件放在 src/components 目录
-- 样式用 scoped
-```
-
-##### 2. 贴示例代码让 AI 模仿
-
-```markdown
-# 告诉 AI
-参考以下代码的写法，帮我写一个 ProductList.vue
-
-```vue
-<!-- src/components/UserList.vue -->
-<template>
-  <div class="user-list">
-    <div v-for="user in list" :key="user.id">
-      {{ user.name }}
-    </div>
-  </div>
-</template>
-
-<script setup>
-import { ref, onMounted } from 'vue'
-import { getUserList } from '@/api/user'
-
-const list = ref([])
-
-onMounted(async () => {
-  list.value = await getUserList()
-})
-</script>
-
-<style scoped>
-.user-list {
-  padding: 16px;
-}
-</style>
-```
-```
-
-##### 3. 贴公共方法让 AI 调用
-
-```markdown
-# 告诉 AI
-我们项目有一个封装好的请求方法，在 utils/request.js 中：
-
-```javascript
-export function get(url, params) {
-  return axios.get(url, { params })
-}
-```
-
-现在帮我写一个获取商品列表的 API 调用，用这个方法。
-```
-
-#### 关键点总结
-
-| 步骤 | 做法 |
-|------|------|
-| **找参考** | 先在项目里搜类似的实现 |
-| **喂代码** | 把现有代码发给 AI 看 |
-| **定规范** | 告诉 AI 项目的技术栈和约定 |
-| **让 AI 模仿** | "按照这个模式写" |
-
-**核心就是：让 AI 抄作业，而不是闭眼写。AI 不了解你的项目，所以需要把现有代码展示给它看。**
-
-## 七、常见问题
-
-### 1. AI 生成的代码有 Bug
-
-```markdown
-# 解决
-1. 把完整错误信息发给 AI
-2. 描述你的期望行为
-3. 让 AI 分析原因并提供修复方案
-```
-
-### 2. AI 不理解你的需求
-
-```markdown
-# 解决
-1. 补充更多细节
-2. 提供示例
-3. 用图表示意图
-4. 分多次描述
-```
-
-### 3. AI 生成的代码不符合团队规范
-
-```markdown
-# 解决
-1. 先告诉 AI 团队的代码规范
-2. 让 AI 按照规范生成
-3. 生成后手动调整
-```
-
-### 4. 不知道问什么
-
-```markdown
-# 常用问题模板
-1. "这个报错怎么解决？"
-2. "这个功能怎么实现？"
-3. "这段代码什么意思？"
-4. "有没有更好的实现方式？"
-5. "如果要做到 XXX，需要注意什么？"
-```
-
-## 八、AI 工具对比
-
-| 工具 | 优点 | 缺点 | 适用场景 |
-|------|------|------|----------|
-| **Cursor** | 深度集成 IDE，功能强大 | 需要付费 | 专业开发 |
-| **Copilot** | 补全快，集成好 | 需要付费 | 代码补全 |
-| **ChatGPT** | 通用能力强 | 需要复制粘贴 | 问题解答 |
-| **通义灵码** | 免费，国内访问快 | 功能相对简单 | 日常开发 |
-
-## 九、项目失控与处理
-
-### 问题场景
-
-在项目中随着时间推移，可能会出现以下问题：
-
-| 问题 | 表现 |
-|------|------|
-| 依赖膨胀 | package.json 里一堆没用的包 |
-| 技术栈混乱 | Vue2/Vue3 混用、多种状态管理混用 |
-| 代码风格不统一 | 有人用 TS，有人用 JS |
-| 重复代码 | 相同逻辑 copy 多处 |
-
-### 处理方法
-
-#### 1. 定期代码走查
-
-```
-每周/每月安排固定时间 review 代码
-- 删除无用代码
-- 合并重复逻辑
-- 统一代码风格
-```
-
-#### 2. 依赖审计
-
-```bash
-# 检查安全漏洞
-npm audit
-
-# 检查没用的依赖
-npx depcheck
-
-# 检查过期依赖
-npm outdated
-```
-
-#### 3. 代码规范检测
-
-```bash
-# ESLint 检查
-npx eslint src/
-
-# Prettier 格式化
-npx prettier --check src/
-
-# TypeScript 类型检查
-npx tsc --noEmit
-```
-
-#### 4. 代码质量检测
-
-| 工具 | 功能 |
-|------|------|
-| ESLint | 代码规范检查 |
-| Prettier | 代码格式化 |
-| SonarQube | 代码质量分析 |
-| CodeClimate | 代码评分 |
-| depcheck | 无用依赖检测 |
-| bundlephobia | 包体积分析 |
-
-#### 5. CI/CD 集成
-
-```yaml
-# .github/workflows/quality.yml
-name: Code Quality
-
-on: [push, pull_request]
-
-jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-      - run: npm ci
-      - run: npx eslint src/
-      - run: npx tsc --noEmit
-      - run: npx depcheck
-```
-
-#### 6. 规范化约束
-
-- 制定团队技术规范
-- 新增代码必须 review
-- CI/CD 加 lint/typecheck 检查
-
-#### 7. 定期重构
-
-| 频率 | 内容 |
-|------|------|
-| 每周 | 小范围重构，删除无用代码 |
-| 每月 | 合并重复逻辑 |
-| 每季度 | 技术栈评估 |
-
-### 核心思路
-
-```
-失控 -> 定期走查 -> 清理重复 -> 规范约束 -> 工具检测
-```
-
-**简单说：定期代码走查 + 删除重复代码 + 工具辅助检测**
-
-## 十、总结
-
-### 核心要点
-
-1. **需求描述要详细** - 越详细 AI 理解越准确
-2. **分步提问** - 不要一次性问太复杂的问题
-3. **代码要审查** - AI 生成的代码不一定完全正确
-4. **复杂逻辑自己把握** - 核心业务不要完全依赖 AI
-
-### 工作流
-
-```
-需求 -> AI 生成代码 -> 运行测试 -> 报错发给 AI -> 修复 -> 循环
-```
-
-### 心态
-
-- AI 是**助手**不是**替代**
-- AI 能提高效率，但不能替代思考
-- **人**才是最终决策者
-
-掌握 AI 辅助开发，能够大幅提升开发效率，但核心的技术判断和架构能力还是需要不断学习和积累。
+工具会持续变化，但这条分工原则不会很快过时。

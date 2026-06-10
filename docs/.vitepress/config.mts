@@ -193,10 +193,6 @@ export default defineConfig({
         ],
       },
       {
-        text: '测试',
-        link: '/test/',
-      },
-      {
         text: 'Web3',
         items: [
           { text: 'DApp基础', link: '/web3/' },
