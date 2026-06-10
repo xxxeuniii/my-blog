@@ -6,14 +6,10 @@ layout: home
   <header class="archive-hero">
     <div class="hero-main">
       <p class="eyebrow">Eunie's technical archive · 2026</p>
-      <h1>把零散的技术经验，整理成可以反复查阅的知识系统。</h1>
+      <h1>把零散的技术经验，<br>整理成可反复查阅的知识系统。</h1>
       <p class="hero-intro">
         记录前端工程、AI Agent、后端与计算机基础。这里不追逐速成答案，更关注技术为什么成立，以及如何落到真实项目中。
       </p>
-      <div class="hero-actions">
-        <a class="primary-action" href="/my-blog/LLM/LangGraph/学习路径">开始阅读 <span>↗</span></a>
-        <a class="text-action" href="/my-blog/project/">查看项目</a>
-      </div>
     </div>
 
 <div class="hero-index" aria-label="档案信息">
@@ -109,6 +105,15 @@ layout: home
 <a href="/my-blog/basic/数据结构与算法/">数据结构与算法</a>
 </nav>
 </article>
+<article class="topic-column">
+<div class="topic-head"><span>05</span><h3>Web3</h3></div>
+<p>理解区块链、智能合约与去中心化应用，探索链上产品的开发方式。</p>
+<nav>
+<a href="/my-blog/web3/">Web3 知识索引</a>
+<a href="/my-blog/web3/DApp基础">DApp 基础</a>
+<a href="/my-blog/web3/DApp基础#三智能合约">智能合约</a>
+</nav>
+</article>
 </div>
   </section>
 
@@ -133,6 +138,8 @@ layout: home
   --paper: #f6faff;
   --surface: #edf3ef;
   --accent: #a33d32;
+  --font-display: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-editorial: 'Newsreader', Georgia, serif;
   max-width: 1180px;
   margin: 0 auto;
   padding: clamp(3rem, 7vw, 7rem) clamp(1.25rem, 4vw, 2.5rem) 3rem;
@@ -179,13 +186,13 @@ layout: home
 }
 
 .hero-main h1 {
-  max-width: 16ch;
-  margin-top: 1.4rem;
-  font-family: 'Newsreader', Georgia, serif;
-  font-size: clamp(3rem, 5.4vw, 4.8rem);
-  font-weight: 500;
-  letter-spacing: -0.045em;
-  line-height: 0.98;
+  max-width: 22ch;
+  margin-top: 1.6rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.3rem, 3.5vw, 3.35rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.34;
 }
 
 .hero-intro {
@@ -194,37 +201,6 @@ layout: home
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.9;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.primary-action {
-  display: inline-flex;
-  gap: 2.5rem;
-  align-items: center;
-  padding: 0.82rem 1rem;
-  background: var(--ink);
-  color: var(--paper) !important;
-  font-size: 0.82rem;
-  font-weight: 600;
-  transition: background-color 180ms ease;
-}
-
-.primary-action:hover {
-  background: var(--accent);
-}
-
-.text-action {
-  padding-bottom: 0.28rem;
-  border-bottom: 1px solid var(--ink);
-  font-size: 0.82rem;
-  font-weight: 600;
 }
 
 .hero-index {
@@ -259,7 +235,7 @@ layout: home
 }
 
 .hero-index dd {
-  font-family: 'Newsreader', Georgia, serif;
+  font-family: var(--font-editorial);
   font-size: 1.05rem;
 }
 
@@ -276,6 +252,10 @@ layout: home
   border-bottom: 1px solid var(--line);
 }
 
+.updates-section {
+  border-bottom: 0;
+}
+
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -286,7 +266,7 @@ layout: home
 
 .section-heading h2 {
   margin-top: 0.45rem;
-  font-family: 'Newsreader', Georgia, serif;
+  font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 500;
   letter-spacing: -0.035em;
@@ -329,8 +309,14 @@ layout: home
   text-transform: uppercase;
 }
 
+.update-number,
+.update-topic,
+.topic-head span {
+  font-family: var(--font-editorial);
+}
+
 .update-title {
-  font-family: 'Newsreader', Georgia, serif;
+  font-family: var(--font-display);
   font-size: clamp(1.35rem, 2.5vw, 1.85rem);
 }
 
@@ -340,9 +326,8 @@ layout: home
 
 .topic-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   border-top: 1px solid var(--ink);
-  border-bottom: 1px solid var(--ink);
 }
 
 .topic-column {
@@ -363,13 +348,13 @@ layout: home
 
 .topic-head span {
   color: var(--accent);
-  font-family: 'Newsreader', Georgia, serif;
+  font-family: var(--font-editorial);
   font-size: 0.85rem;
   font-style: italic;
 }
 
 .topic-head h3 {
-  font-family: 'Newsreader', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.45rem;
   font-weight: 500;
 }
@@ -415,7 +400,7 @@ layout: home
   max-width: 42ch;
   margin-top: 0.8rem !important;
   color: var(--muted);
-  font-family: 'Newsreader', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.2rem;
   line-height: 1.55;
 }
@@ -450,12 +435,17 @@ layout: home
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .topic-column:nth-child(2) {
+  .topic-column:nth-child(even) {
     border-right: 0;
   }
 
-  .topic-column:nth-child(-n + 2) {
+  .topic-column:not(:last-child) {
     border-bottom: 1px solid var(--line);
+  }
+
+  .topic-column:last-child {
+    grid-column: 1 / -1;
+    border-right: 0;
   }
 }
 
@@ -469,7 +459,8 @@ layout: home
   }
 
   .hero-main h1 {
-    font-size: clamp(2.8rem, 14vw, 4rem);
+    font-size: clamp(2rem, 9vw, 2.7rem);
+    line-height: 1.3;
   }
 
   .section-heading {
@@ -495,7 +486,9 @@ layout: home
   }
 
   .topic-column,
-  .topic-column:nth-child(2) {
+  .topic-column:nth-child(even),
+  .topic-column:last-child {
+    grid-column: auto;
     min-height: auto;
     border-right: 0;
     border-bottom: 1px solid var(--line);
