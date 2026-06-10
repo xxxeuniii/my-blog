@@ -82,7 +82,7 @@ layout: home
 <div class="topic-head"><span>02</span><h3>AI 与 Agent</h3></div>
 <p>关注大模型原理、工作流编排，以及 Agent 在研发中的应用。</p>
 <nav>
-<a href="/my-blog/LLM/原理/">大模型原理</a>
+<a href="/my-blog/LLM/原理/">LLM 应用机制</a>
 <a href="/my-blog/LLM/LangGraph/">LangGraph</a>
 <a href="/my-blog/LLM/向量数据库/">向量数据库</a>
 </nav>
@@ -115,6 +115,7 @@ layout: home
     </div>
     <div class="footer-links">
       <a href="https://github.com/xxxeuniii/my-blog">GitHub ↗</a>
+      <a href="https://juejin.cn/user/2947156030789534/posts">掘金 ↗</a>
       <a href="https://www.npmjs.com/~euniii">npm ↗</a>
       <a href="mailto:1491372173@qq.com">Email ↗</a>
     </div>
