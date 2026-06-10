@@ -105,15 +105,6 @@ layout: home
 <a href="/my-blog/basic/数据结构与算法/">数据结构与算法</a>
 </nav>
 </article>
-<article class="topic-column">
-<div class="topic-head"><span>05</span><h3>Web3</h3></div>
-<p>理解区块链、智能合约与去中心化应用，探索链上产品的开发方式。</p>
-<nav>
-<a href="/my-blog/web3/">Web3 知识索引</a>
-<a href="/my-blog/web3/DApp基础">DApp 基础</a>
-<a href="/my-blog/web3/DApp基础#三智能合约">智能合约</a>
-</nav>
-</article>
 </div>
   </section>
 
@@ -327,7 +318,7 @@ layout: home
 
 .topic-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid var(--ink);
 }
 
@@ -436,17 +427,12 @@ layout: home
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .topic-column:nth-child(even) {
+  .topic-column:nth-child(2) {
     border-right: 0;
   }
 
-  .topic-column:not(:last-child) {
+  .topic-column:nth-child(-n + 2) {
     border-bottom: 1px solid var(--line);
-  }
-
-  .topic-column:last-child {
-    grid-column: 1 / -1;
-    border-right: 0;
   }
 }
 
@@ -487,9 +473,7 @@ layout: home
   }
 
   .topic-column,
-  .topic-column:nth-child(even),
-  .topic-column:last-child {
-    grid-column: auto;
+  .topic-column:nth-child(2) {
     min-height: auto;
     border-right: 0;
     border-bottom: 1px solid var(--line);
