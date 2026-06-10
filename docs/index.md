@@ -2,757 +2,522 @@
 layout: home
 ---
 
-<div class="homepage-container">
-  <!-- Hero Title -->
-  <header class="hero-section">
-    <h1 class="hero-title">技术档案：知识图谱与索引</h1>
-    <p class="hero-description">
-      写代码的日常，技术笔记与思考。
-    </p>
+<div class="archive-home">
+  <header class="archive-hero">
+    <div class="hero-main">
+      <p class="eyebrow">Eunie's technical archive · 2026</p>
+      <h1>把零散的技术经验，整理成可以反复查阅的知识系统。</h1>
+      <p class="hero-intro">
+        记录前端工程、AI Agent、后端与计算机基础。这里不追逐速成答案，更关注技术为什么成立，以及如何落到真实项目中。
+      </p>
+      <div class="hero-actions">
+        <a class="primary-action" href="/my-blog/LLM/LangGraph/学习路径">开始阅读 <span>↗</span></a>
+        <a class="text-action" href="/my-blog/project/">查看项目</a>
+      </div>
+    </div>
+
+<div class="hero-index" aria-label="档案信息">
+<p class="index-label">Archive index</p>
+<dl>
+<div><dt>记录</dt><dd>262</dd></div>
+<div><dt>主题</dt><dd>11</dd></div>
+<div><dt>项目</dt><dd>10</dd></div>
+<div><dt>坐标</dt><dd>Guangzhou</dd></div>
+</dl>
+<p class="index-note">持续整理中<br>Last edited · 2026.06</p>
+</div>
   </header>
 
-  <!-- Statistics Overview -->
-  <section class="stats-overview">
-    <div class="stats-grid">
-      <div class="stat-card">
-        <span class="stat-number">262</span>
-        <span class="stat-label">文章总数</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">11</span>
-        <span class="stat-label">技术分类</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">10</span>
-        <span class="stat-label">项目实践</span>
+  <section class="home-section updates-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Reading log · 01</p>
+        <h2>最近值得读</h2>
       </div>
     </div>
+
+<div class="update-list">
+<a class="update-item" href="/my-blog/LLM/LangGraph/学习路径">
+<span class="update-number">01</span>
+<span class="update-title">LangGraph 学习路径</span>
+<span class="update-topic">AI Agent</span>
+<span class="update-arrow">↗</span>
+</a>
+<a class="update-item" href="/my-blog/backend/node/node后端实战">
+<span class="update-number">02</span>
+<span class="update-title">Node.js 后端实战</span>
+<span class="update-topic">Backend</span>
+<span class="update-arrow">↗</span>
+</a>
+<a class="update-item" href="/my-blog/LLM/基础知识/智能研发Agent设计">
+<span class="update-number">03</span>
+<span class="update-title">智能研发 Agent 设计</span>
+<span class="update-topic">LLM</span>
+<span class="update-arrow">↗</span>
+</a>
+<a class="update-item" href="/my-blog/frontent/性能优化/加载性能优化">
+<span class="update-number">04</span>
+<span class="update-title">前端加载性能优化</span>
+<span class="update-topic">Frontend</span>
+<span class="update-arrow">↗</span>
+</a>
+</div>
   </section>
 
-  <!-- Technical Stack & Categories -->
-  <section class="tech-categories">
-    <div class="section-header">
-      <h2 class="section-title">技术分类</h2>
-    </div>
-    <div class="category-grid">
-      <div class="category-column">
-        <h3 class="category-title">基础</h3>
-        <ul class="category-list">
-          <li><a href="/my-blog/frontent/html/">HTML</a></li>
-          <li><a href="/my-blog/frontent/css/">CSS</a></li>
-          <li><a href="/my-blog/frontent/JavaScript/">JavaScript</a></li>
-          <li><a href="/my-blog/frontent/TypeScript/">TypeScript</a></li>
-        </ul>
-      </div>
-      <div class="category-column">
-        <h3 class="category-title">框架</h3>
-        <ul class="category-list">
-          <li><a href="/my-blog/frontent/vue/">Vue.js</a></li>
-          <li><a href="/my-blog/frontent/react/">React.js</a></li>
-          <li><a href="/my-blog/frontent/vite/">Vite</a></li>
-          <li><a href="/my-blog/frontent/webpack/">Webpack</a></li>
-          <li><a href="/my-blog/frontent/Electron/">Electron</a></li>
-          <li><a href="/my-blog/frontent/微前端/">微前端</a></li>
-          <li><a href="/my-blog/frontent/component/">组件库</a></li>
-        </ul>
-      </div>
-      <div class="category-column">
-        <h3 class="category-title">后端</h3>
-        <ul class="category-list">
-          <li><a href="/my-blog/backend/node/">Node.js</a></li>
-          <li><a href="/my-blog/backend/python/">Python</a></li>
-          <li><a href="/my-blog/backend/sql/">SQL</a></li>
-          <li><a href="/my-blog/backend/server/">服务器</a></li>
-        </ul>
-      </div>
-      <div class="category-column">
-        <h3 class="category-title">大模型</h3>
-        <ul class="category-list">
-          <li><a href="/my-blog/LLM/基础知识/">基础知识</a></li>
-          <li><a href="/my-blog/LLM/LangChain/">LangChain</a></li>
-          <li><a href="/my-blog/LLM/LangGraph/">LangGraph</a></li>
-          <li><a href="/my-blog/LLM/Prompt%20Engineering/">提示词工程</a></li>
-          <li><a href="/my-blog/LLM/FastAPI/">FastAPI</a></li>
-        </ul>
+  <section class="home-section topics-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Knowledge map · 02</p>
+        <h2>探索主题</h2>
       </div>
     </div>
+
+<div class="topic-grid">
+<article class="topic-column">
+<div class="topic-head"><span>01</span><h3>前端工程</h3></div>
+<p>从语言、框架到工程化与性能，建立可维护的前端系统。</p>
+<nav>
+<a href="/my-blog/frontent/JavaScript/">JavaScript</a>
+<a href="/my-blog/frontent/vue/">Vue.js</a>
+<a href="/my-blog/frontent/性能优化/">性能优化</a>
+</nav>
+</article>
+<article class="topic-column">
+<div class="topic-head"><span>02</span><h3>AI 与 Agent</h3></div>
+<p>关注大模型原理、工作流编排，以及 Agent 在研发中的应用。</p>
+<nav>
+<a href="/my-blog/LLM/原理/">大模型原理</a>
+<a href="/my-blog/LLM/LangGraph/">LangGraph</a>
+<a href="/my-blog/LLM/向量数据库/">向量数据库</a>
+</nav>
+</article>
+<article class="topic-column">
+<div class="topic-head"><span>03</span><h3>后端与运维</h3></div>
+<p>服务端开发、数据存储和部署运维的实践记录。</p>
+<nav>
+<a href="/my-blog/backend/node/">Node.js</a>
+<a href="/my-blog/backend/python/">Python</a>
+<a href="/my-blog/ops/">Linux & DevOps</a>
+</nav>
+</article>
+<article class="topic-column">
+<div class="topic-head"><span>04</span><h3>计算机基础</h3></div>
+<p>补齐操作系统、网络、算法与软件工程的底层知识。</p>
+<nav>
+<a href="/my-blog/basic/操作系统基础/">操作系统</a>
+<a href="/my-blog/basic/计算机网络基础/">计算机网络</a>
+<a href="/my-blog/basic/数据结构与算法/">数据结构与算法</a>
+</nav>
+</article>
+</div>
   </section>
 
-
-
-
-  <!-- About Section -->
-  <section class="about-section">
-    <hr class="about-divider"/>
-    <section class="about-tech-stack">
-      <h3 class="about-section-title">技术栈与方法论</h3>
-      <div class="about-tech-grid">
-        <div class="about-tech-card">
-          <span class="about-tech-label">技术领域</span>
-          <div class="about-tech-list">
-            <div class="about-tech-item">
-              <span class="about-tech-name">Vue.js / React / TypeScript</span>
-              <span class="about-tech-num">01</span>
-            </div>
-            <div class="about-tech-divider"></div>
-            <div class="about-tech-item">
-              <span class="about-tech-name">前端 / Agent / Vibe Coding</span>
-              <span class="about-tech-num">02</span>
-            </div>
-            <div class="about-tech-divider"></div>
-            <div class="about-tech-item">
-              <span class="about-tech-name">Vite / Webpack / VitePress</span>
-              <span class="about-tech-num">03</span>
-            </div>
-            <div class="about-tech-divider"></div>
-            <div class="about-tech-item">
-              <span class="about-tech-name">CSS / SCSS / Tailwind CSS</span>
-              <span class="about-tech-num">04</span>
-            </div>
-            <div class="about-tech-divider"></div>
-            <div class="about-tech-item">
-              <span class="about-tech-name">UI / UX / 视觉设计</span>
-              <span class="about-tech-num">05</span>
-            </div>
-          </div>
-          <p class="about-tech-desc">专注于前端工程化与用户体验，追求每一像素的精确性。</p>
-        </div>
-        <div class="about-tech-card">
-          <span class="about-tech-label">设计理念</span>
-          <div class="about-design-title">
-            <h4>Minimalism as Logic</h4>
-            <div class="about-design-bar"></div>
-          </div>
-          <p class="about-design-desc">
-            提倡"减法"设计，在保持功能完整的同时，消除不必要的系统复杂性。我认为优秀的代码应该是自解释的，就像一件精密设计的机械结构。
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="about-mission">
-      <h3 class="about-section-title">初衷与使命</h3>
-      <div class="about-mission-box">
-        <blockquote class="about-mission-quote">
-          "技术的本质不应只是解决问题，更应是建立一个可理解、可演进的逻辑体系。"
-        </blockquote>
-        <p class="about-mission-text">
-        在信息碎片化的时代，我发现深刻的技术理解往往被淹没。本博客的初衷是构建一个具有**学术严谨性**的技术归档系统。无论是一个简单的组件库开发，还是复杂的分布式共识算法分析，我都力求通过系统的推演和翔实的记录，让知识不仅仅是"可用"，更是"透明"。
-      </p>
-      </div>
-    </section>
-    <section class="about-contact">
-      <div class="about-contact-wrapper">
-        <div class="about-contact-left">
-          <h3 class="about-contact-title">连接与协作</h3>
-          <p class="about-contact-desc">如果你对我的项目感兴趣，或者想探讨任何技术细节，欢迎通过以下渠道联系。</p>
-          <div class="about-contact-links">
-            <a class="about-contact-link" href="https://github.com">GitHub</a>
-            <a class="about-contact-link" href="https://linkedin.com">LinkedIn</a>
-            <a class="about-contact-link" href="https://www.npmjs.com/~euniii">npm</a>
-            <a class="about-contact-link" href="mailto:1491372173@qq.com" target="_blank">Email</a>
-          </div>
-        </div>
-        <div class="about-contact-right">
-          <span class="about-contact-location-label">地理位置</span>
-          <span class="about-contact-location">中国，广州</span>
-        </div>
-      </div>
-    </section>
-  </section>
-
+  <footer class="archive-footer">
+    <div>
+      <p class="eyebrow">About this archive</p>
+      <p>技术的价值不只在于解决眼前的问题，也在于留下清晰、可复用的思考路径。</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/xxxeuniii/my-blog">GitHub ↗</a>
+      <a href="https://www.npmjs.com/~euniii">npm ↗</a>
+      <a href="mailto:1491372173@qq.com">Email ↗</a>
+    </div>
+  </footer>
 </div>
 
 <style>
-blockquote {
-  border-left: none !important;
-}
-
-/* 保护首页样式不受目录页样式影响 */
-.homepage-container h2,
-.homepage-container h3,
-.homepage-container ul,
-.homepage-container li,
-.homepage-container a {
-  border-left: none !important;
-  padding-left: 0 !important;
-  display: block !important;
-  text-decoration: none !important;
-  background: transparent !important;
-  border: none !important;
-}
-
-.homepage-container h2 {
-  font-family: 'Newsreader', serif !important;
-  font-size: 2rem !important;
-  font-weight: 500 !important;
-  color: #171717 !important;
-  line-height: normal !important;
-  text-transform: none !important;
-  letter-spacing: normal !important;
-  padding-bottom: 1rem !important;
-  margin-bottom: 2.5rem !important;
-}
-
-.homepage-container h3 {
-  font-family: inherit !important;
-  font-size: inherit !important;
-  font-weight: inherit !important;
-  color: inherit !important;
-  line-height: normal !important;
-  text-transform: none !important;
-  letter-spacing: normal !important;
-  padding-bottom: 0.5rem !important;
-  margin-bottom: 1.5rem !important;
-}
-
-.homepage-container .category-title {
-  border-bottom: 2px solid #171717 !important;
-}
-
-.homepage-container ul {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: block !important;
-  gap: 0 !important;
-}
-
-.homepage-container li {
-  padding: 0.75rem 0 !important;
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  transition: none !important;
-  cursor: pointer !important;
-  position: static !important;
-  overflow: visible !important;
-}
-
-.homepage-container {
-  max-width: 1200px;
+.archive-home {
+  --ink: #17201d;
+  --muted: #66706b;
+  --line: #d6ddd8;
+  --paper: #f6faff;
+  --surface: #edf3ef;
+  --accent: #a33d32;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: clamp(3rem, 7vw, 7rem) clamp(1.25rem, 4vw, 2.5rem) 3rem;
+  color: var(--ink);
 }
 
-/* Hero Section */
-.hero-section {
-  margin-bottom: 5rem;
+.archive-home *,
+.archive-home *::before,
+.archive-home *::after {
+  box-sizing: border-box;
 }
 
-.archive-label {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #737373;
-  margin-bottom: 1.5rem;
-}
-
-.hero-title {
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  color: #0c1014;
-  margin-bottom: 2rem;
-  font-family: 'Newsreader', serif;
-}
-
-.hero-description {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: #585f66;
-  max-width: 700px;
-}
-
-/* Section Header */
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-bottom: 1rem;
-  margin-bottom: 2.5rem;
-}
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #171717;
-  font-family: 'Newsreader', serif;
-}
-
-.total-count {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #a3a3a3;
-}
-
-/* Year Archive */
-.year-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 3rem;
-}
-
-@media (min-width: 768px) {
-  .year-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.year-card {
-  cursor: pointer;
-}
-
-.year-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  border-bottom: 1px solid #f5f5f5;
-  padding-bottom: 1.5rem;
-  margin-bottom: 1rem;
-  transition: border-color 0.2s ease;
-}
-
-.year-card:hover .year-header {
-  border-color: #171717;
-}
-
-.year-number {
-  font-size: 3.5rem;
-  font-weight: 600;
-  color: #171717;
-  font-family: 'Newsreader', serif;
-}
-
-.year-count {
-  font-size: 1.25rem;
-  font-style: italic;
-  color: #a3a3a3;
-  transition: color 0.2s ease;
-  font-family: 'Newsreader', serif;
-}
-
-.year-card:hover .year-count {
-  color: #171717;
-}
-
-.year-description {
-  font-size: 0.875rem;
-  line-height: 1.6;
-  color: #737373;
-}
-
-/* Tech Categories */
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .category-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .category-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.category-title {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #171717;
-  border-bottom: 2px solid #171717;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.category-list {
-  list-style: none;
-  padding: 0;
+.archive-home h1,
+.archive-home h2,
+.archive-home h3,
+.archive-home p,
+.archive-home dl,
+.archive-home dd {
   margin: 0;
 }
 
-.category-list li {
+.archive-home a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.archive-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(240px, 0.7fr);
+  gap: clamp(3rem, 8vw, 8rem);
+  align-items: end;
+  min-height: 480px;
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+  border-bottom: 1px solid var(--ink);
+}
+
+.hero-main h1 {
+  max-width: 16ch;
+  margin-top: 1.4rem;
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(3rem, 5.4vw, 4.8rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+}
+
+.hero-intro {
+  max-width: 58ch;
+  margin-top: 2rem !important;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.primary-action {
+  display: inline-flex;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 0.82rem 1rem;
+  background: var(--ink);
+  color: var(--paper) !important;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: background-color 180ms ease;
+}
+
+.primary-action:hover {
+  background: var(--accent);
+}
+
+.text-action {
+  padding-bottom: 0.28rem;
+  border-bottom: 1px solid var(--ink);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.hero-index {
+  padding-top: 1rem;
+  border-top: 4px solid var(--accent);
+}
+
+.index-label {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero-index dl {
+  margin-top: 1.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.hero-index dl div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 0;
+  gap: 1rem;
+  padding: 0.78rem 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.category-list a {
-  font-size: 1rem;
-  color: #525252;
-  text-decoration: none;
-  transition: color 0.2s ease;
+.hero-index dt {
+  color: var(--muted);
+  font-size: 0.74rem;
 }
 
-.category-list a:hover {
-  color: #171717;
+.hero-index dd {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.05rem;
 }
 
-.category-list span {
-  font-size: 0.75rem;
-  color: #d4d4d4;
-  font-style: italic;
+.index-note {
+  margin-top: 1.5rem !important;
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.8;
+  text-align: right;
 }
 
-/* Topics Cloud */
-.topics-cloud {
-  background-color: #fafafa;
-  padding: 3rem;
-  margin: 4rem 0;
+.home-section {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.topics-cloud .section-title {
-  text-align: center;
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: end;
   margin-bottom: 2.5rem;
 }
 
-.tags-container {
+.section-heading h2 {
+  margin-top: 0.45rem;
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.section-heading > a,
+.section-note {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.section-heading > a:hover {
+  color: var(--accent);
+}
+
+.update-list {
+  border-top: 1px solid var(--ink);
+}
+
+.update-item {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr) 9rem 1rem;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--line);
+  transition: padding 180ms ease, color 180ms ease;
+}
+
+.update-item:hover {
+  padding-left: 0.6rem;
+  color: var(--accent);
+}
+
+.update-number,
+.update-topic {
+  color: var(--muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.update-title {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+}
+
+.update-arrow {
+  text-align: right;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+
+.topic-column {
+  min-height: 330px;
+  padding: 1.5rem;
+  border-right: 1px solid var(--line);
+}
+
+.topic-column:last-child {
+  border-right: 0;
+}
+
+.topic-head {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   align-items: baseline;
 }
 
-.tag {
-  font-weight: 500;
-}
-
-.tag-sm {
-  font-size: 1rem;
-  color: #a3a3a3;
-  font-weight: 400;
-}
-
-.tag-medium {
-  font-size: 1.25rem;
-  color: #737373;
-}
-
-.tag-large {
-  font-size: 1.5rem;
-  color: #171717;
-  font-weight: 600;
-}
-
-.tag-xl {
-  font-size: 2rem;
-  color: #171717;
-  font-weight: 600;
-}
-
-/* Statistics Overview */
-.stats-overview {
-  margin-bottom: 5rem;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-@media (max-width: 768px) {
-  .stats-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.stat-card {
-  text-align: center;
-  padding: 2.5rem 1.5rem;
-  border: 1px solid #e5e5e5;
-  border-radius: 0.5rem;
-  transition: all 0.2s ease;
-}
-
-.stat-card:hover {
-  border-color: #171717;
-  transform: translateY(-2px);
-}
-
-.stat-number {
-  display: block;
-  font-size: 3rem;
-  font-weight: 600;
-  color: #171717;
-  font-family: 'Newsreader', serif;
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-
-.stat-label {
-  display: block;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #737373;
-  font-weight: 500;
-}
-
-/* About Section */
-.about-section {
-  margin-top: 5rem;
-}
-
-.about-divider {
-  border: none;
-  border-top: 1px solid #dbe3ec;
-  margin: 4rem 0;
-}
-
-.about-content {
-  margin-bottom: 4rem;
-}
-
-.about-title {
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  color: #0c1014;
-  margin-bottom: 1.5rem;
-  font-family: 'Newsreader', serif;
-}
-
-.about-intro {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: #585f66;
-  max-width: 700px;
-}
-
-.about-section-title {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #171717;
-  font-family: 'Newsreader', serif;
-  padding-bottom: 1rem;
-  margin-bottom: 2.5rem;
-}
-
-.about-tech-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .about-tech-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.about-tech-card {
-  padding: 2rem;
-  border: 1px solid #dbe3ec;
-  border-radius: 0.5rem;
-  background: #ffffff;
-  transition: all 0.2s ease;
-}
-
-.about-tech-card:hover {
-  border-color: #0c101420;
-}
-
-.about-tech-label {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #a3a3a3;
-  margin-bottom: 1.5rem;
-}
-
-.about-tech-list {
-  margin-bottom: 1.5rem;
-}
-
-.about-tech-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 0;
-}
-
-.about-tech-name {
-  font-size: 1rem;
-  color: #0c1014;
-}
-
-.about-tech-num {
-  font-size: 0.75rem;
-  font-family: monospace;
-  color: #a3a3a3;
-}
-
-.about-tech-divider {
-  height: 1px;
-  width: 100%;
-  background-color: #dbe3ec;
-}
-
-.about-tech-desc {
-  font-size: 0.875rem;
-  color: #737373;
+.topic-head span {
+  color: var(--accent);
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 0.85rem;
   font-style: italic;
 }
 
-.about-design-title {
-  margin-bottom: 1.5rem;
+.topic-head h3 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 500;
 }
 
-.about-design-title h4 {
-  font-size: 1.5rem;
-  color: #0c1014;
-  font-family: 'Newsreader', serif;
-  margin-bottom: 0.5rem;
+.topic-column > p {
+  min-height: 7rem;
+  margin-top: 1.2rem !important;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.75;
 }
 
-.about-design-bar {
-  width: 3rem;
-  height: 0.25rem;
-  background-color: #0c1014;
+.topic-column nav {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--line);
 }
 
-.about-design-desc {
-  font-size: 0.875rem;
-  color: #585f66;
-  line-height: 1.6;
+.topic-column nav a {
+  padding: 0.72rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.78rem;
 }
 
-.about-mission {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.topic-column nav a::after {
+  content: '↗';
+  float: right;
+  color: var(--muted);
 }
 
-.about-mission-box {
-  background-color: #fafafa;
-  padding: 2.5rem;
-  border-radius: 0.5rem;
-  border-left: 4px solid #0c1014;
+.topic-column nav a:hover {
+  color: var(--accent);
 }
 
-.about-mission-quote {
-  font-size: 1.125rem;
-  font-style: italic;
-  color: #0c1014;
-  margin: 0 0 2rem 0;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #dbe3ec;
-}
-
-.about-mission-text {
-  font-size: 1rem;
-  color: #585f66;
-  line-height: 2;
-}
-
-.about-contact {
-  border-top: 1px solid #dbe3ec;
-  padding-top: 3rem;
-}
-
-.about-contact-wrapper {
-  display: flex;
-  flex-direction: column;
+.archive-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 3rem;
+  padding: 3.5rem 0 1rem;
 }
 
-@media (min-width: 768px) {
-  .about-contact-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+.archive-footer > div:first-child > p:last-child {
+  max-width: 42ch;
+  margin-top: 0.8rem !important;
+  color: var(--muted);
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.55;
 }
 
-.about-contact-left {
-  flex: 1;
-}
-
-.about-contact-title {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #0c1014;
-  font-family: 'Newsreader', serif;
-  margin-bottom: 1rem;
-}
-
-.about-contact-desc {
-  font-size: 1rem;
-  color: #585f66;
-  margin-bottom: 2rem;
-  max-width: 32rem;
-}
-
-.about-contact-links {
+.footer-links {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  align-items: center;
+  align-items: start;
 }
 
-.about-contact-link {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #a3a3a3 !important;
-  text-decoration: none;
-  transition: color 0.2s ease;
-  cursor: pointer;
+.footer-links a {
+  color: var(--muted);
+  font-size: 0.74rem;
 }
 
-.about-contact-link:hover {
-  color: #0c1014;
+.footer-links a:hover {
+  color: var(--accent);
 }
 
-.about-contact-link:not(:last-child)::after {
-  content: '|';
-  margin-left: 1.5rem;
-  color: #a3a3a3;
-}
+@media (max-width: 900px) {
+  .archive-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
 
-.about-contact-right {
-  border-left: 2px solid #dbe3ec;
-  padding-left: 1.5rem;
-}
+  .hero-index {
+    max-width: 360px;
+  }
 
-@media (min-width: 768px) {
-  .about-contact-right {
-    border-left: none;
-    border-right: 2px solid #dbe3ec;
-    padding-left: 0;
-    padding-right: 1.5rem;
-    text-align: right;
+  .topic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .topic-column:nth-child(2) {
+    border-right: 0;
+  }
+
+  .topic-column:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
   }
 }
 
-.about-contact-location-label {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #a3a3a3;
-  margin-bottom: 0.25rem;
+@media (max-width: 640px) {
+  .archive-home {
+    padding-top: 3rem;
+  }
+
+  .archive-hero {
+    gap: 3.5rem;
+  }
+
+  .hero-main h1 {
+    font-size: clamp(2.8rem, 14vw, 4rem);
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading > a,
+  .section-note {
+    display: block;
+    margin-top: 1rem !important;
+  }
+
+  .update-item {
+    grid-template-columns: 2rem minmax(0, 1fr) 1rem;
+  }
+
+  .update-topic {
+    display: none;
+  }
+
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-column,
+  .topic-column:nth-child(2) {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .topic-column:last-child {
+    border-bottom: 0;
+  }
+
+  .topic-column > p {
+    min-height: auto;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .archive-footer {
+    grid-template-columns: 1fr;
+  }
 }
 
-.about-contact-location {
-  font-size: 1.5rem;
-  color: #0c1014;
-  font-family: 'Newsreader', serif;
+@media (prefers-reduced-motion: reduce) {
+  .archive-home a {
+    transition: none;
+  }
 }
 </style>

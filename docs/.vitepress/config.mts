@@ -162,7 +162,7 @@ export default defineConfig({
       {
         text: '大模型',
         items: [
-          { text: '原理', link: '/LLM/原理/' },
+          { text: 'LLM 应用机制', link: '/LLM/原理/' },
           { text: '基础知识', link: '/LLM/基础知识/' },
           { text: '向量数据库', link: '/LLM/向量数据库/' },
           { text: 'LangChain', link: '/LLM/LangChain/' },
@@ -220,11 +220,11 @@ export default defineConfig({
       ],
       '/LLM/原理/': [
         {
-          text: '大模型原理',
+          text: 'LLM 应用机制',
           items: [
             { text: 'RAG 的原理', link: '/LLM/原理/RAG的原理' },
-            { text: '大模型为什么具有推理能力', link: '/LLM/原理/大模型为什么具有推理能力' },
-            { text: '大模型如何判断何时调用 MCP', link: '/LLM/原理/大模型如何判断何时调用MCP' },
+            { text: '大语言模型推理能力的形成机制', link: '/LLM/原理/大语言模型推理能力的形成机制' },
+            { text: '大语言模型的工具调用决策机制', link: '/LLM/原理/大语言模型的工具调用决策机制' },
           ]
         }
       ],
