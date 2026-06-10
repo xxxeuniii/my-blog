@@ -5,9 +5,9 @@ sidebar: false
 
 <div class="category-index-page">
 
-# LangGraph
+# 软件测试
 
-状态管理工作流框架，构建复杂 AI 应用。
+软件测试是保证软件质量的重要手段，涵盖测试理论、测试方法、测试工具等内容。
 
 <div class="category-info">
   <div class="info-item">
@@ -17,40 +17,30 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li data-href="./学习路径">
-    <strong>学习路径</strong>
+  <li data-href="./测试基础">
+    <strong>测试基础</strong>
     <br>
-    <span>LangGraph 学习路线与资源推荐</span>
+    <span>软件测试的基本概念与分类</span>
   </li>
-  <li data-href="./01_basic_graph_基础图">
-    <strong>01. 基础图</strong>
+  <li data-href="./测试流程">
+    <strong>测试流程</strong>
     <br>
-    <span>基础图结构与节点定义</span>
+    <span>传统软件测试流程与阶段</span>
   </li>
-  <li data-href="./02_conditional_branch_条件分支">
-    <strong>02. 条件分支</strong>
+  <li data-href="./测试方法">
+    <strong>测试方法</strong>
     <br>
-    <span>条件判断与路由</span>
+    <span>黑盒测试、白盒测试、灰盒测试</span>
   </li>
-  <li data-href="./03_cycle_loop_循环">
-    <strong>03. 循环</strong>
+  <li data-href="./测试类型">
+    <strong>测试类型</strong>
     <br>
-    <span>循环执行与迭代</span>
+    <span>单元测试、集成测试、系统测试、验收测试</span>
   </li>
-  <li data-href="./04_human_in_loop_人机交互">
-    <strong>04. 人机交互</strong>
+  <li data-href="./测试用例设计">
+    <strong>测试用例设计</strong>
     <br>
-    <span>人类在环模式</span>
-  </li>
-  <li data-href="./05_state_management_状态管理">
-    <strong>05. 状态管理</strong>
-    <br>
-    <span>状态存储与传递</span>
-  </li>
-  <li data-href="./高频面试题">
-    <strong>高频面试题</strong>
-    <br>
-    <span>常见面试问题与答案</span>
+    <span>等价类划分、边界值分析、因果图法</span>
   </li>
 </ul>
 </div>

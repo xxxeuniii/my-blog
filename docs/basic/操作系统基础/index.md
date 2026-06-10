@@ -22,6 +22,11 @@ sidebar: false
     <br>
     <span>进程线程协程、并发并行、内存管理、Linux基础</span>
   </li>
+  <li data-href="./操作系统对比">
+    <strong>操作系统对比</strong>
+    <br>
+    <span>Linux、macOS、Windows三大系统对比及信创系统介绍</span>
+  </li>
 </ul>
 
 <script setup>

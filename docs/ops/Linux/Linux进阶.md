@@ -144,64 +144,9 @@ top -p PID
 
 ---
 
-## 三、定时任务（Cron）
+## 三、日志管理
 
-### 3.1 Cron 表达式
-
-```
-┌───────────── 分钟 (0-59)
-│ ┌───────────── 小时 (0-23)
-│ │ ┌───────────── 日期 (1-31)
-│ │ │ ┌───────────── 月份 (1-12)
-│ │ │ │ ┌───────────── 星期 (0-6)
-│ │ │ │ │
-│ │ │ │ │
-* * * * * command
-```
-
-### 3.2 常用命令
-
-```bash
-# 编辑当前用户的定时任务
-crontab -e
-
-# 查看当前用户的定时任务
-crontab -l
-
-# 删除当前用户的定时任务
-crontab -r
-
-# 查看系统定时任务目录
-ls /etc/cron.*
-
-# 重启 cron 服务
-systemctl restart cron
-```
-
-### 3.3 示例
-
-```bash
-# 每天凌晨 2 点执行备份
-0 2 * * * /usr/bin/backup.sh
-
-# 每小时执行一次
-0 * * * * /usr/bin/check.sh
-
-# 每周一、三、五的 9:30 执行
-30 9 * * 1,3,5 /usr/bin/sync.sh
-
-# 每 10 分钟执行一次
-*/10 * * * * /usr/bin/heartbeat.sh
-
-# 工作日 9:00-18:00 每小时执行
-0 9-18 * * 1-5 /usr/bin/report.sh
-```
-
----
-
-## 四、日志管理
-
-### 4.1 日志位置
+### 3.1 日志位置
 
 ```bash
 # 系统日志
@@ -218,7 +163,7 @@ systemctl restart cron
 /var/log/apache2/        # Apache 日志
 ```
 
-### 4.2 日志查看命令
+### 3.2 日志查看命令
 
 ```bash
 # 实时查看日志
@@ -246,9 +191,9 @@ gzip /var/log/syslog.1
 
 ---
 
-## 五、用户与权限进阶
+## 四、用户与权限进阶
 
-### 5.1 用户组管理
+### 4.1 用户组管理
 
 ```bash
 # 创建用户组
@@ -270,7 +215,7 @@ cat /etc/passwd
 cat /etc/group
 ```
 
-### 5.2 权限进阶
+### 4.2 权限进阶
 
 ```bash
 # 设置 SUID（执行时拥有文件所有者权限）
@@ -289,7 +234,7 @@ chmod -R 755 /var/www
 chown -R www-data:www-data /var/www
 ```
 
-### 5.3 sudo 权限
+### 4.3 sudo 权限
 
 ```bash
 # 编辑 sudoers 文件
@@ -307,9 +252,9 @@ username ALL=(ALL) NOPASSWD: ALL
 
 ---
 
-## 六、文件查找与处理
+## 五、文件查找与处理
 
-### 6.1 文件查找
+### 5.1 文件查找
 
 ```bash
 # 按名称查找
@@ -332,7 +277,7 @@ find /path -name "*.log" -exec rm {} \;
 find /path -name "*.log" -delete
 ```
 
-### 6.2 文件内容处理
+### 5.2 文件内容处理
 
 ```bash
 # 查看文件内容（分页）
@@ -365,9 +310,9 @@ cat -n file.txt
 
 ---
 
-## 七、系统维护
+## 六、系统维护
 
-### 7.1 系统更新
+### 6.1 系统更新
 
 ```bash
 # Debian/Ubuntu
@@ -381,7 +326,7 @@ cat /var/log/apt/history.log    # Debian
 cat /var/log/yum.log            # CentOS
 ```
 
-### 7.2 清理系统
+### 6.2 清理系统
 
 ```bash
 # 清理缓存
@@ -399,7 +344,7 @@ rm -rf /var/tmp/*
 find /var/log -type f -name "*.log.*" -delete
 ```
 
-### 7.3 系统时间
+### 6.3 系统时间
 
 ```bash
 # 查看当前时间
@@ -421,9 +366,9 @@ timedatectl set-timezone Asia/Shanghai
 
 ---
 
-## 八、实用脚本示例
+## 七、实用脚本示例
 
-### 8.1 备份脚本
+### 7.1 备份脚本
 
 ```bash
 #!/bin/bash
@@ -449,7 +394,7 @@ find $BACKUP_DIR -name "*.sql.gz" -mtime +7 -delete
 echo "Backup completed: $BACKUP_DIR/db_backup_$DATE.sql.gz"
 ```
 
-### 8.2 监控脚本
+### 7.2 监控脚本
 
 ```bash
 #!/bin/bash
@@ -472,9 +417,9 @@ fi
 
 ---
 
-## 九、服务器安全加固
+## 八、服务器安全加固
 
-### 9.1 基础安全设置
+### 8.1 基础安全设置
 
 ```bash
 # 禁止 root 远程登录
@@ -490,7 +435,7 @@ sed -i 's/Port 22/Port 2222/' /etc/ssh/sshd_config
 systemctl restart sshd
 ```
 
-### 9.2 安全扫描
+### 8.2 安全扫描
 
 ```bash
 # 扫描开放端口
@@ -511,7 +456,7 @@ rkhunter --check
 
 ---
 
-## 十、常用命令速查表
+## 九、常用命令速查表
 
 ### 文件操作
 

@@ -47,6 +47,11 @@ sidebar: false
     <br>
     <span>技能系统</span>
   </li>
+  <li data-href="./Transformer架构详解">
+    <strong>Transformer架构详解</strong>
+    <br>
+    <span>通俗理解Transformer架构</span>
+  </li>
 </ul>
 
 <script setup>

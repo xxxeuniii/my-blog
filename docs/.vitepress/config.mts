@@ -162,7 +162,9 @@ export default defineConfig({
       {
         text: '大模型',
         items: [
+          { text: '原理', link: '/LLM/原理/' },
           { text: '基础知识', link: '/LLM/基础知识/' },
+          { text: '向量数据库', link: '/LLM/向量数据库/' },
           { text: 'LangChain', link: '/LLM/LangChain/' },
           { text: 'LangGraph', link: '/LLM/LangGraph/' },
           { text: '提示词工程', link: '/LLM/Prompt%20Engineering/' },
@@ -184,6 +186,17 @@ export default defineConfig({
         ],
       },
       {
+        text: '项目',
+        items: [
+          { text: '项目总览', link: '/project/' },
+          { text: 'D2C', link: '/project/D2C/' },
+        ],
+      },
+      {
+        text: '测试',
+        link: '/test/',
+      },
+      {
         text: 'Web3',
         items: [
           { text: 'DApp基础', link: '/web3/' },
@@ -192,6 +205,29 @@ export default defineConfig({
 
     ],
     sidebar: {
+      '/project/D2C/': [
+        {
+          text: 'D2C',
+          items: [
+            { text: '项目介绍与架构', link: '/project/前端/D2C设计转代码平台' },
+            { text: 'Agent 1：数据清洗 Agent 设计', link: '/project/D2C/数据清洗Agent设计' },
+            { text: 'Agent 2：结构转换 Agent 设计', link: '/project/D2C/结构转换Agent设计' },
+            { text: 'Agent 3：知识检索 Agent 设计', link: '/project/D2C/知识检索Agent设计' },
+            { text: 'Agent 4：代码生成 Agent 设计', link: '/project/D2C/代码生成Agent设计' },
+            { text: 'Agent 5：测试验证 Agent 设计', link: '/project/D2C/测试验证Agent设计' },
+          ]
+        }
+      ],
+      '/LLM/原理/': [
+        {
+          text: '大模型原理',
+          items: [
+            { text: 'RAG 的原理', link: '/LLM/原理/RAG的原理' },
+            { text: '大模型为什么具有推理能力', link: '/LLM/原理/大模型为什么具有推理能力' },
+            { text: '大模型如何判断何时调用 MCP', link: '/LLM/原理/大模型如何判断何时调用MCP' },
+          ]
+        }
+      ],
       '/ops/Linux/': [
         {
           text: 'Linux',
@@ -199,6 +235,7 @@ export default defineConfig({
             { text: 'Linux基础', link: '/ops/Linux/Linux基础' },
             { text: 'Linux进阶', link: '/ops/Linux/Linux进阶' },
             { text: 'Linux发行版对比', link: '/ops/Linux/Linux发行版对比' },
+            { text: 'Cron定时任务', link: '/ops/Linux/Cron定时任务' },
           ]
         }
       ],
@@ -230,7 +267,12 @@ export default defineConfig({
         {
           text: '服务器安全',
           items: [
-            { text: '服务器网络安全', link: '/ops/Security/服务器网络安全' },
+            { text: '服务器网络安全概述', link: '/ops/Security/服务器网络安全' },
+            { text: '网络层安全防护', link: '/ops/Security/网络层安全防护' },
+            { text: '系统层安全防护', link: '/ops/Security/系统层安全防护' },
+            { text: '应用层安全防护', link: '/ops/Security/应用层安全防护' },
+            { text: '数据安全与监控', link: '/ops/Security/数据安全与监控' },
+            { text: 'JWT认证', link: '/ops/Security/JWT认证' },
           ]
         }
       ],
@@ -412,6 +454,7 @@ export default defineConfig({
           items: [
             { text: 'node基础', link: '/backend/node/node基础' },
             { text: 'node服务端开发', link: '/backend/node/node服务端开发' },
+            { text: 'node后端实战', link: '/backend/node/node后端实战' },
           ]
         }
       ],
@@ -474,6 +517,7 @@ export default defineConfig({
           text: '操作系统基础',
           items: [
             { text: '操作系统基础', link: '/basic/操作系统基础/操作系统基础' },
+            { text: '操作系统对比', link: '/basic/操作系统基础/操作系统对比' },
           ]
         }
       ],
@@ -548,6 +592,22 @@ export default defineConfig({
             { text: 'TensorFlow', link: '/LLM/基础知识/TensorFlow' },
             { text: 'PyTorch', link: '/LLM/基础知识/PyTorch' },
             { text: '智能研发Agent设计', link: '/LLM/基础知识/智能研发Agent设计' },
+            { text: 'Transformer架构详解', link: '/LLM/基础知识/Transformer架构详解' },
+          ]
+        }
+      ],
+      '/LLM/向量数据库/': [
+        {
+          text: '向量数据库',
+          items: [
+            { text: '01_向量数据库概览', link: '/LLM/向量数据库/01_向量数据库概览' },
+            { text: '02_Chroma', link: '/LLM/向量数据库/02_Chroma' },
+            { text: '03_Pinecone', link: '/LLM/向量数据库/03_Pinecone' },
+            { text: '04_Milvus', link: '/LLM/向量数据库/04_Milvus' },
+            { text: '05_Weaviate', link: '/LLM/向量数据库/05_Weaviate' },
+            { text: '06_Qdrant', link: '/LLM/向量数据库/06_Qdrant' },
+            { text: '07_其他向量数据库', link: '/LLM/向量数据库/07_其他向量数据库' },
+            { text: '08_FAISS详解', link: '/LLM/向量数据库/08_FAISS详解' },
           ]
         }
       ],
