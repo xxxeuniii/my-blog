@@ -190,7 +190,7 @@ layout: home
   max-width: 22ch;
   margin-top: 1.6rem;
   font-family: var(--font-display);
-  font-size: clamp(2.3rem, 3.5vw, 3.35rem);
+  font-size: clamp(2rem, 2.9vw, 2.8rem);
   font-weight: 400;
   letter-spacing: -0.025em;
   line-height: 1.34;
@@ -200,7 +200,7 @@ layout: home
   max-width: 58ch;
   margin-top: 2rem !important;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.9;
 }
 
@@ -237,7 +237,7 @@ layout: home
 
 .hero-index dd {
   font-family: var(--font-editorial);
-  font-size: 1.05rem;
+  font-size: 0.95rem;
 }
 
 .index-note {
@@ -268,7 +268,7 @@ layout: home
 .section-heading h2 {
   margin-top: 0.45rem;
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(1.7rem, 2.8vw, 2.35rem);
   font-weight: 500;
   letter-spacing: -0.035em;
 }
@@ -318,7 +318,7 @@ layout: home
 
 .update-title {
   font-family: var(--font-mixed);
-  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
 }
 
 .update-arrow {
@@ -356,7 +356,7 @@ layout: home
 
 .topic-head h3 {
   font-family: var(--font-mixed);
-  font-size: 1.45rem;
+  font-size: 1.15rem;
   font-weight: 500;
 }
 
@@ -402,7 +402,7 @@ layout: home
   margin-top: 0.8rem !important;
   color: var(--muted);
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.55;
 }
 
@@ -460,7 +460,7 @@ layout: home
   }
 
   .hero-main h1 {
-    font-size: clamp(2rem, 9vw, 2.7rem);
+    font-size: clamp(1.85rem, 8vw, 2.35rem);
     line-height: 1.3;
   }
 
