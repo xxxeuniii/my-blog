@@ -140,6 +140,7 @@ layout: home
   --accent: #a33d32;
   --font-display: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
   --font-editorial: 'Newsreader', Georgia, serif;
+  --font-mixed: 'Newsreader', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
   max-width: 1180px;
   margin: 0 auto;
   padding: clamp(3rem, 7vw, 7rem) clamp(1.25rem, 4vw, 2.5rem) 3rem;
@@ -316,7 +317,7 @@ layout: home
 }
 
 .update-title {
-  font-family: var(--font-display);
+  font-family: var(--font-mixed);
   font-size: clamp(1.35rem, 2.5vw, 1.85rem);
 }
 
@@ -354,7 +355,7 @@ layout: home
 }
 
 .topic-head h3 {
-  font-family: var(--font-display);
+  font-family: var(--font-mixed);
   font-size: 1.45rem;
   font-weight: 500;
 }
