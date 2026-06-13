@@ -24,10 +24,40 @@ layout: home
 </div>
   </header>
 
+  <section class="home-section projects-section">
+<div class="section-heading projects-heading">
+<div>
+<p class="eyebrow">Selected work · 01</p>
+<h2>把想法做成可以使用的东西</h2>
+</div>
+<a href="/my-blog/project/">查看全部项目 ↗</a>
+</div>
+
+<div class="project-showcase">
+<article class="featured-project">
+<span class="project-kicker">Featured experiment · 01</span>
+<span class="project-display">CAT<br>WEB</span>
+<span class="project-summary">来看看我的小猫派派</span>
+<span class="project-meta">React 19 · Motion · Visual</span>
+<span class="project-actions">
+<a href="https://cat-web-six.vercel.app/" target="_blank" rel="noopener">在线预览 <b>↗</b></a>
+<a href="/my-blog/project/cat-web">项目介绍 <b>→</b></a>
+</span>
+</article>
+
+<div class="project-directory">
+<article><span class="project-index">02</span><strong>PicKit</strong><small>图片处理工具箱</small><span class="directory-actions"><a href="https://pic-kit.vercel.app/" target="_blank" rel="noopener">预览 ↗</a><a href="/my-blog/project/PicKit">介绍 →</a></span></article>
+<article><span class="project-index">03</span><strong>TextKit</strong><small>文本处理工具箱</small><span class="directory-actions"><a href="https://textkit-livid.vercel.app/" target="_blank" rel="noopener">预览 ↗</a><a href="/my-blog/project/Textkit">介绍 →</a></span></article>
+<article><span class="project-index">04</span><strong>SEO MCP</strong><small>SEO 内容工作流</small><span class="directory-actions"><a href="https://github.com/xxxeuniii/SEO_MCP" target="_blank" rel="noopener">GitHub ↗</a><a href="/my-blog/project/SEO_MCP">介绍 →</a></span></article>
+<article><span class="project-index">05</span><strong>D2C</strong><small>设计稿转代码平台</small><span class="directory-actions"><a href="/my-blog/project/D2C/">概览 ↗</a><a href="/my-blog/project/前端/D2C设计转代码平台">介绍 →</a></span></article>
+</div>
+</div>
+  </section>
+
   <section class="home-section updates-section">
     <div class="section-heading">
       <div>
-        <p class="eyebrow">Reading log · 01</p>
+        <p class="eyebrow">Reading log · 02</p>
         <h2>最近值得读</h2>
       </div>
     </div>
@@ -57,36 +87,6 @@ layout: home
 <span class="update-topic">Frontend</span>
 <span class="update-arrow">↗</span>
 </a>
-</div>
-  </section>
-
-  <section class="home-section projects-section">
-<div class="section-heading projects-heading">
-<div>
-<p class="eyebrow">Selected work · 02</p>
-<h2>把想法做成可以使用的东西</h2>
-</div>
-<a href="/my-blog/project/">查看全部项目 ↗</a>
-</div>
-
-<div class="project-showcase">
-<article class="featured-project">
-<span class="project-kicker">Featured experiment · 01</span>
-<span class="project-display">CAT<br>WEB</span>
-<span class="project-summary">来看看我的小猫派派</span>
-<span class="project-meta">React 19 · Motion · Visual</span>
-<span class="project-actions">
-<a href="https://cat-web-six.vercel.app/" target="_blank" rel="noopener">在线预览 <b>↗</b></a>
-<a href="/my-blog/project/cat-web">项目介绍 <b>→</b></a>
-</span>
-</article>
-
-<div class="project-directory">
-<article><span class="project-index">02</span><strong>PicKit</strong><small>图片处理工具箱</small><span class="directory-actions"><a href="https://pic-kit.vercel.app/" target="_blank" rel="noopener">预览 ↗</a><a href="/my-blog/project/PicKit">介绍 →</a></span></article>
-<article><span class="project-index">03</span><strong>TextKit</strong><small>文本处理工具箱</small><span class="directory-actions"><a href="https://textkit-livid.vercel.app/" target="_blank" rel="noopener">预览 ↗</a><a href="/my-blog/project/Textkit">介绍 →</a></span></article>
-<article><span class="project-index">04</span><strong>SEO MCP</strong><small>SEO 内容工作流</small><span class="directory-actions"><a href="https://github.com/xxxeuniii/SEO_MCP" target="_blank" rel="noopener">GitHub ↗</a><a href="/my-blog/project/SEO_MCP">介绍 →</a></span></article>
-<article><span class="project-index">05</span><strong>D2C</strong><small>设计稿转代码平台</small><span class="directory-actions"><a href="/my-blog/project/D2C/">概览 ↗</a><a href="/my-blog/project/前端/D2C设计转代码平台">介绍 →</a></span></article>
-</div>
 </div>
   </section>
 
