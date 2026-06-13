@@ -191,6 +191,10 @@ export default defineConfig({
         items: [
           { text: '项目总览', link: '/project/' },
           { text: 'D2C', link: '/project/D2C/' },
+          { text: 'SEO MCP Server', link: '/project/SEO_MCP' },
+          { text: 'PicKit', link: '/project/PicKit' },
+          { text: 'TextKit', link: '/project/Textkit' },
+          { text: 'cat-web', link: '/project/cat-web' },
         ],
       },
       {

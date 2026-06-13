@@ -17,6 +17,26 @@ sidebar: false
 </div>
 
 <ul id="article-list">
+  <li data-href="./cat-web">
+    <strong>cat-web</strong>
+    <br>
+    <span>使用 React、Framer Motion 与多种鼠标交互效果实现的猫主题视觉实验网站</span>
+  </li>
+  <li data-href="./Textkit">
+    <strong>TextKit</strong>
+    <br>
+    <span>本地处理的在线文本工具箱，支持正则测试、加解密、UUID、文字统计和 Token 计算</span>
+  </li>
+  <li data-href="./PicKit">
+    <strong>PicKit</strong>
+    <br>
+    <span>纯前端实现的在线图片工具箱，支持压缩、裁剪、格式转换、批量处理和图片转 PDF</span>
+  </li>
+  <li data-href="./SEO_MCP">
+    <strong>SEO MCP Server</strong>
+    <br>
+    <span>用于竞争对手研究、SEO 页面生成与 Schema.org 结构化数据输出的 MCP Server</span>
+  </li>
   <li data-href="./D2C/">
     <strong>D2C</strong>
     <br>
