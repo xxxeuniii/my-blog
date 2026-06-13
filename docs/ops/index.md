@@ -27,6 +27,11 @@ sidebar: false
     <br>
     <span>SSH 免登录配置、CI/CD 自动化部署</span>
   </li>
+  <li data-href="./Cloud/">
+    <strong>云计算</strong>
+    <br>
+    <span>国内云与国外云平台选型、核心服务和部署实践</span>
+  </li>
   <li data-href="./Docker/">
     <strong>Docker</strong>
     <br>

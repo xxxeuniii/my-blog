@@ -154,6 +154,7 @@ export default defineConfig({
         items: [
           { text: 'Linux', link: '/ops/Linux/' },
           { text: 'SSH与云服务器', link: '/ops/SSH/' },
+          { text: '云计算', link: '/ops/Cloud/' },
           { text: 'Docker', link: '/ops/Docker/' },
           { text: 'Nginx', link: '/ops/Nginx/' },
           { text: '服务器安全', link: '/ops/Security/' },
@@ -240,6 +241,22 @@ export default defineConfig({
           text: 'SSH与云服务器',
           items: [
             { text: 'SSH与云服务器配置', link: '/ops/SSH/SSH与云服务器配置' },
+          ]
+        }
+      ],
+      '/ops/Cloud/国内云/': [
+        {
+          text: '国内云',
+          items: [
+            { text: '国内云平台概览', link: '/ops/Cloud/国内云/国内云平台概览' },
+          ]
+        }
+      ],
+      '/ops/Cloud/国外云/': [
+        {
+          text: '国外云',
+          items: [
+            { text: '国外云平台概览', link: '/ops/Cloud/国外云/国外云平台概览' },
           ]
         }
       ],
