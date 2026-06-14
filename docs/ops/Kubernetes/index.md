@@ -5,9 +5,9 @@ sidebar: false
 
 <div class="category-index-page">
 
-# 国内云
+# Kubernetes（K8s）
 
-面向中国大陆业务场景，整理国内云平台的产品、合规、网络与部署实践。
+Kubernetes 容器编排、应用部署、弹性扩缩容与集群运维知识。
 
 <div class="category-info">
   <div class="info-item">
@@ -17,10 +17,10 @@ sidebar: false
 </div>
 
 <ul id="article-list">
-  <li data-href="./国内云平台概览">
-    <strong>国内云平台概览</strong>
+  <li data-href="./Kubernetes基础">
+    <strong>Kubernetes基础</strong>
     <br>
-    <span>主流厂商、核心服务、选型维度与常见架构</span>
+    <span>K8s 核心概念、架构、常用命令与应用部署</span>
   </li>
 </ul>
 
@@ -30,9 +30,11 @@ import { onMounted } from 'vue'
 onMounted(() => {
   const list = document.getElementById('article-list')
   if (!list) return
+
   const items = list.querySelectorAll('li[data-href]')
   const countEl = document.getElementById('article-count')
   if (countEl) countEl.textContent = items.length
+
   items.forEach(item => {
     item.style.cursor = 'pointer'
     item.addEventListener('click', () => {
@@ -42,5 +44,12 @@ onMounted(() => {
   })
 })
 </script>
+
+<style>
+#article-list li[data-href]:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+</style>
 
 </div>

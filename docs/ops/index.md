@@ -37,6 +37,11 @@ sidebar: false
     <br>
     <span>Docker 容器技术入门与实践</span>
   </li>
+  <li data-href="./Kubernetes/">
+    <strong>Kubernetes（K8s）</strong>
+    <br>
+    <span>容器编排、服务部署、扩缩容与集群运维</span>
+  </li>
   <li data-href="./Nginx/">
     <strong>Nginx</strong>
     <br>

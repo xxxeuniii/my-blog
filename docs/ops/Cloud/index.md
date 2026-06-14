@@ -11,19 +11,19 @@ sidebar: false
 
 <div class="category-info">
   <div class="info-item">
-    <div class="info-label">分类数量</div>
+    <div class="info-label">文章数量</div>
     <div class="info-value" id="article-count"></div>
   </div>
 </div>
 
 <ul id="article-list">
-  <li data-href="./国内云/">
-    <strong>国内云</strong>
+  <li data-href="./国内云/国内云平台概览">
+    <strong>国内云平台概览</strong>
     <br>
     <span>阿里云、腾讯云、华为云等国内平台的服务与选型</span>
   </li>
-  <li data-href="./国外云/">
-    <strong>国外云</strong>
+  <li data-href="./国外云/国外云平台概览">
+    <strong>国外云平台概览</strong>
     <br>
     <span>AWS、Azure、Google Cloud 等国际平台的服务与选型</span>
   </li>

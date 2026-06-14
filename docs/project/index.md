@@ -17,6 +17,11 @@ sidebar: false
 </div>
 
 <ul id="article-list">
+  <li data-href="./If-I-Held">
+    <strong>If-I-Held</strong>
+    <br>
+    <span>计算“如果当时没有卖出”的股票复盘工具，用情绪文案和生活消费展示机会成本</span>
+  </li>
   <li data-href="./cat-web">
     <strong>cat-web</strong>
     <br>

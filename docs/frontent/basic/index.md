@@ -32,6 +32,11 @@ DOM、BOM、数据结构等核心知识，前端开发的必备基础。
     <br>
     <span>HTML 基础与进阶，语义化标签和现代 Web 标准。</span>
   </li>
+  <li data-href="./浏览器存储">
+    <strong>浏览器存储</strong>
+    <br>
+    <span>Cookie、Web Storage、IndexedDB 与 Cache Storage。</span>
+  </li>
   <li data-href="./数据结构">
     <strong>数据结构</strong>
     <br>

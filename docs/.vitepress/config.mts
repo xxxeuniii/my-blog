@@ -156,6 +156,7 @@ export default defineConfig({
           { text: 'SSH与云服务器', link: '/ops/SSH/' },
           { text: '云计算', link: '/ops/Cloud/' },
           { text: 'Docker', link: '/ops/Docker/' },
+          { text: 'Kubernetes', link: '/ops/Kubernetes/' },
           { text: 'Nginx', link: '/ops/Nginx/' },
           { text: '服务器安全', link: '/ops/Security/' },
         ],
@@ -195,6 +196,7 @@ export default defineConfig({
           { text: 'PicKit', link: '/project/PicKit' },
           { text: 'TextKit', link: '/project/Textkit' },
           { text: 'cat-web', link: '/project/cat-web' },
+          { text: 'If-I-Held', link: '/project/If-I-Held' },
         ],
       },
       {
@@ -248,18 +250,11 @@ export default defineConfig({
           ]
         }
       ],
-      '/ops/Cloud/国内云/': [
+      '/ops/Cloud/': [
         {
-          text: '国内云',
+          text: '云计算',
           items: [
             { text: '国内云平台概览', link: '/ops/Cloud/国内云/国内云平台概览' },
-          ]
-        }
-      ],
-      '/ops/Cloud/国外云/': [
-        {
-          text: '国外云',
-          items: [
             { text: '国外云平台概览', link: '/ops/Cloud/国外云/国外云平台概览' },
           ]
         }
@@ -269,6 +264,14 @@ export default defineConfig({
           text: 'Docker',
           items: [
             { text: 'Docker基础', link: '/ops/Docker/Docker基础' },
+          ]
+        }
+      ],
+      '/ops/Kubernetes/': [
+        {
+          text: 'Kubernetes',
+          items: [
+            { text: 'Kubernetes基础', link: '/ops/Kubernetes/Kubernetes基础' },
           ]
         }
       ],
@@ -300,6 +303,7 @@ export default defineConfig({
             { text: 'HTML', link: '/frontent/basic/HTML' },
             { text: 'DOM', link: '/frontent/basic/DOM' },
             { text: 'BOM', link: '/frontent/basic/BOM' },
+            { text: '浏览器存储', link: '/frontent/basic/浏览器存储' },
             { text: '数据结构', link: '/frontent/basic/数据结构' },
             { text: '网络请求', link: '/frontent/basic/网络请求' },
           ]

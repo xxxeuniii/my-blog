@@ -1,5 +1,35 @@
 # Linux 发行版对比
 
+## Ubuntu 这些是什么
+
+Ubuntu、Debian、Rocky Linux 等名称都是 **Linux 操作系统发行版**。
+
+可以把它们之间的关系简单理解为：
+
+- **Linux**：操作系统的核心内核，负责管理 CPU、内存、磁盘和硬件。
+- **Linux 发行版**：基于 Linux 内核，加入软件包管理器、系统工具和应用程序后形成的完整操作系统。
+- **云服务器**：云厂商提供的远程虚拟电脑，可以选择安装 Ubuntu、Debian 等操作系统。
+
+购买云服务器时看到的“选择 Ubuntu”，实际上是在选择服务器预装的操作系统。
+
+### 常见 Linux 发行版
+
+| 发行版 | 主要特点 | 适合场景 |
+| --- | --- | --- |
+| Ubuntu | 易用、教程丰富、云厂商支持完善 | 新手学习、开发环境、云服务器 |
+| Debian | 稳定、精简、更新谨慎，Ubuntu 基于它开发 | 长期运行的服务器 |
+| Rocky Linux / AlmaLinux | 兼容 RHEL，稳定性和支持周期较长 | 企业服务器 |
+| CentOS Stream | 位于 Fedora 与 RHEL 之间，持续接收更新 | RHEL 生态开发与测试 |
+| Alpine Linux | 体积极小、依赖精简 | Docker 容器 |
+| Arch Linux | 高度自定义、滚动更新 | 高级用户、学习 Linux 原理 |
+
+### 应该怎么选择
+
+- 第一次使用 Linux 或购买云服务器：优先选择 **Ubuntu LTS 长期支持版本**。
+- 更看重稳定、精简：选择 **Debian**。
+- 使用 RHEL 企业生态：选择 **Rocky Linux、AlmaLinux 或 RHEL**。
+- 构建轻量 Docker 镜像：可以选择 **Alpine Linux**。
+
 ## 一、什么是 Linux 发行版
 
 Linux 发行版（Linux Distribution）是基于 Linux 内核的完整操作系统，包含内核、软件包管理器、桌面环境和各种应用程序。不同发行版针对不同用途和用户群体进行优化。
